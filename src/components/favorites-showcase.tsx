@@ -60,7 +60,9 @@ export default function FavoritesShowcase({ repos, categories, username, generat
             </p>
           </div>
         </div>
+      </section>
 
+      <section className="card filter-panel">
         <div className="top-controls">
           <div className="control-block">
             <div className="side-title">搜索</div>
@@ -86,8 +88,6 @@ export default function FavoritesShowcase({ repos, categories, username, generat
               ))}
             </div>
           </div>
-
-
         </div>
       </section>
 
