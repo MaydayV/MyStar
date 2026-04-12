@@ -132,7 +132,7 @@ export default function FavoritesShowcase({ repos, categories, username, generat
                   <div className="mt-3 flex flex-wrap gap-2">
                     {repo.language && <span className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">{repo.language}</span>}
                     <span className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">⭐ {repo.stars.toLocaleString()}</span>
-                    <span className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">更新 {new Date(repo.updatedAt).toLocaleDateString("zh-CN")}</span>
+                    <span className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">🍴 {repo.forks.toLocaleString()}</span>
                   </div>
                 </a>
               ))}
