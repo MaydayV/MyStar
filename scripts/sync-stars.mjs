@@ -40,35 +40,6 @@ function pickCategory(repo) {
   return "Other";
 }
 
-function recommendation(repo, category) {
-  const lang = repo.language || "多语言";
-  const stars = repo.stargazers_count || 0;
-  const topics = (repo.topics || []).slice(0, 3);
-  const topicText = topics.length ? topics.join(" / ") : "工程实现";
-
-  const whyByCategory = {
-    AI: `我会推荐它，主要看中它在 ${topicText} 上的工程落地，拿来做 AI 能力设计参考很值。`,
-    Frontend: `我推荐这个仓库，因为它在 ${topicText} 的前端实现比较成熟，UI 和交互方案都有借鉴价值。`,
-    Backend: `我会把它列为后端推荐，原因是它在 ${topicText} 这类服务端问题上给出了可复用做法。`,
-    Mobile: `我推荐它给做客户端的同学，这个项目在 ${topicText} 的移动端实践里有不少可直接照搬的点。`,
-    DevOps: `我会推荐这个仓库，它在 ${topicText} 相关的工程自动化上思路清晰，落地成本不高。`,
-    Data: `我推荐它是因为它在 ${topicText} 的数据链路上给了比较完整的实践路径，适合实战参考。`,
-    Tooling: `我把它放进工具类推荐，这个仓库在 ${topicText} 的效率提升上非常直接，能马上用起来。`,
-    Security: `我推荐它的核心原因是安全能力做得扎实，在 ${topicText} 方向上有实际工程价值。`,
-    Other: `我推荐这个仓库，虽然不属于单一类型，但在 ${topicText} 这块的实现思路很值得借鉴。`,
-  };
-
-  const strength =
-    stars >= 50000
-      ? `另外它已经被大量开发者验证（⭐ ${stars.toLocaleString()}），我认为属于必看项目。`
-      : stars >= 10000
-        ? `社区反馈也很稳定（⭐ ${stars.toLocaleString()}），我会优先把它放进推荐列表。`
-        : stars >= 2000
-          ? `从热度和质量看都不错（⭐ ${stars.toLocaleString()}），值得花时间读一遍。`
-          : `虽然热度不算最高，但实现很实在，我会把它当作细分方向的补充推荐。`;
-
-  return `${whyByCategory[category] || whyByCategory.Other} 技术栈以 ${lang} 为主。${strength}`;
-}
 
 async function fetchUsername() {
   if (token) {
@@ -182,7 +153,6 @@ async function main() {
       updatedAt: repo.updated_at,
       starredAt: repo.updated_at,
       category,
-      recommendation: recommendation(repo, category),
     };
   });
 

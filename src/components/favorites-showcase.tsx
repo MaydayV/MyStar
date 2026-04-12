@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState, useEffect, useRef } from "react";
+import { useMemo, useState, useEffect } from "react";
 import clsx from "clsx";
 import type { RepoCategory, StarRepo } from "@/lib/types";
 
@@ -18,7 +18,6 @@ export default function FavoritesShowcase({ repos, categories, username, generat
   const [query, setQuery] = useState("");
   const [recentOnly, setRecentOnly] = useState(false);
   const [page, setPage] = useState(1);
-  const [liveStars, setLiveStars] = useState<Record<number, number>>({});
 
   const filtered = useMemo(() => {
     const latestStarTs = repos.reduce((max, repo) => Math.max(max, Date.parse(repo.starredAt) || 0), 0);
@@ -46,30 +45,6 @@ export default function FavoritesShowcase({ repos, categories, username, generat
     setPage(1);
   }, [activeCategory, query, recentOnly]);
 
-  // 获取实时星星数
-  useEffect(() => {
-    const fetchStars = async () => {
-      const visibleRepos = displayed.slice(0, 50); // 只获取前50个可见仓库的实时数据
-      for (const repo of visibleRepos) {
-        if (liveStars[repo.id]) continue; // 已经获取过
-        
-        try {
-          const response = await fetch(`https://api.github.com/repos/${repo.fullName}`);
-          if (response.ok) {
-            const data = await response.json();
-            setLiveStars((prev) => ({ ...prev, [repo.id]: data.stargazers_count }));
-          }
-        } catch (error) {
-          // 静默失败，使用缓存数据
-        }
-        
-        // 避免 API 限流
-        await new Promise((resolve) => setTimeout(resolve, 100));
-      }
-    };
-
-    fetchStars();
-  }, [displayed]);
 
   return (
     <div className="app-grid">
@@ -152,22 +127,12 @@ export default function FavoritesShowcase({ repos, categories, username, generat
             <div className="repo-grid">
               {displayed.map((repo) => (
                 <a key={repo.id} href={repo.htmlUrl} target="_blank" rel="noreferrer" className="repo-item block">
-                  <div className="mb-2 flex items-center justify-between">
-                    <span className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">{repo.category}</span>
-                    <span className="text-xs text-slate-500">⭐ {(liveStars[repo.id] || repo.stars).toLocaleString()}</span>
-                  </div>
                   <h3 className="line-clamp-1 text-base font-semibold text-slate-900">{repo.fullName}</h3>
                   <p className="mt-2 line-clamp-2 text-xs text-slate-500">{repo.description || "No description"}</p>
-                  <div className="mt-3 rounded-lg bg-blue-50 p-3 border border-blue-100">
-                    <p className="line-clamp-2 text-sm text-slate-700">{repo.recommendation}</p>
-                  </div>
                   <div className="mt-3 flex flex-wrap gap-2">
                     {repo.language && <span className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">{repo.language}</span>}
-                    {repo.topics.slice(0, 3).map((topic) => (
-                      <span key={topic} className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">
-                        #{topic}
-                      </span>
-                    ))}
+                    <span className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">⭐ {repo.stars.toLocaleString()}</span>
+                    <span className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">更新 {new Date(repo.updatedAt).toLocaleDateString("zh-CN")}</span>
                   </div>
                 </a>
               ))}

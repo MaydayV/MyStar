@@ -24,7 +24,6 @@ export interface StarRepo {
   updatedAt: string;
   starredAt: string;
   category: RepoCategory;
-  recommendation: string;
 }
 
 export interface RepoData {
