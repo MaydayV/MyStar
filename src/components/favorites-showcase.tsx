@@ -11,26 +11,21 @@ interface Props {
   generatedAt: string;
 }
 
-const ITEMS_PER_PAGE = 30;
+const ITEMS_PER_PAGE = 32;
 
 export default function FavoritesShowcase({ repos, categories, username, generatedAt }: Props) {
   const [activeCategory, setActiveCategory] = useState<RepoCategory | "All">("All");
   const [query, setQuery] = useState("");
-  const [recentOnly, setRecentOnly] = useState(false);
   const [page, setPage] = useState(1);
 
   const filtered = useMemo(() => {
-    const latestStarTs = repos.reduce((max, repo) => Math.max(max, Date.parse(repo.starredAt) || 0), 0);
-    const threeMonthsAgo = latestStarTs - 1000 * 60 * 60 * 24 * 90;
-
     return repos.filter((repo) => {
       const inCategory = activeCategory === "All" || repo.category === activeCategory;
       const searchable = `${repo.fullName} ${repo.description} ${repo.topics.join(" ")}`.toLowerCase();
       const hit = searchable.includes(query.toLowerCase());
-      const inRecent = !recentOnly || Date.parse(repo.starredAt) >= threeMonthsAgo;
-      return inCategory && hit && inRecent;
+      return inCategory && hit;
     });
-  }, [activeCategory, query, recentOnly, repos]);
+  }, [activeCategory, query, repos]);
 
   const displayed = useMemo(() => {
     const start = (page - 1) * ITEMS_PER_PAGE;
@@ -42,7 +37,7 @@ export default function FavoritesShowcase({ repos, categories, username, generat
 
   useEffect(() => {
     setPage(1);
-  }, [activeCategory, query, recentOnly]);
+  }, [activeCategory, query]);
 
   return (
     <div className="app-stack">
@@ -63,17 +58,6 @@ export default function FavoritesShowcase({ repos, categories, username, generat
               </a>
               的 Star 自动整理。这里是筛选台，不是传统首页。
             </p>
-          </div>
-
-          <div className="top-stats text-sm">
-            <div className="rounded-lg border border-slate-200 bg-slate-50 p-3">
-              <div className="text-xs text-slate-500">总项目</div>
-              <div className="mt-1 font-semibold">{repos.length}</div>
-            </div>
-            <div className="rounded-lg border border-slate-200 bg-slate-50 p-3">
-              <div className="text-xs text-slate-500">命中</div>
-              <div className="mt-1 font-semibold">{filtered.length}</div>
-            </div>
           </div>
         </div>
 
@@ -103,15 +87,7 @@ export default function FavoritesShowcase({ repos, categories, username, generat
             </div>
           </div>
 
-          <label className="top-toggle inline-flex items-center gap-2 text-sm text-slate-600">
-            <input
-              type="checkbox"
-              checked={recentOnly}
-              onChange={(e) => setRecentOnly(e.target.checked)}
-              className="h-4 w-4 accent-blue-600"
-            />
-            仅看最近90天
-          </label>
+
         </div>
       </section>
 
@@ -121,7 +97,11 @@ export default function FavoritesShowcase({ repos, categories, username, generat
             <div className="text-xs text-slate-500">Live Collection View</div>
             <div className="text-sm font-semibold text-slate-900">{activeCategory === "All" ? "全部分类" : activeCategory}</div>
           </div>
-          <div className="text-xs text-slate-500">最后同步：{generatedAt ? new Date(generatedAt).toLocaleDateString("zh-CN") : "--"}</div>
+          <div className="content-header-meta">
+            <span className="meta-pill">总项目 {repos.length}</span>
+            <span className="meta-pill">命中 {filtered.length}</span>
+            <span className="text-xs text-slate-500">最后同步：{generatedAt ? new Date(generatedAt).toLocaleDateString("zh-CN") : "--"}</span>
+          </div>
         </div>
 
         {filtered.length === 0 ? (

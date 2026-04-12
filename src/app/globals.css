@@ -39,6 +39,9 @@ html, body {
 
 .top-panel {
   padding: 14px;
+  position: sticky;
+  top: 12px;
+  z-index: 30;
 }
 
 .top-panel-head {
@@ -49,24 +52,12 @@ html, body {
   flex-wrap: wrap;
 }
 
-.top-stats {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(110px, 1fr));
-  gap: 8px;
-  min-width: 220px;
-}
-
 .top-controls {
   margin-top: 14px;
   display: grid;
-  grid-template-columns: minmax(220px, 1.2fr) minmax(360px, 2fr) auto;
+  grid-template-columns: minmax(240px, 1.1fr) minmax(0, 2fr);
   gap: 12px;
   align-items: end;
-}
-
-.top-toggle {
-  height: 40px;
-  white-space: nowrap;
 }
 
 @media (max-width: 1024px) {
@@ -75,8 +66,8 @@ html, body {
     align-items: stretch;
   }
 
-  .top-toggle {
-    height: auto;
+  .top-panel {
+    position: static;
   }
 
   .app-shell {
@@ -143,8 +134,11 @@ html, body {
 
 .tag-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: thin;
 }
 
 .tag {
@@ -178,6 +172,23 @@ html, body {
   justify-content: space-between;
   gap: 12px;
   background: linear-gradient(140deg, rgba(255,255,255,0.82) 0%, rgba(248,250,252,0.9) 100%);
+}
+
+.content-header-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.meta-pill {
+  border: 1px solid var(--line);
+  background: rgba(248, 250, 252, 0.95);
+  color: #334155;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
 }
 
 .repo-grid {
