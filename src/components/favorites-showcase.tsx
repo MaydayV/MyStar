@@ -76,7 +76,18 @@ export default function FavoritesShowcase({ repos, categories, username, generat
       <aside className="card sidebar-card">
         <div className="brand">github收藏夹</div>
         <h2 className="mt-3 text-xl font-bold">仓库发现中心</h2>
-        <p className="mt-2 text-sm text-slate-600">基于 @{username} 的 Star 自动整理。这里是筛选台，不是传统首页。</p>
+        <p className="mt-2 text-sm text-slate-600">
+          基于
+          <a
+            href={`https://github.com/${username}`}
+            target="_blank"
+            rel="noreferrer"
+            className="mx-1 text-slate-900 underline decoration-slate-400 underline-offset-2 hover:text-blue-600"
+          >
+            @{username}
+          </a>
+          的 Star 自动整理。这里是筛选台，不是传统首页。
+        </p>
 
         <div className="mt-4">
           <div className="side-title">搜索</div>
