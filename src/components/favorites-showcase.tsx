@@ -40,76 +40,80 @@ export default function FavoritesShowcase({ repos, categories, username, generat
 
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
 
-  // 重置分页当筛选条件改变
   useEffect(() => {
     setPage(1);
   }, [activeCategory, query, recentOnly]);
 
-
   return (
-    <div className="app-grid">
-      <aside className="card sidebar-card">
-        <div className="brand">github收藏夹</div>
-        <h2 className="mt-3 text-xl font-bold">仓库发现中心</h2>
-        <p className="mt-2 text-sm text-slate-600">
-          基于
-          <a
-            href={`https://github.com/${username}`}
-            target="_blank"
-            rel="noreferrer"
-            className="mx-1 text-slate-900 underline decoration-slate-400 underline-offset-2 hover:text-blue-600"
-          >
-            @{username}
-          </a>
-          的 Star 自动整理。这里是筛选台，不是传统首页。
-        </p>
-
-        <div className="mt-4">
-          <div className="side-title">搜索</div>
-          <input
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="repo / topic / keyword"
-            className="search-input text-sm"
-          />
-        </div>
-
-        <div className="mt-4">
-          <div className="side-title">分类</div>
-          <div className="tag-list">
-            {["All", ...categories].map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat as RepoCategory | "All")}
-                className={clsx("tag", activeCategory === cat && "active")}
+    <div className="app-stack">
+      <section className="card top-panel">
+        <div className="top-panel-head">
+          <div>
+            <div className="brand">github收藏夹</div>
+            <h2 className="mt-3 text-xl font-bold">仓库发现中心</h2>
+            <p className="mt-2 text-sm text-slate-600">
+              基于
+              <a
+                href={`https://github.com/${username}`}
+                target="_blank"
+                rel="noreferrer"
+                className="mx-1 text-slate-900 underline decoration-slate-400 underline-offset-2 hover:text-blue-600"
               >
-                {cat}
-              </button>
-            ))}
+                @{username}
+              </a>
+              的 Star 自动整理。这里是筛选台，不是传统首页。
+            </p>
+          </div>
+
+          <div className="top-stats text-sm">
+            <div className="rounded-lg border border-slate-200 bg-slate-50 p-3">
+              <div className="text-xs text-slate-500">总项目</div>
+              <div className="mt-1 font-semibold">{repos.length}</div>
+            </div>
+            <div className="rounded-lg border border-slate-200 bg-slate-50 p-3">
+              <div className="text-xs text-slate-500">命中</div>
+              <div className="mt-1 font-semibold">{filtered.length}</div>
+            </div>
           </div>
         </div>
 
-        <label className="mt-4 inline-flex items-center gap-2 text-sm text-slate-600">
-          <input
-            type="checkbox"
-            checked={recentOnly}
-            onChange={(e) => setRecentOnly(e.target.checked)}
-            className="h-4 w-4 accent-blue-600"
-          />
-          仅看最近90天
-        </label>
+        <div className="top-controls">
+          <div className="control-block">
+            <div className="side-title">搜索</div>
+            <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="repo / topic / keyword"
+              className="search-input text-sm"
+            />
+          </div>
 
-        <div className="mt-4 grid grid-cols-2 gap-2 text-sm">
-          <div className="rounded-lg border border-slate-200 bg-slate-50 p-2">
-            <div className="text-xs text-slate-500">总项目</div>
-            <div className="mt-1 font-semibold">{repos.length}</div>
+          <div className="control-block">
+            <div className="side-title">分类</div>
+            <div className="tag-list">
+              {["All", ...categories].map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat as RepoCategory | "All")}
+                  className={clsx("tag", activeCategory === cat && "active")}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
           </div>
-          <div className="rounded-lg border border-slate-200 bg-slate-50 p-2">
-            <div className="text-xs text-slate-500">命中</div>
-            <div className="mt-1 font-semibold">{filtered.length}</div>
-          </div>
+
+          <label className="top-toggle inline-flex items-center gap-2 text-sm text-slate-600">
+            <input
+              type="checkbox"
+              checked={recentOnly}
+              onChange={(e) => setRecentOnly(e.target.checked)}
+              className="h-4 w-4 accent-blue-600"
+            />
+            仅看最近90天
+          </label>
         </div>
-      </aside>
+      </section>
 
       <section className="space-y-3">
         <div className="card content-header">
@@ -131,8 +135,8 @@ export default function FavoritesShowcase({ repos, categories, username, generat
                   <p className="mt-2 line-clamp-2 text-xs text-slate-500">{repo.description || "No description"}</p>
                   <div className="mt-3 flex flex-wrap gap-2">
                     {repo.language && <span className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">{repo.language}</span>}
-                    <span className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">⭐ {repo.stars.toLocaleString()}</span>
-                    <span className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">🍴 {repo.forks.toLocaleString()}</span>
+                    <span className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">Star {repo.stars.toLocaleString()}</span>
+                    <span className="rounded bg-slate-100 px-2 py-1 text-xs text-slate-600">Fork {repo.forks.toLocaleString()}</span>
                   </div>
                 </a>
               ))}
