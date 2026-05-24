@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-24T01:50:19.800Z",
+  "generatedAt": "2026-05-24T08:10:45.071Z",
   "username": "MaydayV",
   "total": 527,
   "categories": [
@@ -22,8 +22,8 @@
       "htmlUrl": "https://github.com/openclaw/openclaw",
       "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
       "language": "TypeScript",
-      "stars": 374191,
-      "forks": 77809,
+      "stars": 374249,
+      "forks": 77829,
       "topics": [
         "ai",
         "assistant",
@@ -34,8 +34,8 @@
         "personal"
       ],
       "homepage": "https://openclaw.ai",
-      "updatedAt": "2026-05-24T01:48:44Z",
-      "starredAt": "2026-05-24T01:48:44Z",
+      "updatedAt": "2026-05-24T08:09:37Z",
+      "starredAt": "2026-05-24T08:09:37Z",
       "category": "AI"
     },
     {
@@ -46,12 +46,37 @@
       "htmlUrl": "https://github.com/obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "language": "Shell",
-      "stars": 204017,
-      "forks": 18167,
+      "stars": 204289,
+      "forks": 18197,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-24T01:48:03Z",
-      "starredAt": "2026-05-24T01:48:03Z",
+      "updatedAt": "2026-05-24T08:03:52Z",
+      "starredAt": "2026-05-24T08:03:52Z",
+      "category": "AI"
+    },
+    {
+      "id": 1136590548,
+      "fullName": "affaan-m/ECC",
+      "name": "ECC",
+      "owner": "affaan-m",
+      "htmlUrl": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 189463,
+      "forks": 29308,
+      "topics": [
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "developer-tools",
+        "llm",
+        "mcp",
+        "productivity"
+      ],
+      "homepage": "https://ecc.tools",
+      "updatedAt": "2026-05-24T08:10:20Z",
+      "starredAt": "2026-05-24T08:10:20Z",
       "category": "AI"
     },
     {
@@ -62,8 +87,8 @@
       "htmlUrl": "https://github.com/n8n-io/n8n",
       "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "language": "TypeScript",
-      "stars": 189424,
-      "forks": 57951,
+      "stars": 189458,
+      "forks": 57960,
       "topics": [
         "ai",
         "apis",
@@ -87,33 +112,8 @@
         "workflow-automation"
       ],
       "homepage": "https://n8n.io",
-      "updatedAt": "2026-05-24T01:48:48Z",
-      "starredAt": "2026-05-24T01:48:48Z",
-      "category": "AI"
-    },
-    {
-      "id": 1136590548,
-      "fullName": "affaan-m/ECC",
-      "name": "ECC",
-      "owner": "affaan-m",
-      "htmlUrl": "https://github.com/affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "language": "JavaScript",
-      "stars": 189224,
-      "forks": 29262,
-      "topics": [
-        "ai-agents",
-        "anthropic",
-        "claude",
-        "claude-code",
-        "developer-tools",
-        "llm",
-        "mcp",
-        "productivity"
-      ],
-      "homepage": "https://ecc.tools",
-      "updatedAt": "2026-05-24T01:45:48Z",
-      "starredAt": "2026-05-24T01:45:48Z",
+      "updatedAt": "2026-05-24T07:53:51Z",
+      "starredAt": "2026-05-24T07:53:51Z",
       "category": "AI"
     },
     {
@@ -124,12 +124,12 @@
       "htmlUrl": "https://github.com/jackfrued/Python-100-Days",
       "description": "Python - 100天从新手到大师",
       "language": "Jupyter Notebook",
-      "stars": 182724,
-      "forks": 55701,
+      "stars": 182731,
+      "forks": 55699,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-24T00:53:50Z",
-      "starredAt": "2026-05-24T00:53:50Z",
+      "updatedAt": "2026-05-24T07:52:23Z",
+      "starredAt": "2026-05-24T07:52:23Z",
       "category": "Other"
     },
     {
@@ -140,8 +140,8 @@
       "htmlUrl": "https://github.com/NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "language": "Python",
-      "stars": 164494,
-      "forks": 27029,
+      "stars": 164828,
+      "forks": 27105,
       "topics": [
         "ai",
         "ai-agent",
@@ -161,8 +161,8 @@
         "openclaw"
       ],
       "homepage": "https://hermes-agent.nousresearch.com",
-      "updatedAt": "2026-05-24T01:47:19Z",
-      "starredAt": "2026-05-24T01:47:19Z",
+      "updatedAt": "2026-05-24T08:09:52Z",
+      "starredAt": "2026-05-24T08:09:52Z",
       "category": "AI"
     },
     {
@@ -173,12 +173,12 @@
       "htmlUrl": "https://github.com/anomalyco/opencode",
       "description": "The open source coding agent.",
       "language": "TypeScript",
-      "stars": 164451,
-      "forks": 19466,
+      "stars": 164533,
+      "forks": 19485,
       "topics": [],
       "homepage": "https://opencode.ai",
-      "updatedAt": "2026-05-24T01:49:52Z",
-      "starredAt": "2026-05-24T01:49:52Z",
+      "updatedAt": "2026-05-24T08:05:03Z",
+      "starredAt": "2026-05-24T08:05:03Z",
       "category": "AI"
     },
     {
@@ -189,8 +189,8 @@
       "htmlUrl": "https://github.com/langgenius/dify",
       "description": "Production-ready platform for agentic workflow development.",
       "language": "TypeScript",
-      "stars": 142374,
-      "forks": 22399,
+      "stars": 142409,
+      "forks": 22409,
       "topics": [
         "agent",
         "agentic-ai",
@@ -214,8 +214,8 @@
         "workflow"
       ],
       "homepage": "https://dify.ai",
-      "updatedAt": "2026-05-24T01:30:53Z",
-      "starredAt": "2026-05-24T01:30:53Z",
+      "updatedAt": "2026-05-24T08:09:05Z",
+      "starredAt": "2026-05-24T08:09:05Z",
       "category": "AI"
     },
     {
@@ -226,8 +226,8 @@
       "htmlUrl": "https://github.com/open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
       "language": "Python",
-      "stars": 138382,
-      "forks": 19793,
+      "stars": 138405,
+      "forks": 19798,
       "topics": [
         "ai",
         "llm",
@@ -246,8 +246,8 @@
         "webui"
       ],
       "homepage": "https://openwebui.com",
-      "updatedAt": "2026-05-24T01:48:25Z",
-      "starredAt": "2026-05-24T01:48:25Z",
+      "updatedAt": "2026-05-24T08:06:00Z",
+      "starredAt": "2026-05-24T08:06:00Z",
       "category": "AI"
     },
     {
@@ -258,7 +258,7 @@
       "htmlUrl": "https://github.com/microsoft/PowerToys",
       "description": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows",
       "language": "C#",
-      "stars": 133418,
+      "stars": 133428,
       "forks": 8004,
       "topics": [
         "advanced-paste",
@@ -275,8 +275,8 @@
         "windows-11"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-24T01:20:58Z",
-      "starredAt": "2026-05-24T01:20:58Z",
+      "updatedAt": "2026-05-24T07:52:22Z",
+      "starredAt": "2026-05-24T07:52:22Z",
       "category": "Backend"
     },
     {
@@ -287,8 +287,8 @@
       "htmlUrl": "https://github.com/clash-verge-rev/clash-verge-rev",
       "description": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
       "language": "TypeScript",
-      "stars": 120386,
-      "forks": 8766,
+      "stars": 120452,
+      "forks": 8773,
       "topics": [
         "clash",
         "clash-meta",
@@ -300,8 +300,8 @@
         "windows"
       ],
       "homepage": "https://www.clashverge.dev",
-      "updatedAt": "2026-05-24T01:44:59Z",
-      "starredAt": "2026-05-24T01:44:59Z",
+      "updatedAt": "2026-05-24T08:08:28Z",
+      "starredAt": "2026-05-24T08:08:28Z",
       "category": "AI"
     },
     {
@@ -312,8 +312,8 @@
       "htmlUrl": "https://github.com/shadcn-ui/ui",
       "description": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code.",
       "language": "TypeScript",
-      "stars": 114930,
-      "forks": 8888,
+      "stars": 114945,
+      "forks": 8892,
       "topics": [
         "base-ui",
         "components",
@@ -328,8 +328,8 @@
         "vite"
       ],
       "homepage": "https://ui.shadcn.com",
-      "updatedAt": "2026-05-24T01:45:40Z",
-      "starredAt": "2026-05-24T01:45:40Z",
+      "updatedAt": "2026-05-24T08:08:58Z",
+      "starredAt": "2026-05-24T08:08:58Z",
       "category": "AI"
     },
     {
@@ -340,8 +340,8 @@
       "htmlUrl": "https://github.com/Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
       "language": "Python",
-      "stars": 114200,
-      "forks": 13364,
+      "stars": 114247,
+      "forks": 13376,
       "topics": [
         "ai",
         "comfy",
@@ -351,8 +351,8 @@
         "stable-diffusion"
       ],
       "homepage": "https://www.comfy.org/",
-      "updatedAt": "2026-05-24T01:43:38Z",
-      "starredAt": "2026-05-24T01:43:38Z",
+      "updatedAt": "2026-05-24T08:05:43Z",
+      "starredAt": "2026-05-24T08:05:43Z",
       "category": "AI"
     },
     {
@@ -363,7 +363,7 @@
       "htmlUrl": "https://github.com/mrdoob/three.js",
       "description": "JavaScript 3D Library.",
       "language": "JavaScript",
-      "stars": 112627,
+      "stars": 112631,
       "forks": 36375,
       "topics": [
         "3d",
@@ -380,8 +380,8 @@
         "webxr"
       ],
       "homepage": "https://threejs.org/",
-      "updatedAt": "2026-05-24T01:26:51Z",
-      "starredAt": "2026-05-24T01:26:51Z",
+      "updatedAt": "2026-05-24T07:46:26Z",
+      "starredAt": "2026-05-24T07:46:26Z",
       "category": "Backend"
     },
     {
@@ -392,8 +392,8 @@
       "htmlUrl": "https://github.com/github/spec-kit",
       "description": "💫 Toolkit to help you get started with Spec-Driven Development",
       "language": "Python",
-      "stars": 105316,
-      "forks": 9299,
+      "stars": 105383,
+      "forks": 9305,
       "topics": [
         "ai",
         "copilot",
@@ -404,8 +404,8 @@
         "spec-driven"
       ],
       "homepage": "https://github.github.com/spec-kit/",
-      "updatedAt": "2026-05-24T01:43:31Z",
-      "starredAt": "2026-05-24T01:43:31Z",
+      "updatedAt": "2026-05-24T07:58:32Z",
+      "starredAt": "2026-05-24T07:58:32Z",
       "category": "AI"
     },
     {
@@ -416,12 +416,12 @@
       "htmlUrl": "https://github.com/msitarzewski/agency-agents",
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "language": "Shell",
-      "stars": 104519,
-      "forks": 17193,
+      "stars": 104588,
+      "forks": 17209,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-24T01:49:35Z",
-      "starredAt": "2026-05-24T01:49:35Z",
+      "updatedAt": "2026-05-24T08:04:36Z",
+      "starredAt": "2026-05-24T08:04:36Z",
       "category": "AI"
     },
     {
@@ -432,12 +432,12 @@
       "htmlUrl": "https://github.com/garrytan/gstack",
       "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
       "language": "TypeScript",
-      "stars": 101278,
-      "forks": 15102,
+      "stars": 101365,
+      "forks": 15121,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-24T01:49:00Z",
-      "starredAt": "2026-05-24T01:49:00Z",
+      "updatedAt": "2026-05-24T08:09:26Z",
+      "starredAt": "2026-05-24T08:09:26Z",
       "category": "Tooling"
     },
     {
@@ -448,8 +448,8 @@
       "htmlUrl": "https://github.com/hacksider/Deep-Live-Cam",
       "description": "real time face swap and one-click video deepfake with only a single image",
       "language": "Python",
-      "stars": 93313,
-      "forks": 13581,
+      "stars": 93324,
+      "forks": 13584,
       "topics": [
         "ai",
         "ai-deep-fake",
@@ -471,8 +471,8 @@
         "webcamera"
       ],
       "homepage": "https://deeplivecam.net/",
-      "updatedAt": "2026-05-24T01:47:21Z",
-      "starredAt": "2026-05-24T01:47:21Z",
+      "updatedAt": "2026-05-24T08:03:41Z",
+      "starredAt": "2026-05-24T08:03:41Z",
       "category": "AI"
     },
     {
@@ -483,8 +483,8 @@
       "htmlUrl": "https://github.com/ChatGPTNextWeb/NextChat",
       "description": "✨ Light and Fast AI Assistant. Support: Web | iOS | MacOS | Android |  Linux | Windows",
       "language": "TypeScript",
-      "stars": 88070,
-      "forks": 59696,
+      "stars": 88071,
+      "forks": 59699,
       "topics": [
         "calclaude",
         "chatgpt",
@@ -507,8 +507,8 @@
         "webui"
       ],
       "homepage": "https://nextchat.club",
-      "updatedAt": "2026-05-24T00:58:14Z",
-      "starredAt": "2026-05-24T00:58:14Z",
+      "updatedAt": "2026-05-24T07:58:46Z",
+      "starredAt": "2026-05-24T07:58:46Z",
       "category": "AI"
     },
     {
@@ -519,8 +519,8 @@
       "htmlUrl": "https://github.com/louislam/uptime-kuma",
       "description": "A fancy self-hosted monitoring tool",
       "language": "JavaScript",
-      "stars": 87128,
-      "forks": 7883,
+      "stars": 87137,
+      "forks": 7886,
       "topics": [
         "docker",
         "monitor",
@@ -536,8 +536,8 @@
         "websocket"
       ],
       "homepage": "https://uptime.kuma.pet",
-      "updatedAt": "2026-05-24T01:45:44Z",
-      "starredAt": "2026-05-24T01:45:44Z",
+      "updatedAt": "2026-05-24T06:02:46Z",
+      "starredAt": "2026-05-24T06:02:46Z",
       "category": "Backend"
     },
     {
@@ -548,8 +548,8 @@
       "htmlUrl": "https://github.com/lobehub/lobehub",
       "description": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
       "language": "TypeScript",
-      "stars": 77602,
-      "forks": 15273,
+      "stars": 77613,
+      "forks": 15271,
       "topics": [
         "agent",
         "agent-collaboration",
@@ -568,8 +568,8 @@
         "skills"
       ],
       "homepage": "https://lobehub.com",
-      "updatedAt": "2026-05-24T01:36:46Z",
-      "starredAt": "2026-05-24T01:36:46Z",
+      "updatedAt": "2026-05-24T07:36:11Z",
+      "starredAt": "2026-05-24T07:36:11Z",
       "category": "AI"
     },
     {
@@ -580,8 +580,8 @@
       "htmlUrl": "https://github.com/obsproject/obs-studio",
       "description": "OBS Studio - Free and open source software for live streaming and screen recording",
       "language": "C",
-      "stars": 72632,
-      "forks": 9276,
+      "stars": 72637,
+      "forks": 9278,
       "topics": [
         "c",
         "c-plus-plus",
@@ -596,8 +596,8 @@
         "youtube-live"
       ],
       "homepage": "https://obsproject.com",
-      "updatedAt": "2026-05-24T01:17:19Z",
-      "starredAt": "2026-05-24T01:17:19Z",
+      "updatedAt": "2026-05-24T06:02:18Z",
+      "starredAt": "2026-05-24T06:02:18Z",
       "category": "Other"
     },
     {
@@ -608,8 +608,8 @@
       "htmlUrl": "https://github.com/binary-husky/gpt_academic",
       "description": "为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。",
       "language": "Python",
-      "stars": 70719,
-      "forks": 8391,
+      "stars": 70729,
+      "forks": 8390,
       "topics": [
         "academic",
         "chatglm-6b",
@@ -618,8 +618,8 @@
         "large-language-models"
       ],
       "homepage": "https://github.com/binary-husky/gpt_academic/wiki/online",
-      "updatedAt": "2026-05-23T19:56:17Z",
-      "starredAt": "2026-05-23T19:56:17Z",
+      "updatedAt": "2026-05-24T07:56:15Z",
+      "starredAt": "2026-05-24T07:56:15Z",
       "category": "AI"
     },
     {
@@ -630,8 +630,8 @@
       "htmlUrl": "https://github.com/facebook/docusaurus",
       "description": "Easy to maintain open source documentation websites.",
       "language": "TypeScript",
-      "stars": 64990,
-      "forks": 9894,
+      "stars": 64991,
+      "forks": 9892,
       "topics": [
         "documentation",
         "hacktoberfest",
@@ -641,8 +641,8 @@
         "website"
       ],
       "homepage": "https://docusaurus.io",
-      "updatedAt": "2026-05-24T01:03:23Z",
-      "starredAt": "2026-05-24T01:03:23Z",
+      "updatedAt": "2026-05-24T05:13:13Z",
+      "starredAt": "2026-05-24T05:13:13Z",
       "category": "AI"
     },
     {
@@ -653,8 +653,8 @@
       "htmlUrl": "https://github.com/JuliusBrussee/caveman",
       "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
       "language": "JavaScript",
-      "stars": 64048,
-      "forks": 3602,
+      "stars": 64108,
+      "forks": 3611,
       "topics": [
         "ai",
         "anthropic",
@@ -668,8 +668,8 @@
         "tokens"
       ],
       "homepage": "https://getcaveman.dev/",
-      "updatedAt": "2026-05-24T01:47:10Z",
-      "starredAt": "2026-05-24T01:47:10Z",
+      "updatedAt": "2026-05-24T07:50:17Z",
+      "starredAt": "2026-05-24T07:50:17Z",
       "category": "AI"
     },
     {
@@ -680,8 +680,8 @@
       "htmlUrl": "https://github.com/RVC-Boss/GPT-SoVITS",
       "description": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning)",
       "language": "Python",
-      "stars": 57710,
-      "forks": 6287,
+      "stars": 57720,
+      "forks": 6291,
       "topics": [
         "text-to-speech",
         "tts",
@@ -691,8 +691,8 @@
         "voice-cloning"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-24T01:35:21Z",
-      "starredAt": "2026-05-24T01:35:21Z",
+      "updatedAt": "2026-05-24T08:01:15Z",
+      "starredAt": "2026-05-24T08:01:15Z",
       "category": "AI"
     },
     {
@@ -703,8 +703,8 @@
       "htmlUrl": "https://github.com/starship/starship",
       "description": "☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
       "language": "Rust",
-      "stars": 57708,
-      "forks": 2529,
+      "stars": 57710,
+      "forks": 2528,
       "topics": [
         "bash",
         "fish",
@@ -720,8 +720,8 @@
         "zsh-theme"
       ],
       "homepage": "https://starship.rs",
-      "updatedAt": "2026-05-24T01:33:28Z",
-      "starredAt": "2026-05-24T01:33:28Z",
+      "updatedAt": "2026-05-24T08:05:14Z",
+      "starredAt": "2026-05-24T08:05:14Z",
       "category": "Backend"
     },
     {
@@ -768,8 +768,8 @@
         "ws"
       ],
       "homepage": "https://ngosang.github.io/trackerslist/",
-      "updatedAt": "2026-05-24T01:49:37Z",
-      "starredAt": "2026-05-24T01:49:37Z",
+      "updatedAt": "2026-05-24T07:35:43Z",
+      "starredAt": "2026-05-24T07:35:43Z",
       "category": "Other"
     },
     {
@@ -780,8 +780,8 @@
       "htmlUrl": "https://github.com/rtk-ai/rtk",
       "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
       "language": "Rust",
-      "stars": 53253,
-      "forks": 3252,
+      "stars": 53380,
+      "forks": 3261,
       "topics": [
         "agentic-coding",
         "ai-coding",
@@ -798,8 +798,8 @@
         "token-optimization"
       ],
       "homepage": "https://www.rtk-ai.app",
-      "updatedAt": "2026-05-24T01:47:15Z",
-      "starredAt": "2026-05-24T01:47:15Z",
+      "updatedAt": "2026-05-24T08:10:19Z",
+      "starredAt": "2026-05-24T08:10:19Z",
       "category": "AI"
     },
     {
@@ -810,8 +810,8 @@
       "htmlUrl": "https://github.com/odoo/odoo",
       "description": "Odoo. Open Source Apps To Grow Your Business.",
       "language": "Python",
-      "stars": 51494,
-      "forks": 32530,
+      "stars": 51574,
+      "forks": 32535,
       "topics": [
         "apps",
         "business",
@@ -822,8 +822,8 @@
         "python"
       ],
       "homepage": "https://www.odoo.com",
-      "updatedAt": "2026-05-24T01:49:16Z",
-      "starredAt": "2026-05-24T01:49:16Z",
+      "updatedAt": "2026-05-24T08:07:08Z",
+      "starredAt": "2026-05-24T08:07:08Z",
       "category": "Backend"
     },
     {
@@ -834,8 +834,8 @@
       "htmlUrl": "https://github.com/AlistGo/alist",
       "description": "🗂️A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs。",
       "language": "Go",
-      "stars": 49525,
-      "forks": 7942,
+      "stars": 49527,
+      "forks": 7941,
       "topics": [
         "file-server",
         "gin",
@@ -845,8 +845,8 @@
         "webdav"
       ],
       "homepage": "https://alistgo.com",
-      "updatedAt": "2026-05-23T22:39:41Z",
-      "starredAt": "2026-05-23T22:39:41Z",
+      "updatedAt": "2026-05-24T07:49:05Z",
+      "starredAt": "2026-05-24T07:49:05Z",
       "category": "AI"
     },
     {
@@ -857,8 +857,8 @@
       "htmlUrl": "https://github.com/tw93/Pake",
       "description": "🤱🏻 Turn any webpage into a desktop app with one command.",
       "language": "Rust",
-      "stars": 48909,
-      "forks": 9896,
+      "stars": 48921,
+      "forks": 9901,
       "topics": [
         "chatgpt",
         "claude",
@@ -875,8 +875,8 @@
         "youtube"
       ],
       "homepage": "https://x.com/HiTw93/status/2037724342755504612",
-      "updatedAt": "2026-05-24T01:32:16Z",
-      "starredAt": "2026-05-24T01:32:16Z",
+      "updatedAt": "2026-05-24T07:45:50Z",
+      "starredAt": "2026-05-24T07:45:50Z",
       "category": "AI"
     },
     {
@@ -887,16 +887,16 @@
       "htmlUrl": "https://github.com/1c7/chinese-independent-developer",
       "description": "👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么",
       "language": "",
-      "stars": 48641,
-      "forks": 4173,
+      "stars": 48644,
+      "forks": 4174,
       "topics": [
         "china",
         "indie",
         "indie-developer"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T23:49:27Z",
-      "starredAt": "2026-05-23T23:49:27Z",
+      "updatedAt": "2026-05-24T05:58:51Z",
+      "starredAt": "2026-05-24T05:58:51Z",
       "category": "Other"
     },
     {
@@ -931,7 +931,7 @@
       "htmlUrl": "https://github.com/slidevjs/slidev",
       "description": "Presentation Slides for Developers",
       "language": "TypeScript",
-      "stars": 46688,
+      "stars": 46692,
       "forks": 2079,
       "topics": [
         "markdown",
@@ -942,8 +942,8 @@
         "vueuse"
       ],
       "homepage": "https://sli.dev",
-      "updatedAt": "2026-05-24T01:27:31Z",
-      "starredAt": "2026-05-24T01:27:31Z",
+      "updatedAt": "2026-05-24T07:41:22Z",
+      "starredAt": "2026-05-24T07:41:22Z",
       "category": "Frontend"
     },
     {
@@ -954,7 +954,7 @@
       "htmlUrl": "https://github.com/GitHubDaily/GitHubDaily",
       "description": "坚持分享 GitHub 上高质量、有趣实用的开源技术教程、开发者工具、编程网站、技术资讯。A list cool, interesting projects of GitHub.",
       "language": "",
-      "stars": 46563,
+      "stars": 46570,
       "forks": 4653,
       "topics": [
         "ai",
@@ -975,8 +975,8 @@
         "web"
       ],
       "homepage": "https://githubdaily.com",
-      "updatedAt": "2026-05-24T00:57:11Z",
-      "starredAt": "2026-05-24T00:57:11Z",
+      "updatedAt": "2026-05-24T07:57:51Z",
+      "starredAt": "2026-05-24T07:57:51Z",
       "category": "AI"
     },
     {
@@ -987,7 +987,7 @@
       "htmlUrl": "https://github.com/CherryHQ/cherry-studio",
       "description": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
       "language": "TypeScript",
-      "stars": 46178,
+      "stars": 46193,
       "forks": 4394,
       "topics": [
         "agent-skills",
@@ -1002,8 +1002,8 @@
         "vibe-coding"
       ],
       "homepage": "https://cherry-ai.com",
-      "updatedAt": "2026-05-24T01:24:16Z",
-      "starredAt": "2026-05-24T01:24:16Z",
+      "updatedAt": "2026-05-24T07:57:39Z",
+      "starredAt": "2026-05-24T07:57:39Z",
       "category": "AI"
     },
     {
@@ -1014,8 +1014,8 @@
       "htmlUrl": "https://github.com/twentyhq/twenty",
       "description": "The open alternative to Salesforce, designed for AI.",
       "language": "TypeScript",
-      "stars": 46097,
-      "forks": 6504,
+      "stars": 46148,
+      "forks": 6512,
       "topics": [
         "crm",
         "crm-system",
@@ -1036,8 +1036,8 @@
         "web"
       ],
       "homepage": "https://twenty.com",
-      "updatedAt": "2026-05-24T01:43:48Z",
-      "starredAt": "2026-05-24T01:43:48Z",
+      "updatedAt": "2026-05-24T07:52:53Z",
+      "starredAt": "2026-05-24T07:52:53Z",
       "category": "AI"
     },
     {
@@ -1048,8 +1048,8 @@
       "htmlUrl": "https://github.com/upscayl/upscayl",
       "description": "🆙 Upscayl - #1 Free and Open Source AI Image Upscaler for Linux, MacOS and Windows.",
       "language": "TypeScript",
-      "stars": 45491,
-      "forks": 2232,
+      "stars": 45498,
+      "forks": 2235,
       "topics": [
         "ai",
         "electron",
@@ -1064,8 +1064,8 @@
         "upscayl"
       ],
       "homepage": "https://upscayl.org",
-      "updatedAt": "2026-05-23T23:33:02Z",
-      "starredAt": "2026-05-23T23:33:02Z",
+      "updatedAt": "2026-05-24T07:26:32Z",
+      "starredAt": "2026-05-24T07:26:32Z",
       "category": "AI"
     },
     {
@@ -1076,7 +1076,7 @@
       "htmlUrl": "https://github.com/iina/iina",
       "description": "The modern video player for macOS.",
       "language": "Swift",
-      "stars": 44966,
+      "stars": 44967,
       "forks": 2826,
       "topics": [
         "hacktoberfest",
@@ -1087,8 +1087,8 @@
         "video-player"
       ],
       "homepage": "https://iina.io",
-      "updatedAt": "2026-05-23T18:09:19Z",
-      "starredAt": "2026-05-23T18:09:19Z",
+      "updatedAt": "2026-05-24T06:14:01Z",
+      "starredAt": "2026-05-24T06:14:01Z",
       "category": "Mobile"
     },
     {
@@ -1099,8 +1099,8 @@
       "htmlUrl": "https://github.com/zhayujie/CowAgent",
       "description": "CowAgent (chatgpt-on-wechat) 是基于大模型的超级AI助理，能主动思考和任务规划、访问操作系统和外部资源、创造和执行Skills、通过长期记忆和知识库不断成长，比OpenClaw更轻量和便捷。同时支持微信、飞书、钉钉、企微、QQ、公众号、网页等接入，可选择DeepSeek/OpenAI/Claude/Gemini/ MiniMax/Qwen/GLM/LinkAI，能处理文本、语音、图片和文件，可快速搭建个人AI助理和企业数字员工。",
       "language": "Python",
-      "stars": 44751,
-      "forks": 10125,
+      "stars": 44765,
+      "forks": 10128,
       "topics": [
         "ai",
         "ai-agent",
@@ -1124,8 +1124,8 @@
         "wechat"
       ],
       "homepage": "https://cowagent.ai",
-      "updatedAt": "2026-05-24T01:50:05Z",
-      "starredAt": "2026-05-24T01:50:05Z",
+      "updatedAt": "2026-05-24T07:57:02Z",
+      "starredAt": "2026-05-24T07:57:02Z",
       "category": "AI"
     },
     {
@@ -1136,12 +1136,12 @@
       "htmlUrl": "https://github.com/zhongyang219/TrafficMonitor",
       "description": "这是一个用于显示当前网速、CPU及内存利用率的桌面悬浮窗软件，并支持任务栏显示，支持更换皮肤。",
       "language": "C++",
-      "stars": 44530,
-      "forks": 3688,
+      "stars": 44535,
+      "forks": 3689,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-24T00:41:00Z",
-      "starredAt": "2026-05-24T00:41:00Z",
+      "updatedAt": "2026-05-24T07:38:39Z",
+      "starredAt": "2026-05-24T07:38:39Z",
       "category": "Other"
     },
     {
@@ -1152,8 +1152,8 @@
       "htmlUrl": "https://github.com/DIYgod/RSSHub",
       "description": "🧡 Everything is RSSible",
       "language": "TypeScript",
-      "stars": 44208,
-      "forks": 9811,
+      "stars": 44216,
+      "forks": 9813,
       "topics": [
         "bilibili",
         "douban",
@@ -1175,8 +1175,8 @@
         "zhihu"
       ],
       "homepage": "https://docs.rsshub.app",
-      "updatedAt": "2026-05-24T01:41:46Z",
-      "starredAt": "2026-05-24T01:41:46Z",
+      "updatedAt": "2026-05-24T07:49:37Z",
+      "starredAt": "2026-05-24T07:49:37Z",
       "category": "Frontend"
     },
     {
@@ -1187,7 +1187,7 @@
       "htmlUrl": "https://github.com/NaiboWang/EasySpider",
       "description": "A visual no-code/code-free web crawler/spider易采集：一个可视化浏览器自动化测试/数据采集/网页爬虫软件，可以无代码图形化的设计和执行爬虫任务。别名：ServiceWrapper面向Web应用的智能化服务封装系统。",
       "language": "JavaScript",
-      "stars": 43859,
+      "stars": 43860,
       "forks": 5336,
       "topics": [
         "batch-processing",
@@ -1212,8 +1212,8 @@
         "www"
       ],
       "homepage": "https://www.easyspider.net",
-      "updatedAt": "2026-05-23T18:04:32Z",
-      "starredAt": "2026-05-23T18:04:32Z",
+      "updatedAt": "2026-05-24T07:05:15Z",
+      "starredAt": "2026-05-24T07:05:15Z",
       "category": "Frontend"
     },
     {
@@ -1224,7 +1224,7 @@
       "htmlUrl": "https://github.com/payloadcms/payload",
       "description": "Payload is the open-source, fullstack Next.js framework, giving you instant backend superpowers. Get a full TypeScript backend and admin panel instantly. Use Payload as a headless CMS or for building powerful applications.",
       "language": "TypeScript",
-      "stars": 42582,
+      "stars": 42587,
       "forks": 3735,
       "topics": [
         "cms",
@@ -1248,8 +1248,8 @@
         "typescript"
       ],
       "homepage": "https://payloadcms.com",
-      "updatedAt": "2026-05-24T01:04:15Z",
-      "starredAt": "2026-05-24T01:04:15Z",
+      "updatedAt": "2026-05-24T07:20:49Z",
+      "starredAt": "2026-05-24T07:20:49Z",
       "category": "Frontend"
     },
     {
@@ -1260,7 +1260,7 @@
       "htmlUrl": "https://github.com/chen08209/FlClash",
       "description": "A multi-platform proxy client based on ClashMeta,simple and easy to use, open-source and ad-free.",
       "language": "Dart",
-      "stars": 39544,
+      "stars": 39568,
       "forks": 2463,
       "topics": [
         "clash",
@@ -1274,8 +1274,8 @@
         "vpn"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-24T00:30:21Z",
-      "starredAt": "2026-05-24T00:30:21Z",
+      "updatedAt": "2026-05-24T08:04:19Z",
+      "starredAt": "2026-05-24T08:04:19Z",
       "category": "Mobile"
     },
     {
@@ -1286,7 +1286,7 @@
       "htmlUrl": "https://github.com/exelban/stats",
       "description": "macOS system monitor in your menu bar",
       "language": "Swift",
-      "stars": 39039,
+      "stars": 39045,
       "forks": 1335,
       "topics": [
         "battery",
@@ -1305,8 +1305,8 @@
         "temperature"
       ],
       "homepage": "https://mac-stats.com",
-      "updatedAt": "2026-05-24T00:26:30Z",
-      "starredAt": "2026-05-24T00:26:30Z",
+      "updatedAt": "2026-05-24T07:15:18Z",
+      "starredAt": "2026-05-24T07:15:18Z",
       "category": "Mobile"
     },
     {
@@ -1317,8 +1317,8 @@
       "htmlUrl": "https://github.com/sxyazi/yazi",
       "description": "💥 Blazing fast terminal file manager written in Rust, based on async I/O.",
       "language": "Rust",
-      "stars": 38406,
-      "forks": 883,
+      "stars": 38411,
+      "forks": 882,
       "topics": [
         "android",
         "asyncio",
@@ -1341,8 +1341,8 @@
         "windows"
       ],
       "homepage": "https://yazi-rs.github.io",
-      "updatedAt": "2026-05-24T01:24:11Z",
-      "starredAt": "2026-05-24T01:24:11Z",
+      "updatedAt": "2026-05-24T07:05:42Z",
+      "starredAt": "2026-05-24T07:05:42Z",
       "category": "Frontend"
     },
     {
@@ -1353,7 +1353,7 @@
       "htmlUrl": "https://github.com/RSSNext/Folo",
       "description": "🧡 Folo is the AI RSS Reader",
       "language": "TypeScript",
-      "stars": 38356,
+      "stars": 38358,
       "forks": 2057,
       "topics": [
         "ai",
@@ -1363,8 +1363,8 @@
         "rsshub"
       ],
       "homepage": "https://app.folo.is",
-      "updatedAt": "2026-05-24T00:04:59Z",
-      "starredAt": "2026-05-24T00:04:59Z",
+      "updatedAt": "2026-05-24T08:04:25Z",
+      "starredAt": "2026-05-24T08:04:25Z",
       "category": "AI"
     },
     {
@@ -1375,8 +1375,8 @@
       "htmlUrl": "https://github.com/pbatard/rufus",
       "description": "The Reliable USB Formatting Utility",
       "language": "C",
-      "stars": 36155,
-      "forks": 3060,
+      "stars": 36158,
+      "forks": 3059,
       "topics": [
         "bios",
         "boot",
@@ -1400,8 +1400,8 @@
         "windows-to-go"
       ],
       "homepage": "https://rufus.ie",
-      "updatedAt": "2026-05-24T01:37:47Z",
-      "starredAt": "2026-05-24T01:37:47Z",
+      "updatedAt": "2026-05-24T07:31:50Z",
+      "starredAt": "2026-05-24T07:31:50Z",
       "category": "AI"
     },
     {
@@ -1412,7 +1412,7 @@
       "htmlUrl": "https://github.com/reworkd/AgentGPT",
       "description": "🤖 Assemble, configure, and deploy autonomous AI Agents in your browser.",
       "language": "TypeScript",
-      "stars": 36122,
+      "stars": 36124,
       "forks": 9348,
       "topics": [
         "agent",
@@ -1432,8 +1432,8 @@
         "t3-stack"
       ],
       "homepage": "https://agentgpt.reworkd.ai",
-      "updatedAt": "2026-05-23T21:27:05Z",
-      "starredAt": "2026-05-23T21:27:05Z",
+      "updatedAt": "2026-05-24T07:11:45Z",
+      "starredAt": "2026-05-24T07:11:45Z",
       "category": "AI"
     },
     {
@@ -1444,8 +1444,8 @@
       "htmlUrl": "https://github.com/directus/directus",
       "description": "The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth & more.",
       "language": "TypeScript",
-      "stars": 35843,
-      "forks": 4771,
+      "stars": 35848,
+      "forks": 4772,
       "topics": [
         "api",
         "app",
@@ -1469,8 +1469,8 @@
         "vue"
       ],
       "homepage": "https://directus.io",
-      "updatedAt": "2026-05-23T18:32:47Z",
-      "starredAt": "2026-05-23T18:32:47Z",
+      "updatedAt": "2026-05-24T07:47:48Z",
+      "starredAt": "2026-05-24T07:47:48Z",
       "category": "Frontend"
     },
     {
@@ -1481,7 +1481,7 @@
       "htmlUrl": "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI",
       "description": "Easily train a good VC model with voice data <= 10 mins!",
       "language": "Python",
-      "stars": 35687,
+      "stars": 35690,
       "forks": 5048,
       "topics": [
         "audio-analysis",
@@ -1502,8 +1502,8 @@
         "voiceconversion"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T23:34:58Z",
-      "starredAt": "2026-05-23T23:34:58Z",
+      "updatedAt": "2026-05-24T07:39:10Z",
+      "starredAt": "2026-05-24T07:39:10Z",
       "category": "AI"
     },
     {
@@ -1514,7 +1514,7 @@
       "htmlUrl": "https://github.com/mpv-player/mpv",
       "description": "🎥 Command line media player",
       "language": "C",
-      "stars": 35326,
+      "stars": 35330,
       "forks": 3344,
       "topics": [
         "audio",
@@ -1526,8 +1526,8 @@
         "video"
       ],
       "homepage": "https://mpv.io",
-      "updatedAt": "2026-05-23T22:05:29Z",
-      "starredAt": "2026-05-23T22:05:29Z",
+      "updatedAt": "2026-05-24T08:06:19Z",
+      "starredAt": "2026-05-24T08:06:19Z",
       "category": "Other"
     },
     {
@@ -1538,8 +1538,8 @@
       "htmlUrl": "https://github.com/QuantumNous/new-api",
       "description": "A unified AI model hub for aggregation & distribution. It supports cross-converting various LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats. A centralized gateway for personal and enterprise model management. 🍥",
       "language": "Go",
-      "stars": 35066,
-      "forks": 7824,
+      "stars": 35101,
+      "forks": 7838,
       "topics": [
         "ai-gateway",
         "claude",
@@ -1550,8 +1550,8 @@
         "rerank"
       ],
       "homepage": "https://www.newapi.ai",
-      "updatedAt": "2026-05-24T01:44:12Z",
-      "starredAt": "2026-05-24T01:44:12Z",
+      "updatedAt": "2026-05-24T08:10:37Z",
+      "starredAt": "2026-05-24T08:10:37Z",
       "category": "AI"
     },
     {
@@ -1562,8 +1562,8 @@
       "htmlUrl": "https://github.com/frappe/erpnext",
       "description": "Free and Open Source Enterprise Resource Planning (ERP)",
       "language": "Python",
-      "stars": 34920,
-      "forks": 11416,
+      "stars": 34925,
+      "forks": 11418,
       "topics": [
         "accounting",
         "asset-management",
@@ -1583,8 +1583,8 @@
         "support"
       ],
       "homepage": "https://frappe.io/erpnext",
-      "updatedAt": "2026-05-23T23:55:20Z",
-      "starredAt": "2026-05-23T23:55:20Z",
+      "updatedAt": "2026-05-24T07:58:54Z",
+      "starredAt": "2026-05-24T07:58:54Z",
       "category": "AI"
     },
     {
@@ -1595,8 +1595,8 @@
       "htmlUrl": "https://github.com/Yeachan-Heo/oh-my-claudecode",
       "description": "Teams-first Multi-agent orchestration for Claude Code",
       "language": "TypeScript",
-      "stars": 34680,
-      "forks": 3173,
+      "stars": 34704,
+      "forks": 3176,
       "topics": [
         "agentic-coding",
         "ai-agents",
@@ -1610,8 +1610,8 @@
         "vibe-coding"
       ],
       "homepage": "https://oh-my-claudecode.dev",
-      "updatedAt": "2026-05-24T01:19:28Z",
-      "starredAt": "2026-05-24T01:19:28Z",
+      "updatedAt": "2026-05-24T08:00:21Z",
+      "starredAt": "2026-05-24T08:00:21Z",
       "category": "AI"
     },
     {
@@ -1623,7 +1623,7 @@
       "description": "ORM",
       "language": "TypeScript",
       "stars": 34501,
-      "forks": 1404,
+      "forks": 1405,
       "topics": [
         "bunjs",
         "mysql",
@@ -1637,8 +1637,8 @@
         "typescript"
       ],
       "homepage": "https://orm.drizzle.team",
-      "updatedAt": "2026-05-24T00:38:04Z",
-      "starredAt": "2026-05-24T00:38:04Z",
+      "updatedAt": "2026-05-24T02:49:10Z",
+      "starredAt": "2026-05-24T02:49:10Z",
       "category": "Backend"
     },
     {
@@ -1649,8 +1649,8 @@
       "htmlUrl": "https://github.com/router-for-me/CLIProxyAPI",
       "description": "Wrap Gemini CLI, Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.5, Grok 4.3, Claude model through API",
       "language": "Go",
-      "stars": 34423,
-      "forks": 5739,
+      "stars": 34474,
+      "forks": 5745,
       "topics": [
         "antigravity",
         "claude-code",
@@ -1660,8 +1660,8 @@
         "openai"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-24T01:45:35Z",
-      "starredAt": "2026-05-24T01:45:35Z",
+      "updatedAt": "2026-05-24T08:09:32Z",
+      "starredAt": "2026-05-24T08:09:32Z",
       "category": "AI"
     },
     {
@@ -1672,8 +1672,8 @@
       "htmlUrl": "https://github.com/songquanpeng/one-api",
       "description": "LLM API 管理 & 分发系统，支持 OpenAI、Azure、Anthropic Claude、Google Gemini、DeepSeek、字节豆包、ChatGLM、文心一言、讯飞星火、通义千问、360 智脑、腾讯混元等主流模型，统一 API 适配，可用于 key 管理与二次分发。单可执行文件，提供 Docker 镜像，一键部署，开箱即用。LLM API management & key redistribution system, unifying multiple providers under a single API. Single binary, Docker-ready, with an English UI.",
       "language": "JavaScript",
-      "stars": 34119,
-      "forks": 6513,
+      "stars": 34134,
+      "forks": 6516,
       "topics": [
         "api",
         "api-gateway",
@@ -1688,8 +1688,8 @@
         "proxy"
       ],
       "homepage": "https://oneapi.justsong.cn/",
-      "updatedAt": "2026-05-24T00:33:53Z",
-      "starredAt": "2026-05-24T00:33:53Z",
+      "updatedAt": "2026-05-24T08:01:53Z",
+      "starredAt": "2026-05-24T08:01:53Z",
       "category": "AI"
     },
     {
@@ -1700,7 +1700,7 @@
       "htmlUrl": "https://github.com/zeromicro/go-zero",
       "description": "A cloud-native Go microservices framework with cli tool for productivity.",
       "language": "Go",
-      "stars": 33028,
+      "stars": 33027,
       "forks": 4297,
       "topics": [
         "ai-native",
@@ -1725,8 +1725,8 @@
         "web-framework"
       ],
       "homepage": "https://go-zero.dev",
-      "updatedAt": "2026-05-23T19:21:09Z",
-      "starredAt": "2026-05-23T19:21:09Z",
+      "updatedAt": "2026-05-24T05:15:30Z",
+      "starredAt": "2026-05-24T05:15:30Z",
       "category": "AI"
     },
     {
@@ -1753,8 +1753,8 @@
       "htmlUrl": "https://github.com/qier222/YesPlayMusic",
       "description": "高颜值的第三方网易云播放器，支持 Windows / macOS / Linux :electron: ",
       "language": "Vue",
-      "stars": 32882,
-      "forks": 4703,
+      "stars": 32881,
+      "forks": 4702,
       "topics": [
         "electron",
         "javascript",
@@ -1776,8 +1776,8 @@
         "windows"
       ],
       "homepage": "https://music.qier222.com",
-      "updatedAt": "2026-05-24T00:57:26Z",
-      "starredAt": "2026-05-24T00:57:26Z",
+      "updatedAt": "2026-05-24T08:01:16Z",
+      "starredAt": "2026-05-24T08:01:16Z",
       "category": "Frontend"
     },
     {
@@ -1789,7 +1789,7 @@
       "description": "Telegram Desktop messaging app",
       "language": "C++",
       "stars": 31838,
-      "forks": 6739,
+      "forks": 6738,
       "topics": [
         "messenger",
         "multi-platform",
@@ -1798,8 +1798,8 @@
         "telegram-solution"
       ],
       "homepage": "https://desktop.telegram.org/",
-      "updatedAt": "2026-05-24T00:25:18Z",
-      "starredAt": "2026-05-24T00:25:18Z",
+      "updatedAt": "2026-05-24T06:13:34Z",
+      "starredAt": "2026-05-24T06:13:34Z",
       "category": "Other"
     },
     {
@@ -1810,8 +1810,8 @@
       "htmlUrl": "https://github.com/dgtlmoon/changedetection.io",
       "description": "Best and simplest tool for website change detection, web page monitoring, and website change alerts. Perfect for tracking content changes, price drops, restock alerts, and website defacement monitoring—all for free or enjoy our SaaS plan!",
       "language": "Python",
-      "stars": 31679,
-      "forks": 1799,
+      "stars": 31683,
+      "forks": 1800,
       "topics": [
         "back-in-stock",
         "change-alert",
@@ -1835,8 +1835,8 @@
         "website-watcher"
       ],
       "homepage": "https://changedetection.io",
-      "updatedAt": "2026-05-24T01:35:34Z",
-      "starredAt": "2026-05-24T01:35:34Z",
+      "updatedAt": "2026-05-24T04:53:51Z",
+      "starredAt": "2026-05-24T04:53:51Z",
       "category": "Backend"
     },
     {
@@ -1847,12 +1847,12 @@
       "htmlUrl": "https://github.com/Chanzhaoyu/chatgpt-web",
       "description": "用 Express 和  Vue3 搭建的 ChatGPT 演示网页",
       "language": "Vue",
-      "stars": 31663,
+      "stars": 31662,
       "forks": 10843,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-23T13:06:54Z",
-      "starredAt": "2026-05-23T13:06:54Z",
+      "updatedAt": "2026-05-24T07:16:28Z",
+      "starredAt": "2026-05-24T07:16:28Z",
       "category": "AI"
     },
     {
@@ -1863,7 +1863,7 @@
       "htmlUrl": "https://github.com/zeroclaw-labs/zeroclaw",
       "description": "Fast, small, and fully autonomous AI personal assistant infrastructure, any OS, any platform — deploy anywhere, swap anything 🦀",
       "language": "Rust",
-      "stars": 31545,
+      "stars": 31548,
       "forks": 4650,
       "topics": [
         "agent",
@@ -1876,8 +1876,8 @@
         "zeroclaw"
       ],
       "homepage": "https://www.zeroclawlabs.ai/",
-      "updatedAt": "2026-05-23T20:58:53Z",
-      "starredAt": "2026-05-23T20:58:53Z",
+      "updatedAt": "2026-05-24T07:50:16Z",
+      "starredAt": "2026-05-24T07:50:16Z",
       "category": "AI"
     },
     {
@@ -1888,7 +1888,7 @@
       "htmlUrl": "https://github.com/coolsnowwolf/lede",
       "description": "Lean's LEDE source",
       "language": "C",
-      "stars": 31450,
+      "stars": 31451,
       "forks": 19329,
       "topics": [
         "lede",
@@ -1898,8 +1898,8 @@
         "openwrt-zh-cn"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T09:15:37Z",
-      "starredAt": "2026-05-23T09:15:37Z",
+      "updatedAt": "2026-05-24T03:59:00Z",
+      "starredAt": "2026-05-24T03:59:00Z",
       "category": "Other"
     },
     {
@@ -1910,8 +1910,8 @@
       "htmlUrl": "https://github.com/hesamsheikh/awesome-openclaw-usecases",
       "description": "A community collection of OpenClaw use cases for making life easier.",
       "language": "",
-      "stars": 31160,
-      "forks": 2679,
+      "stars": 31168,
+      "forks": 2680,
       "topics": [
         "awesome-list",
         "clawdbot",
@@ -1923,8 +1923,8 @@
         "usecase"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-24T00:36:43Z",
-      "starredAt": "2026-05-24T00:36:43Z",
+      "updatedAt": "2026-05-24T07:44:01Z",
+      "starredAt": "2026-05-24T07:44:01Z",
       "category": "Tooling"
     },
     {
@@ -1935,8 +1935,8 @@
       "htmlUrl": "https://github.com/kingToolbox/WindTerm",
       "description": "A professional cross-platform SSH/Sftp/Shell/Telnet/Tmux/Serial terminal.",
       "language": "C",
-      "stars": 31063,
-      "forks": 2361,
+      "stars": 31064,
+      "forks": 2360,
       "topics": [
         "bash",
         "client",
@@ -1960,8 +1960,8 @@
         "zmodem"
       ],
       "homepage": "https://kingtoolbox.github.io",
-      "updatedAt": "2026-05-24T01:23:38Z",
-      "starredAt": "2026-05-24T01:23:38Z",
+      "updatedAt": "2026-05-24T07:11:54Z",
+      "starredAt": "2026-05-24T07:11:54Z",
       "category": "Tooling"
     },
     {
@@ -1972,7 +1972,7 @@
       "htmlUrl": "https://github.com/jumpserver/jumpserver",
       "description": "JumpServer is an open-source Privileged Access Management (PAM) platform that provides DevOps and IT teams with on-demand and secure access to SSH, RDP, Kubernetes, Database and RemoteApp endpoints through a web browser.",
       "language": "Python",
-      "stars": 30489,
+      "stars": 30490,
       "forks": 5701,
       "topics": [
         "bastion-host",
@@ -1986,8 +1986,8 @@
         "terminal"
       ],
       "homepage": "https://jumpserver.com",
-      "updatedAt": "2026-05-24T01:42:52Z",
-      "starredAt": "2026-05-24T01:42:52Z",
+      "updatedAt": "2026-05-24T06:52:32Z",
+      "starredAt": "2026-05-24T06:52:32Z",
       "category": "Backend"
     },
     {
@@ -1998,8 +1998,8 @@
       "htmlUrl": "https://github.com/MetaCubeX/mihomo",
       "description": "A simple Python Pydantic model for Honkai: Star Rail parsed data from the Mihomo API.",
       "language": "Python",
-      "stars": 30472,
-      "forks": 4056,
+      "stars": 30483,
+      "forks": 4058,
       "topics": [
         "honkai-star-rail",
         "mihomo",
@@ -2007,8 +2007,8 @@
         "star-rail-api"
       ],
       "homepage": "https://wiki.metacubex.one",
-      "updatedAt": "2026-05-24T01:49:16Z",
-      "starredAt": "2026-05-24T01:49:16Z",
+      "updatedAt": "2026-05-24T07:55:36Z",
+      "starredAt": "2026-05-24T07:55:36Z",
       "category": "AI"
     },
     {
@@ -2035,12 +2035,12 @@
       "htmlUrl": "https://github.com/pbakaus/impeccable",
       "description": "The design language that makes your AI harness better at design.",
       "language": "JavaScript",
-      "stars": 29766,
-      "forks": 1633,
+      "stars": 29824,
+      "forks": 1634,
       "topics": [],
       "homepage": "https://impeccable.style",
-      "updatedAt": "2026-05-24T01:26:33Z",
-      "starredAt": "2026-05-24T01:26:33Z",
+      "updatedAt": "2026-05-24T07:55:03Z",
+      "starredAt": "2026-05-24T07:55:03Z",
       "category": "AI"
     },
     {
@@ -2051,8 +2051,8 @@
       "htmlUrl": "https://github.com/chatwoot/chatwoot",
       "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
       "language": "Ruby",
-      "stars": 29674,
-      "forks": 7349,
+      "stars": 29675,
+      "forks": 7350,
       "topics": [
         "actioncable",
         "chat-widget",
@@ -2075,8 +2075,8 @@
         "zendesk"
       ],
       "homepage": "https://www.chatwoot.com/help-center",
-      "updatedAt": "2026-05-24T01:46:02Z",
-      "starredAt": "2026-05-24T01:46:02Z",
+      "updatedAt": "2026-05-24T03:50:08Z",
+      "starredAt": "2026-05-24T03:50:08Z",
       "category": "AI"
     },
     {
@@ -2087,15 +2087,15 @@
       "htmlUrl": "https://github.com/lbjlaq/Antigravity-Manager",
       "description": "Professional Antigravity Account Manager & Switcher. One-click seamless account switching for Antigravity Tools. Built with Tauri v2 + React (Rust).专业的 Antigravity 账号管理与切换工具。为 Antigravity 提供一键无缝账号切换功能。",
       "language": "Rust",
-      "stars": 29329,
+      "stars": 29338,
       "forks": 3189,
       "topics": [
         "account-manager",
         "antigravity"
       ],
       "homepage": "https://lbjlaq.github.io/Antigravity-Manager/",
-      "updatedAt": "2026-05-24T00:42:45Z",
-      "starredAt": "2026-05-24T00:42:45Z",
+      "updatedAt": "2026-05-24T07:00:28Z",
+      "starredAt": "2026-05-24T07:00:28Z",
       "category": "Frontend"
     },
     {
@@ -2106,8 +2106,8 @@
       "htmlUrl": "https://github.com/labring/FastGPT",
       "description": "FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-box capabilities such as data processing, RAG retrieval, and visual AI workflow orchestration, letting you easily develop and deploy complex question-answering systems without the need for extensive setup or configuration.",
       "language": "TypeScript",
-      "stars": 28127,
-      "forks": 7105,
+      "stars": 28128,
+      "forks": 7106,
       "topics": [
         "agent",
         "claude",
@@ -2121,8 +2121,8 @@
         "workflow"
       ],
       "homepage": "https://fastgpt.io",
-      "updatedAt": "2026-05-24T00:24:51Z",
-      "starredAt": "2026-05-24T00:24:51Z",
+      "updatedAt": "2026-05-24T02:49:19Z",
+      "starredAt": "2026-05-24T02:49:19Z",
       "category": "AI"
     },
     {
@@ -2133,8 +2133,8 @@
       "htmlUrl": "https://github.com/jordanbaird/Ice",
       "description": "Powerful menu bar manager for macOS",
       "language": "Swift",
-      "stars": 28078,
-      "forks": 724,
+      "stars": 28081,
+      "forks": 726,
       "topics": [
         "macos",
         "macos-app",
@@ -2148,8 +2148,8 @@
         "utility"
       ],
       "homepage": "https://icemenubar.app",
-      "updatedAt": "2026-05-24T00:14:45Z",
-      "starredAt": "2026-05-24T00:14:45Z",
+      "updatedAt": "2026-05-24T06:45:27Z",
+      "starredAt": "2026-05-24T06:45:27Z",
       "category": "Frontend"
     },
     {
@@ -2160,7 +2160,7 @@
       "htmlUrl": "https://github.com/cloudreve/cloudreve",
       "description": "🌩 Self-hosted file management and sharing system, supports multiple storage providers",
       "language": "Go",
-      "stars": 27884,
+      "stars": 27885,
       "forks": 3837,
       "topics": [
         "cloud",
@@ -2172,8 +2172,8 @@
         "golang"
       ],
       "homepage": "https://cloudreve.org",
-      "updatedAt": "2026-05-24T00:48:18Z",
-      "starredAt": "2026-05-24T00:48:18Z",
+      "updatedAt": "2026-05-24T08:07:19Z",
+      "starredAt": "2026-05-24T08:07:19Z",
       "category": "AI"
     },
     {
@@ -2184,12 +2184,12 @@
       "htmlUrl": "https://github.com/apple/container",
       "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon. ",
       "language": "Swift",
-      "stars": 26607,
+      "stars": 26611,
       "forks": 761,
       "topics": [],
       "homepage": "https://apple.github.io/container/documentation/",
-      "updatedAt": "2026-05-24T00:58:21Z",
-      "starredAt": "2026-05-24T00:58:21Z",
+      "updatedAt": "2026-05-24T06:48:29Z",
+      "starredAt": "2026-05-24T06:48:29Z",
       "category": "AI"
     },
     {
@@ -2200,8 +2200,8 @@
       "htmlUrl": "https://github.com/iOfficeAI/AionUi",
       "description": "Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code, Codex, OpenCode, Gemini CLI and 20+ more CLI | Customize your assistants | Star if you like it!",
       "language": "TypeScript",
-      "stars": 26267,
-      "forks": 2454,
+      "stars": 26298,
+      "forks": 2459,
       "topics": [
         "acp",
         "agent-team",
@@ -2225,8 +2225,8 @@
         "webui"
       ],
       "homepage": "https://www.aionui.com",
-      "updatedAt": "2026-05-24T01:26:26Z",
-      "starredAt": "2026-05-24T01:26:26Z",
+      "updatedAt": "2026-05-24T07:56:48Z",
+      "starredAt": "2026-05-24T07:56:48Z",
       "category": "AI"
     },
     {
@@ -2237,7 +2237,7 @@
       "htmlUrl": "https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever",
       "description": "提供多款 Shadowrocket 规则，拥有强劲的广告过滤功能。每日 8 时重新构建规则。",
       "language": "",
-      "stars": 25873,
+      "stars": 25880,
       "forks": 1736,
       "topics": [
         "adblock",
@@ -2247,8 +2247,8 @@
         "v2ray"
       ],
       "homepage": "https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/",
-      "updatedAt": "2026-05-24T01:02:48Z",
-      "starredAt": "2026-05-24T01:02:48Z",
+      "updatedAt": "2026-05-24T03:55:55Z",
+      "starredAt": "2026-05-24T03:55:55Z",
       "category": "Other"
     },
     {
@@ -2259,8 +2259,8 @@
       "htmlUrl": "https://github.com/maboloshi/github-chinese",
       "description": "GitHub 汉化插件，GitHub 中文化界面。 (GitHub Translation To Chinese)",
       "language": "JavaScript",
-      "stars": 25856,
-      "forks": 1492,
+      "stars": 25874,
+      "forks": 1493,
       "topics": [
         "github",
         "greasyfork",
@@ -2270,8 +2270,8 @@
         "violentmonkey"
       ],
       "homepage": "https://maboloshi.github.io/github-chinese/",
-      "updatedAt": "2026-05-24T01:22:22Z",
-      "starredAt": "2026-05-24T01:22:22Z",
+      "updatedAt": "2026-05-24T07:38:42Z",
+      "starredAt": "2026-05-24T07:38:42Z",
       "category": "Backend"
     },
     {
@@ -2282,7 +2282,7 @@
       "htmlUrl": "https://github.com/pppscn/SmsForwarder",
       "description": "短信转发器——监控Android手机短信、来电、APP通知，并根据指定规则转发到其他手机：钉钉群自定义机器人、钉钉企业内机器人、企业微信群机器人、飞书机器人、企业微信应用消息、邮箱、bark、webhook、Telegram机器人、Server酱、PushPlus、手机短信等。包括主动控制服务端与客户端，让你轻松远程发短信、查短信、查通话、查话簿、查电量等。（V3.0 新增）PS.这个APK主要是学习与自用，如有BUG请提ISSUE，同时欢迎大家提PR指正",
       "language": "Kotlin",
-      "stars": 25776,
+      "stars": 25780,
       "forks": 3226,
       "topics": [
         "android",
@@ -2304,8 +2304,8 @@
         "wechatapp"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T23:39:20Z",
-      "starredAt": "2026-05-23T23:39:20Z",
+      "updatedAt": "2026-05-24T07:26:32Z",
+      "starredAt": "2026-05-24T07:26:32Z",
       "category": "AI"
     },
     {
@@ -2332,7 +2332,7 @@
       "htmlUrl": "https://github.com/Anjok07/ultimatevocalremovergui",
       "description": " GUI for a Vocal Remover that uses Deep Neural Networks.",
       "language": "Python",
-      "stars": 24757,
+      "stars": 24762,
       "forks": 1848,
       "topics": [
         "audio",
@@ -2349,8 +2349,8 @@
         "vocals"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T22:48:59Z",
-      "starredAt": "2026-05-23T22:48:59Z",
+      "updatedAt": "2026-05-24T08:02:02Z",
+      "starredAt": "2026-05-24T08:02:02Z",
       "category": "Frontend"
     },
     {
@@ -2361,7 +2361,7 @@
       "htmlUrl": "https://github.com/monicahq/monica",
       "description": "Personal CRM. Remember everything about your friends, family and business relationships.",
       "language": "PHP",
-      "stars": 24671,
+      "stars": 24672,
       "forks": 2469,
       "topics": [
         "crm",
@@ -2374,8 +2374,8 @@
         "social"
       ],
       "homepage": "https://beta.monicahq.com",
-      "updatedAt": "2026-05-23T16:53:11Z",
-      "starredAt": "2026-05-23T16:53:11Z",
+      "updatedAt": "2026-05-24T03:52:23Z",
+      "starredAt": "2026-05-24T03:52:23Z",
       "category": "DevOps"
     },
     {
@@ -2390,8 +2390,8 @@
       "forks": 3266,
       "topics": [],
       "homepage": "https://roocode.com",
-      "updatedAt": "2026-05-23T23:20:37Z",
-      "starredAt": "2026-05-23T23:20:37Z",
+      "updatedAt": "2026-05-24T05:09:20Z",
+      "starredAt": "2026-05-24T05:09:20Z",
       "category": "AI"
     },
     {
@@ -2402,7 +2402,7 @@
       "htmlUrl": "https://github.com/mihomo-party-org/clash-party",
       "description": ":electron: Another Mihomo GUI. ",
       "language": "TypeScript",
-      "stars": 24013,
+      "stars": 24024,
       "forks": 1888,
       "topics": [
         "clash",
@@ -2411,8 +2411,8 @@
         "mihomo"
       ],
       "homepage": "https://clashparty.org",
-      "updatedAt": "2026-05-24T01:12:13Z",
-      "starredAt": "2026-05-24T01:12:13Z",
+      "updatedAt": "2026-05-24T07:19:14Z",
+      "starredAt": "2026-05-24T07:19:14Z",
       "category": "Frontend"
     },
     {
@@ -2423,7 +2423,7 @@
       "htmlUrl": "https://github.com/Devolutions/UniGetUI",
       "description": "UniGetUI: The Graphical Interface for your package managers. Could be terribly described as a package manager manager to manage your package managers",
       "language": "C#",
-      "stars": 23985,
+      "stars": 23986,
       "forks": 821,
       "topics": [
         "chocolatey",
@@ -2440,8 +2440,8 @@
         "winget"
       ],
       "homepage": "https://devolutions.net/unigetui/",
-      "updatedAt": "2026-05-24T01:30:55Z",
-      "starredAt": "2026-05-24T01:30:55Z",
+      "updatedAt": "2026-05-24T03:55:45Z",
+      "starredAt": "2026-05-24T03:55:45Z",
       "category": "Frontend"
     },
     {
@@ -2477,8 +2477,8 @@
       "htmlUrl": "https://github.com/Wei-Shaw/sub2api",
       "description": "Sub2API 一站式开源中转服务，让 Claude、Openai 、Gemini、Antigravity订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。",
       "language": "Go",
-      "stars": 23025,
-      "forks": 4406,
+      "stars": 23081,
+      "forks": 4421,
       "topics": [
         "2api",
         "antigravity2api",
@@ -2491,8 +2491,8 @@
         "gemini"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-24T01:42:42Z",
-      "starredAt": "2026-05-24T01:42:42Z",
+      "updatedAt": "2026-05-24T08:08:25Z",
+      "starredAt": "2026-05-24T08:08:25Z",
       "category": "AI"
     },
     {
@@ -2517,8 +2517,8 @@
         "whatsapp"
       ],
       "homepage": "https://wechaty.js.org",
-      "updatedAt": "2026-05-23T19:13:09Z",
-      "starredAt": "2026-05-23T19:13:09Z",
+      "updatedAt": "2026-05-24T06:56:49Z",
+      "starredAt": "2026-05-24T06:56:49Z",
       "category": "AI"
     },
     {
@@ -2529,8 +2529,8 @@
       "htmlUrl": "https://github.com/jackwener/OpenCLI",
       "description": "Make Any Website into CLI & Use your logged-in browser by AI agent. ",
       "language": "JavaScript",
-      "stars": 22411,
-      "forks": 2254,
+      "stars": 22440,
+      "forks": 2256,
       "topics": [
         "ai-agent",
         "ai-agents",
@@ -2538,8 +2538,8 @@
         "cli"
       ],
       "homepage": "https://opencli.info/",
-      "updatedAt": "2026-05-24T01:37:51Z",
-      "starredAt": "2026-05-24T01:37:51Z",
+      "updatedAt": "2026-05-24T08:02:35Z",
+      "starredAt": "2026-05-24T08:02:35Z",
       "category": "AI"
     },
     {
@@ -2550,8 +2550,8 @@
       "htmlUrl": "https://github.com/activepieces/activepieces",
       "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
       "language": "TypeScript",
-      "stars": 22375,
-      "forks": 3690,
+      "stars": 22380,
+      "forks": 3691,
       "topics": [
         "ai-agent",
         "ai-agent-tools",
@@ -2568,8 +2568,8 @@
         "workflows"
       ],
       "homepage": "https://www.activepieces.com",
-      "updatedAt": "2026-05-24T01:01:29Z",
-      "starredAt": "2026-05-24T01:01:29Z",
+      "updatedAt": "2026-05-24T08:10:04Z",
+      "starredAt": "2026-05-24T08:10:04Z",
       "category": "AI"
     },
     {
@@ -2580,7 +2580,7 @@
       "htmlUrl": "https://github.com/AutomaApp/automa",
       "description": "A browser extension for automating your browser by connecting blocks",
       "language": "Vue",
-      "stars": 21335,
+      "stars": 21336,
       "forks": 2325,
       "topics": [
         "automation",
@@ -2594,8 +2594,8 @@
         "workflow"
       ],
       "homepage": "https://extension.automa.site",
-      "updatedAt": "2026-05-24T00:56:42Z",
-      "starredAt": "2026-05-24T00:56:42Z",
+      "updatedAt": "2026-05-24T02:02:32Z",
+      "starredAt": "2026-05-24T02:02:32Z",
       "category": "Frontend"
     },
     {
@@ -2606,7 +2606,7 @@
       "htmlUrl": "https://github.com/czlonkowski/n8n-mcp",
       "description": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you ",
       "language": "TypeScript",
-      "stars": 21211,
+      "stars": 21213,
       "forks": 3434,
       "topics": [
         "mcp",
@@ -2615,8 +2615,8 @@
         "workflows"
       ],
       "homepage": "https://www.n8n-mcp.com/",
-      "updatedAt": "2026-05-24T00:42:05Z",
-      "starredAt": "2026-05-24T00:42:05Z",
+      "updatedAt": "2026-05-24T07:18:02Z",
+      "starredAt": "2026-05-24T07:18:02Z",
       "category": "Frontend"
     },
     {
@@ -2627,8 +2627,8 @@
       "htmlUrl": "https://github.com/slopus/happy",
       "description": "Mobile and Web client for Codex and Claude Code, with realtime voice, encryption and fully featured",
       "language": "TypeScript",
-      "stars": 21087,
-      "forks": 1750,
+      "stars": 21124,
+      "forks": 1751,
       "topics": [
         "claude-code",
         "claude-desktop",
@@ -2638,8 +2638,8 @@
         "hacktoberfest"
       ],
       "homepage": "https://happy.engineering",
-      "updatedAt": "2026-05-24T01:23:40Z",
-      "starredAt": "2026-05-24T01:23:40Z",
+      "updatedAt": "2026-05-24T07:57:19Z",
+      "starredAt": "2026-05-24T07:57:19Z",
       "category": "Tooling"
     },
     {
@@ -2650,7 +2650,7 @@
       "htmlUrl": "https://github.com/1Panel-dev/MaxKB",
       "description": "🔥 MaxKB is an open-source platform for building enterprise-grade agents.  强大易用的开源企业级智能体平台。",
       "language": "Python",
-      "stars": 21037,
+      "stars": 21041,
       "forks": 2831,
       "topics": [
         "agent",
@@ -2669,8 +2669,8 @@
         "rag"
       ],
       "homepage": "https://maxkb.cn",
-      "updatedAt": "2026-05-24T01:16:56Z",
-      "starredAt": "2026-05-24T01:16:56Z",
+      "updatedAt": "2026-05-24T07:53:44Z",
+      "starredAt": "2026-05-24T07:53:44Z",
       "category": "AI"
     },
     {
@@ -2681,7 +2681,7 @@
       "htmlUrl": "https://github.com/MatsuriDayo/NekoBoxForAndroid",
       "description": "NekoBox for Android / sing-box / universal proxy toolchain for Android",
       "language": "Kotlin",
-      "stars": 20920,
+      "stars": 20925,
       "forks": 1640,
       "topics": [
         "android",
@@ -2694,32 +2694,8 @@
         "vpn"
       ],
       "homepage": "https://matsuridayo.github.io/",
-      "updatedAt": "2026-05-24T00:18:02Z",
-      "starredAt": "2026-05-24T00:18:02Z",
-      "category": "AI"
-    },
-    {
-      "id": 642917329,
-      "fullName": "vercel/chatbot",
-      "name": "chatbot",
-      "owner": "vercel",
-      "htmlUrl": "https://github.com/vercel/chatbot",
-      "description": "A full-featured, hackable Next.js AI chatbot built by Vercel",
-      "language": "TypeScript",
-      "stars": 20370,
-      "forks": 6599,
-      "topics": [
-        "ai",
-        "chatgpt",
-        "nextjs",
-        "react",
-        "redis",
-        "shadcn-ui",
-        "vercel"
-      ],
-      "homepage": "https://chatbot.ai-sdk.dev",
-      "updatedAt": "2026-05-23T20:21:54Z",
-      "starredAt": "2026-05-23T20:21:54Z",
+      "updatedAt": "2026-05-24T07:48:53Z",
+      "starredAt": "2026-05-24T07:48:53Z",
       "category": "AI"
     },
     {
@@ -2730,16 +2706,40 @@
       "htmlUrl": "https://github.com/ourongxing/newsnow",
       "description": "Elegant reading of real-time and hottest news",
       "language": "TypeScript",
-      "stars": 20367,
-      "forks": 5686,
+      "stars": 20375,
+      "forks": 5689,
       "topics": [
         "elegant",
         "news"
       ],
       "homepage": "https://newsnow.busiyi.world",
-      "updatedAt": "2026-05-24T01:39:22Z",
-      "starredAt": "2026-05-24T01:39:22Z",
+      "updatedAt": "2026-05-24T07:43:38Z",
+      "starredAt": "2026-05-24T07:43:38Z",
       "category": "Frontend"
+    },
+    {
+      "id": 642917329,
+      "fullName": "vercel/chatbot",
+      "name": "chatbot",
+      "owner": "vercel",
+      "htmlUrl": "https://github.com/vercel/chatbot",
+      "description": "A full-featured, hackable Next.js AI chatbot built by Vercel",
+      "language": "TypeScript",
+      "stars": 20371,
+      "forks": 6600,
+      "topics": [
+        "ai",
+        "chatgpt",
+        "nextjs",
+        "react",
+        "redis",
+        "shadcn-ui",
+        "vercel"
+      ],
+      "homepage": "https://chatbot.ai-sdk.dev",
+      "updatedAt": "2026-05-24T04:15:03Z",
+      "starredAt": "2026-05-24T04:15:03Z",
+      "category": "AI"
     },
     {
       "id": 122758193,
@@ -2749,7 +2749,7 @@
       "htmlUrl": "https://github.com/k4yt3x/video2x",
       "description": "A machine learning-based video super resolution and frame interpolation framework. Est. Hack the Valley II, 2018.",
       "language": "C++",
-      "stars": 19983,
+      "stars": 19986,
       "forks": 1742,
       "topics": [
         "anime4k",
@@ -2764,8 +2764,8 @@
         "vulkan"
       ],
       "homepage": "https://docs.video2x.org",
-      "updatedAt": "2026-05-23T18:53:50Z",
-      "starredAt": "2026-05-23T18:53:50Z",
+      "updatedAt": "2026-05-24T06:36:59Z",
+      "starredAt": "2026-05-24T06:36:59Z",
       "category": "Frontend"
     },
     {
@@ -2776,7 +2776,7 @@
       "htmlUrl": "https://github.com/kortix-ai/suna",
       "description": "The Autonomous Company Operating System",
       "language": "TypeScript",
-      "stars": 19777,
+      "stars": 19778,
       "forks": 3409,
       "topics": [
         "ai",
@@ -2784,8 +2784,8 @@
         "llm"
       ],
       "homepage": "https://www.kortix.com",
-      "updatedAt": "2026-05-23T23:50:08Z",
-      "starredAt": "2026-05-23T23:50:08Z",
+      "updatedAt": "2026-05-24T06:49:13Z",
+      "starredAt": "2026-05-24T06:49:13Z",
       "category": "AI"
     },
     {
@@ -2796,7 +2796,7 @@
       "htmlUrl": "https://github.com/birobirobiro/awesome-shadcn-ui",
       "description": "A curated list of awesome things related to shadcn/ui.",
       "language": "TypeScript",
-      "stars": 19602,
+      "stars": 19604,
       "forks": 1200,
       "topics": [
         "awesome",
@@ -2809,8 +2809,8 @@
         "shadcn-ui"
       ],
       "homepage": "https://awesomeshadcn.dev/",
-      "updatedAt": "2026-05-23T19:37:23Z",
-      "starredAt": "2026-05-23T19:37:23Z",
+      "updatedAt": "2026-05-24T07:11:48Z",
+      "starredAt": "2026-05-24T07:11:48Z",
       "category": "Frontend"
     },
     {
@@ -2822,7 +2822,7 @@
       "description": "支持 Python3、JavaScript、Shell、Typescript 的定时任务管理平台（Timed task management platform supporting Python3, JavaScript, Shell, Typescript）",
       "language": "TypeScript",
       "stars": 19566,
-      "forks": 3256,
+      "forks": 3257,
       "topics": [
         "crontab",
         "docker",
@@ -2833,8 +2833,8 @@
         "typescript"
       ],
       "homepage": "https://qinglong.online",
-      "updatedAt": "2026-05-23T23:29:36Z",
-      "starredAt": "2026-05-23T23:29:36Z",
+      "updatedAt": "2026-05-24T07:13:39Z",
+      "starredAt": "2026-05-24T07:13:39Z",
       "category": "Backend"
     },
     {
@@ -2845,12 +2845,12 @@
       "htmlUrl": "https://github.com/snarktank/ralph",
       "description": "Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are complete. ",
       "language": "TypeScript",
-      "stars": 19446,
+      "stars": 19458,
       "forks": 1942,
       "topics": [],
       "homepage": "https://x.com/ryancarson/status/2008548371712135632",
-      "updatedAt": "2026-05-24T01:29:01Z",
-      "starredAt": "2026-05-24T01:29:01Z",
+      "updatedAt": "2026-05-24T07:33:04Z",
+      "starredAt": "2026-05-24T07:33:04Z",
       "category": "AI"
     },
     {
@@ -2861,8 +2861,8 @@
       "htmlUrl": "https://github.com/lionsoul2014/ip2region",
       "description": "Ip2region is an offline IP-to-Region localization library and IP data management framework with both IPv4 and IPv6 supports, 10-microsecond level query efficiency, xdb search client for many programming languages",
       "language": "Java",
-      "stars": 19050,
-      "forks": 2998,
+      "stars": 19052,
+      "forks": 2999,
       "topics": [
         "ip-address",
         "ip-address-database",
@@ -2880,8 +2880,8 @@
         "xdb-ipv6"
       ],
       "homepage": "https://ip2region.net",
-      "updatedAt": "2026-05-23T19:09:53Z",
-      "starredAt": "2026-05-23T19:09:53Z",
+      "updatedAt": "2026-05-24T07:23:05Z",
+      "starredAt": "2026-05-24T07:23:05Z",
       "category": "Backend"
     },
     {
@@ -2893,7 +2893,7 @@
       "description": "Free and open-source software that allows users to set animated desktop wallpapers and screensavers powered by WinUI 3.",
       "language": "C#",
       "stars": 18860,
-      "forks": 1287,
+      "forks": 1288,
       "topics": [
         "csharp",
         "desktop",
@@ -2917,8 +2917,8 @@
         "winui3"
       ],
       "homepage": "https://rocksdanister.com/lively",
-      "updatedAt": "2026-05-23T20:54:08Z",
-      "starredAt": "2026-05-23T20:54:08Z",
+      "updatedAt": "2026-05-24T05:57:02Z",
+      "starredAt": "2026-05-24T05:57:02Z",
       "category": "Frontend"
     },
     {
@@ -2988,7 +2988,7 @@
       "htmlUrl": "https://github.com/matryer/xbar",
       "description": "Put the output from any script or program into your macOS Menu Bar (the BitBar reboot)",
       "language": "Go",
-      "stars": 18021,
+      "stars": 18022,
       "forks": 651,
       "topics": [
         "bitbar",
@@ -3000,8 +3000,8 @@
         "xbar"
       ],
       "homepage": "https://xbarapp.com",
-      "updatedAt": "2026-05-23T14:42:32Z",
-      "starredAt": "2026-05-23T14:42:32Z",
+      "updatedAt": "2026-05-24T06:37:02Z",
+      "starredAt": "2026-05-24T06:37:02Z",
       "category": "Backend"
     },
     {
@@ -3037,12 +3037,12 @@
       "htmlUrl": "https://github.com/Mikubill/sd-webui-controlnet",
       "description": "WebUI extension for ControlNet",
       "language": "Python",
-      "stars": 17866,
+      "stars": 17865,
       "forks": 2016,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-24T00:58:24Z",
-      "starredAt": "2026-05-24T00:58:24Z",
+      "updatedAt": "2026-05-24T04:41:01Z",
+      "starredAt": "2026-05-24T04:41:01Z",
       "category": "Frontend"
     },
     {
@@ -3053,8 +3053,8 @@
       "htmlUrl": "https://github.com/putyy/res-downloader",
       "description": "视频号、小程序、抖音、快手、小红书、直播流、m3u8、酷狗、QQ音乐等常见网络资源下载!",
       "language": "Go",
-      "stars": 17684,
-      "forks": 2190,
+      "stars": 17698,
+      "forks": 2189,
       "topics": [
         "douyin",
         "kuaishou",
@@ -3064,8 +3064,8 @@
         "xiaohongshu"
       ],
       "homepage": "https://github.com/putyy/res-downloader",
-      "updatedAt": "2026-05-24T01:12:24Z",
-      "starredAt": "2026-05-24T01:12:24Z",
+      "updatedAt": "2026-05-24T08:03:38Z",
+      "starredAt": "2026-05-24T08:03:38Z",
       "category": "AI"
     },
     {
@@ -3099,7 +3099,7 @@
       "htmlUrl": "https://github.com/jianchang512/pyvideotrans",
       "description": "Translate the video from one language to another and embed dubbing & subtitles.",
       "language": "Python",
-      "stars": 17513,
+      "stars": 17514,
       "forks": 2156,
       "topics": [
         "speech-to-text",
@@ -3107,8 +3107,8 @@
         "video-transition"
       ],
       "homepage": "https://pyvideotrans.com",
-      "updatedAt": "2026-05-23T23:53:43Z",
-      "starredAt": "2026-05-23T23:53:43Z",
+      "updatedAt": "2026-05-24T05:16:46Z",
+      "starredAt": "2026-05-24T05:16:46Z",
       "category": "Backend"
     },
     {
@@ -3135,7 +3135,7 @@
       "htmlUrl": "https://github.com/modelscope/FunASR",
       "description": "Industrial-grade speech recognition toolkit. 170x realtime, 50+ languages, speaker diarization, emotion detection — all in 3 lines of Python. Production-ready.",
       "language": "Python",
-      "stars": 16214,
+      "stars": 16225,
       "forks": 1684,
       "topics": [
         "asr",
@@ -3160,8 +3160,8 @@
         "whisper-alternative"
       ],
       "homepage": "https://modelscope.github.io/FunASR",
-      "updatedAt": "2026-05-24T01:03:00Z",
-      "starredAt": "2026-05-24T01:03:00Z",
+      "updatedAt": "2026-05-24T08:05:39Z",
+      "starredAt": "2026-05-24T08:05:39Z",
       "category": "AI"
     },
     {
@@ -3211,8 +3211,8 @@
       "htmlUrl": "https://github.com/JoeanAmier/TikTokDownloader",
       "description": "TikTok 发布/喜欢/合辑/直播/视频/图集/音乐；抖音发布/喜欢/收藏/收藏夹/视频/图集/实况/直播/音乐/合集/评论/账号/搜索/热榜数据采集工具/下载工具",
       "language": "Python",
-      "stars": 14531,
-      "forks": 2508,
+      "stars": 14535,
+      "forks": 2507,
       "topics": [
         "abogus",
         "api",
@@ -3236,32 +3236,9 @@
         "xlsx"
       ],
       "homepage": "https://discord.com/invite/ZYtmgKud9Y",
-      "updatedAt": "2026-05-24T00:58:22Z",
-      "starredAt": "2026-05-24T00:58:22Z",
+      "updatedAt": "2026-05-24T06:43:42Z",
+      "starredAt": "2026-05-24T06:43:42Z",
       "category": "Backend"
-    },
-    {
-      "id": 845829920,
-      "fullName": "bggRGjQaUbCoE/PiliPlus",
-      "name": "PiliPlus",
-      "owner": "bggRGjQaUbCoE",
-      "htmlUrl": "https://github.com/bggRGjQaUbCoE/PiliPlus",
-      "description": "PiliPlus",
-      "language": "Dart",
-      "stars": 14318,
-      "forks": 853,
-      "topics": [
-        "android",
-        "flutter",
-        "ios",
-        "linux-desktop",
-        "macos",
-        "windows"
-      ],
-      "homepage": "",
-      "updatedAt": "2026-05-24T01:47:13Z",
-      "starredAt": "2026-05-24T01:47:13Z",
-      "category": "Mobile"
     },
     {
       "id": 1124249918,
@@ -3271,8 +3248,8 @@
       "htmlUrl": "https://github.com/datawhalechina/easy-vibe",
       "description": "💻 vibe coding 2026 | Your first modern Coding course for beginners to master step by step.",
       "language": "JavaScript",
-      "stars": 14239,
-      "forks": 1358,
+      "stars": 14350,
+      "forks": 1366,
       "topics": [
         "agent",
         "ai",
@@ -3296,9 +3273,32 @@
         "workflow"
       ],
       "homepage": "https://datawhalechina.github.io/easy-vibe/",
-      "updatedAt": "2026-05-24T01:48:50Z",
-      "starredAt": "2026-05-24T01:48:50Z",
+      "updatedAt": "2026-05-24T08:04:08Z",
+      "starredAt": "2026-05-24T08:04:08Z",
       "category": "AI"
+    },
+    {
+      "id": 845829920,
+      "fullName": "bggRGjQaUbCoE/PiliPlus",
+      "name": "PiliPlus",
+      "owner": "bggRGjQaUbCoE",
+      "htmlUrl": "https://github.com/bggRGjQaUbCoE/PiliPlus",
+      "description": "PiliPlus",
+      "language": "Dart",
+      "stars": 14325,
+      "forks": 853,
+      "topics": [
+        "android",
+        "flutter",
+        "ios",
+        "linux-desktop",
+        "macos",
+        "windows"
+      ],
+      "homepage": "",
+      "updatedAt": "2026-05-24T07:10:16Z",
+      "starredAt": "2026-05-24T07:10:16Z",
+      "category": "Mobile"
     },
     {
       "id": 461908156,
@@ -3309,7 +3309,7 @@
       "description": "Smooth scroll at it should be",
       "language": "TypeScript",
       "stars": 13933,
-      "forks": 553,
+      "forks": 552,
       "topics": [
         "performance",
         "react",
@@ -3333,16 +3333,16 @@
       "htmlUrl": "https://github.com/xpzouying/xiaohongshu-mcp",
       "description": "MCP for xiaohongshu.com",
       "language": "Go",
-      "stars": 13726,
-      "forks": 2079,
+      "stars": 13729,
+      "forks": 2080,
       "topics": [
         "mcp",
         "mcp-server",
         "xiaohongshu-mcp"
       ],
       "homepage": "https://www.haha.ai/xiaohongshu-mcp",
-      "updatedAt": "2026-05-24T00:51:53Z",
-      "starredAt": "2026-05-24T00:51:53Z",
+      "updatedAt": "2026-05-24T08:01:42Z",
+      "starredAt": "2026-05-24T08:01:42Z",
       "category": "Backend"
     },
     {
@@ -3353,8 +3353,8 @@
       "htmlUrl": "https://github.com/sunnyyoung/WeChatTweak",
       "description": "A command-line tool for tweaking WeChat - 首款微信 macOS 客户端撤回拦截与多开 🔨",
       "language": "Swift",
-      "stars": 13705,
-      "forks": 1634,
+      "stars": 13704,
+      "forks": 1635,
       "topics": [
         "alfred",
         "alfred-workflow",
@@ -3378,8 +3378,8 @@
         "weixin-tweak"
       ],
       "homepage": "https://www.tweaks.app",
-      "updatedAt": "2026-05-23T19:10:19Z",
-      "starredAt": "2026-05-23T19:10:19Z",
+      "updatedAt": "2026-05-24T07:33:16Z",
+      "starredAt": "2026-05-24T07:33:16Z",
       "category": "Mobile"
     },
     {
@@ -3390,7 +3390,7 @@
       "htmlUrl": "https://github.com/babalae/better-genshin-impact",
       "description": "📦BetterGI · 更好的原神 - 自动拾取 | 自动剧情 | 全自动钓鱼(AI) | 全自动七圣召唤 | 自动伐木 | 自动刷本 | 自动采集/挖矿/锄地 | 一条龙 | 全连音游 | 自动烹饪 - UI Automation Testing Tools For Genshin Impact",
       "language": "C#",
-      "stars": 13623,
+      "stars": 13624,
       "forks": 961,
       "topics": [
         "auto-play-game",
@@ -3401,8 +3401,8 @@
         "yuanshen"
       ],
       "homepage": "https://bettergi.com",
-      "updatedAt": "2026-05-23T19:49:49Z",
-      "starredAt": "2026-05-23T19:49:49Z",
+      "updatedAt": "2026-05-24T07:33:23Z",
+      "starredAt": "2026-05-24T07:33:23Z",
       "category": "AI"
     },
     {
@@ -3413,7 +3413,7 @@
       "htmlUrl": "https://github.com/hq450/fancyss",
       "description": "fancyss is a project providing tools to across the GFW on asuswrt/merlin based router.",
       "language": "Shell",
-      "stars": 13556,
+      "stars": 13557,
       "forks": 3243,
       "topics": [
         "arm",
@@ -3430,8 +3430,8 @@
         "xray"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T15:32:25Z",
-      "starredAt": "2026-05-23T15:32:25Z",
+      "updatedAt": "2026-05-24T05:12:04Z",
+      "starredAt": "2026-05-24T05:12:04Z",
       "category": "AI"
     },
     {
@@ -3442,12 +3442,33 @@
       "htmlUrl": "https://github.com/alienator88/Pearcleaner",
       "description": "A free, source-available and fair-code licensed mac app cleaner",
       "language": "Swift",
-      "stars": 13267,
+      "stars": 13270,
       "forks": 320,
       "topics": [],
       "homepage": "https://itsalin.com/appInfo/?id=pearcleaner",
-      "updatedAt": "2026-05-24T00:29:10Z",
-      "starredAt": "2026-05-24T00:29:10Z",
+      "updatedAt": "2026-05-24T07:59:03Z",
+      "starredAt": "2026-05-24T07:59:03Z",
+      "category": "AI"
+    },
+    {
+      "id": 1097695258,
+      "fullName": "steipete/CodexBar",
+      "name": "CodexBar",
+      "owner": "steipete",
+      "htmlUrl": "https://github.com/steipete/CodexBar",
+      "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
+      "language": "Swift",
+      "stars": 13225,
+      "forks": 1043,
+      "topics": [
+        "ai",
+        "claude-code",
+        "codex",
+        "swift"
+      ],
+      "homepage": "https://codex.bar",
+      "updatedAt": "2026-05-24T08:06:06Z",
+      "starredAt": "2026-05-24T08:06:06Z",
       "category": "AI"
     },
     {
@@ -3458,7 +3479,7 @@
       "htmlUrl": "https://github.com/metersphere/metersphere",
       "description": "MeterSphere 是新一代的开源持续测试工具，内置 AI 助手，让软件测试工作更简单、更高效，不再成为持续交付的瓶颈。",
       "language": "Java",
-      "stars": 13220,
+      "stars": 13221,
       "forks": 2816,
       "topics": [
         "api-testing",
@@ -3474,29 +3495,8 @@
         "testlink-alternative"
       ],
       "homepage": "https://metersphere.io/",
-      "updatedAt": "2026-05-24T01:42:32Z",
-      "starredAt": "2026-05-24T01:42:32Z",
-      "category": "AI"
-    },
-    {
-      "id": 1097695258,
-      "fullName": "steipete/CodexBar",
-      "name": "CodexBar",
-      "owner": "steipete",
-      "htmlUrl": "https://github.com/steipete/CodexBar",
-      "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
-      "language": "Swift",
-      "stars": 13206,
-      "forks": 1043,
-      "topics": [
-        "ai",
-        "claude-code",
-        "codex",
-        "swift"
-      ],
-      "homepage": "https://codex.bar",
-      "updatedAt": "2026-05-24T01:10:55Z",
-      "starredAt": "2026-05-24T01:10:55Z",
+      "updatedAt": "2026-05-24T02:19:32Z",
+      "starredAt": "2026-05-24T02:19:32Z",
       "category": "AI"
     },
     {
@@ -3522,8 +3522,8 @@
         "tauri-app"
       ],
       "homepage": "https://nyanpasu.org",
-      "updatedAt": "2026-05-23T22:32:18Z",
-      "starredAt": "2026-05-23T22:32:18Z",
+      "updatedAt": "2026-05-24T05:04:29Z",
+      "starredAt": "2026-05-24T05:04:29Z",
       "category": "Frontend"
     },
     {
@@ -3534,7 +3534,7 @@
       "htmlUrl": "https://github.com/xszyou/Fay",
       "description": "fay是一个帮助数字人（2.5d、3d、移动、pc、网页）或大语言模型（openai兼容、deepseek）连通业务系统的agent框架。",
       "language": "Python",
-      "stars": 12810,
+      "stars": 12813,
       "forks": 2275,
       "topics": [
         "ai",
@@ -3546,8 +3546,8 @@
         "wav2lip"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T21:45:56Z",
-      "starredAt": "2026-05-23T21:45:56Z",
+      "updatedAt": "2026-05-24T08:00:53Z",
+      "starredAt": "2026-05-24T08:00:53Z",
       "category": "AI"
     },
     {
@@ -3558,7 +3558,7 @@
       "htmlUrl": "https://github.com/go-admin-team/go-admin",
       "description": "基于Gin + Vue + Element UI &  Arco Design & Ant Design 的前后端分离权限管理系统脚手架（包含了：多租户的支持，基础用户管理功能，jwt鉴权，代码生成器，RBAC资源控制，表单构建，定时任务等）3分钟构建自己的中后台项目；项目文档》：https://www.go-admin.pro   V2 Demo： https://vue2.go-admin.dev V3 Demo： https://vue3.go-admin.dev Antd PRO：https://antd.go-admin.pro",
       "language": "Go",
-      "stars": 12653,
+      "stars": 12655,
       "forks": 2591,
       "topics": [
         "admin",
@@ -3577,8 +3577,8 @@
         "vue3"
       ],
       "homepage": "https://www.go-admin.pro",
-      "updatedAt": "2026-05-23T18:23:22Z",
-      "starredAt": "2026-05-23T18:23:22Z",
+      "updatedAt": "2026-05-24T06:33:37Z",
+      "starredAt": "2026-05-24T06:33:37Z",
       "category": "Frontend"
     },
     {
@@ -3589,7 +3589,7 @@
       "htmlUrl": "https://github.com/doocs/md",
       "description": "✍ WeChat Markdown Editor | 一款高度简洁的微信 Markdown 编辑器：支持 Markdown 语法、自定义主题样式、内容管理、多图床、AI 助手等特性",
       "language": "Vue",
-      "stars": 12636,
+      "stars": 12639,
       "forks": 2140,
       "topics": [
         "ai-bot",
@@ -3606,8 +3606,8 @@
         "weixin"
       ],
       "homepage": "https://md.doocs.org",
-      "updatedAt": "2026-05-23T17:10:36Z",
-      "starredAt": "2026-05-23T17:10:36Z",
+      "updatedAt": "2026-05-24T08:09:02Z",
+      "starredAt": "2026-05-24T08:09:02Z",
       "category": "AI"
     },
     {
@@ -3639,7 +3639,7 @@
       "htmlUrl": "https://github.com/DayBreak-u/chineseocr_lite",
       "description": "超轻量级中文ocr，支持竖排文字识别, 支持ncnn、mnn、tnn推理 ( dbnet(1.8M) + crnn(2.5M) + anglenet(378KB)) 总模型仅4.7M ",
       "language": "C++",
-      "stars": 12302,
+      "stars": 12303,
       "forks": 2275,
       "topics": [
         "ncnn",
@@ -3647,8 +3647,8 @@
         "pytorch"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-22T14:56:43Z",
-      "starredAt": "2026-05-22T14:56:43Z",
+      "updatedAt": "2026-05-24T02:08:16Z",
+      "starredAt": "2026-05-24T02:08:16Z",
       "category": "Other"
     },
     {
@@ -3713,7 +3713,7 @@
       "htmlUrl": "https://github.com/Wei-Shaw/claude-relay-service",
       "description": "CRS-自建Claude Code镜像，一站式开源中转服务，让 Claude、OpenAI、Gemini、Droid 订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。",
       "language": "JavaScript",
-      "stars": 11865,
+      "stars": 11870,
       "forks": 1777,
       "topics": [
         "claude",
@@ -3728,8 +3728,8 @@
         "gemini-cli"
       ],
       "homepage": "https://pincc.ai",
-      "updatedAt": "2026-05-24T01:21:31Z",
-      "starredAt": "2026-05-24T01:21:31Z",
+      "updatedAt": "2026-05-24T07:39:52Z",
+      "starredAt": "2026-05-24T07:39:52Z",
       "category": "AI"
     },
     {
@@ -3740,7 +3740,7 @@
       "htmlUrl": "https://github.com/AIsouler/GKD_subscription",
       "description": "GKD 第三方订阅规则",
       "language": "TypeScript",
-      "stars": 11633,
+      "stars": 11634,
       "forks": 473,
       "topics": [
         "gkd",
@@ -3748,8 +3748,8 @@
         "typescript"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-24T00:21:49Z",
-      "starredAt": "2026-05-24T00:21:49Z",
+      "updatedAt": "2026-05-24T03:38:51Z",
+      "starredAt": "2026-05-24T03:38:51Z",
       "category": "Frontend"
     },
     {
@@ -3760,8 +3760,8 @@
       "htmlUrl": "https://github.com/siteboon/claudecodeui",
       "description": "Use Claude Code, Cursor CLI or Codex on mobile and web with CloudCLI (aka Claude Code UI). CloudCLI is a free open source webui/GUI that helps you manage your Claude Code session and projects remotely",
       "language": "TypeScript",
-      "stars": 11225,
-      "forks": 1516,
+      "stars": 11239,
+      "forks": 1519,
       "topics": [
         "anthropic",
         "anthropic-ai",
@@ -3777,8 +3777,8 @@
         "ui"
       ],
       "homepage": "https://cloudcli.ai",
-      "updatedAt": "2026-05-24T01:41:30Z",
-      "starredAt": "2026-05-24T01:41:30Z",
+      "updatedAt": "2026-05-24T07:47:03Z",
+      "starredAt": "2026-05-24T07:47:03Z",
       "category": "AI"
     },
     {
@@ -3789,8 +3789,8 @@
       "htmlUrl": "https://github.com/superset-sh/superset",
       "description": "Code Editor for the AI Agents Era - Run an army of Claude Code, Codex, etc. on your machine",
       "language": "TypeScript",
-      "stars": 11077,
-      "forks": 928,
+      "stars": 11089,
+      "forks": 930,
       "topics": [
         "agentic-ai",
         "ai-agents",
@@ -3814,8 +3814,8 @@
         "worktrees"
       ],
       "homepage": "https://superset.sh",
-      "updatedAt": "2026-05-24T01:49:55Z",
-      "starredAt": "2026-05-24T01:49:55Z",
+      "updatedAt": "2026-05-24T08:00:05Z",
+      "starredAt": "2026-05-24T08:00:05Z",
       "category": "AI"
     },
     {
@@ -3826,8 +3826,8 @@
       "htmlUrl": "https://github.com/YaoFANGUK/video-subtitle-remover",
       "description": "基于AI的图片/视频硬字幕去除、文本水印去除，无损分辨率生成去字幕、去水印后的图片/视频文件。无需申请第三方API，本地实现。AI-based tool for removing hard-coded subtitles and text-like watermarks from videos or Pictures.",
       "language": "Python",
-      "stars": 11020,
-      "forks": 1401,
+      "stars": 11029,
+      "forks": 1403,
       "topics": [
         "ai",
         "deepleanring",
@@ -3836,8 +3836,8 @@
         "vsr"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T18:53:37Z",
-      "starredAt": "2026-05-23T18:53:37Z",
+      "updatedAt": "2026-05-24T08:04:08Z",
+      "starredAt": "2026-05-24T08:04:08Z",
       "category": "AI"
     },
     {
@@ -3849,7 +3849,7 @@
       "description": "WireGuard VPN installer for Linux servers",
       "language": "Shell",
       "stars": 10927,
-      "forks": 1649,
+      "forks": 1650,
       "topics": [
         "linux",
         "nat",
@@ -3886,7 +3886,7 @@
       "htmlUrl": "https://github.com/millionco/react-doctor",
       "description": "Your agent writes bad React. This catches it",
       "language": "TypeScript",
-      "stars": 10640,
+      "stars": 10650,
       "forks": 345,
       "topics": [
         "agents",
@@ -3896,8 +3896,8 @@
         "skill"
       ],
       "homepage": "https://react.doctor",
-      "updatedAt": "2026-05-24T01:25:35Z",
-      "starredAt": "2026-05-24T01:25:35Z",
+      "updatedAt": "2026-05-24T07:45:51Z",
+      "starredAt": "2026-05-24T07:45:51Z",
       "category": "AI"
     },
     {
@@ -3908,7 +3908,7 @@
       "htmlUrl": "https://github.com/wangrongding/wechat-bot",
       "description": "🤖一个基于 WeChaty 结合 ChatGPT / Claude / Kimi / DeepSeek / Ollama等Ai服务实现的微信机器人 ，可以用来帮助你自动回复微信消息，或者社群分析/好友管理，检测僵尸粉等...",
       "language": "JavaScript",
-      "stars": 10601,
+      "stars": 10602,
       "forks": 1221,
       "topics": [
         "chatgpt",
@@ -3918,8 +3918,8 @@
         "wechaty"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T14:59:11Z",
-      "starredAt": "2026-05-23T14:59:11Z",
+      "updatedAt": "2026-05-24T02:29:58Z",
+      "starredAt": "2026-05-24T02:29:58Z",
       "category": "AI"
     },
     {
@@ -3930,8 +3930,8 @@
       "htmlUrl": "https://github.com/jason5ng32/MyIP",
       "description": "The best IP Toolbox. Check your IP address & geolocation, test IP for WebRTC and DNS IP leaks, run an IP quality check, browser fingerprint check, website availability check, network speed test, global latency test, MTR test, Whois search, and more.",
       "language": "Vue",
-      "stars": 10554,
-      "forks": 1121,
+      "stars": 10557,
+      "forks": 1122,
       "topics": [
         "awesome",
         "censorship",
@@ -3954,8 +3954,8 @@
         "whois-lookup"
       ],
       "homepage": "https://ipcheck.ing",
-      "updatedAt": "2026-05-23T21:36:21Z",
-      "starredAt": "2026-05-23T21:36:21Z",
+      "updatedAt": "2026-05-24T06:27:30Z",
+      "starredAt": "2026-05-24T06:27:30Z",
       "category": "AI"
     },
     {
@@ -3966,8 +3966,8 @@
       "htmlUrl": "https://github.com/hicccc77/WeFlow",
       "description": "WeFlow - 一个本地的微信聊天记录导出和年度报告应用",
       "language": "TypeScript",
-      "stars": 10493,
-      "forks": 2517,
+      "stars": 10511,
+      "forks": 2519,
       "topics": [
         "annual-report",
         "data-analysis",
@@ -3976,8 +3976,8 @@
         "wechat"
       ],
       "homepage": "https://weflow.top",
-      "updatedAt": "2026-05-24T01:32:42Z",
-      "starredAt": "2026-05-24T01:32:42Z",
+      "updatedAt": "2026-05-24T07:28:41Z",
+      "starredAt": "2026-05-24T07:28:41Z",
       "category": "Data"
     },
     {
@@ -4014,8 +4014,8 @@
       "forks": 3447,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-23T12:32:33Z",
-      "starredAt": "2026-05-23T12:32:33Z",
+      "updatedAt": "2026-05-24T05:28:51Z",
+      "starredAt": "2026-05-24T05:28:51Z",
       "category": "Frontend"
     },
     {
@@ -4026,7 +4026,7 @@
       "htmlUrl": "https://github.com/getgridea/gridea",
       "description": "✍️ A static blog writing client (一个静态博客写作客户端)",
       "language": "TypeScript",
-      "stars": 10272,
+      "stars": 10271,
       "forks": 833,
       "topics": [
         "blog",
@@ -4048,8 +4048,8 @@
         "windows"
       ],
       "homepage": "https://open.gridea.dev",
-      "updatedAt": "2026-05-23T13:37:53Z",
-      "starredAt": "2026-05-23T13:37:53Z",
+      "updatedAt": "2026-05-24T03:26:42Z",
+      "starredAt": "2026-05-24T03:26:42Z",
       "category": "Frontend"
     },
     {
@@ -4060,7 +4060,7 @@
       "htmlUrl": "https://github.com/nezhahq/nezha",
       "description": ":trollface: Self-hosted, lightweight server and website monitoring and O&M tool",
       "language": "Go",
-      "stars": 10020,
+      "stars": 10022,
       "forks": 1592,
       "topics": [
         "monitoring",
@@ -4068,8 +4068,8 @@
         "system"
       ],
       "homepage": "https://nezhahq.github.io",
-      "updatedAt": "2026-05-23T15:16:49Z",
-      "starredAt": "2026-05-23T15:16:49Z",
+      "updatedAt": "2026-05-24T06:00:44Z",
+      "starredAt": "2026-05-24T06:00:44Z",
       "category": "Backend"
     },
     {
@@ -4117,7 +4117,7 @@
       "htmlUrl": "https://github.com/chaitin/PandaWiki",
       "description": "PandaWiki 是一款 AI 大模型驱动的开源知识库搭建系统，帮助你快速构建智能化的 产品文档、技术文档、FAQ、博客系统，借助大模型的力量为你提供 AI 创作、AI 问答、AI 搜索等能力。",
       "language": "TypeScript",
-      "stars": 9653,
+      "stars": 9655,
       "forks": 943,
       "topics": [
         "ai",
@@ -4131,8 +4131,8 @@
         "wiki"
       ],
       "homepage": "https://pandawiki.docs.baizhi.cloud/",
-      "updatedAt": "2026-05-23T15:41:23Z",
-      "starredAt": "2026-05-23T15:41:23Z",
+      "updatedAt": "2026-05-24T02:46:21Z",
+      "starredAt": "2026-05-24T02:46:21Z",
       "category": "AI"
     },
     {
@@ -4143,12 +4143,12 @@
       "htmlUrl": "https://github.com/TheBoredTeam/boring.notch",
       "description": "TheBoringNotch: Not so boring notch That Rocks 🎸🎶",
       "language": "Swift",
-      "stars": 9286,
+      "stars": 9288,
       "forks": 735,
       "topics": [],
       "homepage": "https://theboring.name/",
-      "updatedAt": "2026-05-24T01:19:25Z",
-      "starredAt": "2026-05-24T01:19:25Z",
+      "updatedAt": "2026-05-24T07:41:17Z",
+      "starredAt": "2026-05-24T07:41:17Z",
       "category": "Mobile"
     },
     {
@@ -4180,6 +4180,33 @@
       "category": "AI"
     },
     {
+      "id": 756611765,
+      "fullName": "alireza0/s-ui",
+      "name": "s-ui",
+      "owner": "alireza0",
+      "htmlUrl": "https://github.com/alireza0/s-ui",
+      "description": "An advanced Web Panel • Built for SagerNet/Sing-Box",
+      "language": "Go",
+      "stars": 9055,
+      "forks": 1539,
+      "topics": [
+        "hysteria",
+        "hysteria2",
+        "naive-proxy",
+        "shadowsocks",
+        "shadowtls",
+        "sing-box",
+        "trojan",
+        "tuic",
+        "vless",
+        "vmess"
+      ],
+      "homepage": "https://t.me/XrayUI",
+      "updatedAt": "2026-05-24T07:55:14Z",
+      "starredAt": "2026-05-24T07:55:14Z",
+      "category": "AI"
+    },
+    {
       "id": 240818838,
       "fullName": "AppHouseKitchen/AlDente-Battery_Care_and_Monitoring",
       "name": "AlDente-Battery_Care_and_Monitoring",
@@ -4196,33 +4223,6 @@
       "category": "Mobile"
     },
     {
-      "id": 756611765,
-      "fullName": "alireza0/s-ui",
-      "name": "s-ui",
-      "owner": "alireza0",
-      "htmlUrl": "https://github.com/alireza0/s-ui",
-      "description": "An advanced Web Panel • Built for SagerNet/Sing-Box",
-      "language": "Go",
-      "stars": 9046,
-      "forks": 1530,
-      "topics": [
-        "hysteria",
-        "hysteria2",
-        "naive-proxy",
-        "shadowsocks",
-        "shadowtls",
-        "sing-box",
-        "trojan",
-        "tuic",
-        "vless",
-        "vmess"
-      ],
-      "homepage": "https://t.me/XrayUI",
-      "updatedAt": "2026-05-24T01:19:35Z",
-      "starredAt": "2026-05-24T01:19:35Z",
-      "category": "AI"
-    },
-    {
       "id": 252840261,
       "fullName": "kiddin9/Kwrt",
       "name": "Kwrt",
@@ -4230,8 +4230,8 @@
       "htmlUrl": "https://github.com/kiddin9/Kwrt",
       "description": "openwrt 软路由固件",
       "language": "Shell",
-      "stars": 8909,
-      "forks": 3530,
+      "stars": 8910,
+      "forks": 3528,
       "topics": [
         "k2p",
         "kwrt",
@@ -4255,8 +4255,8 @@
         "xiaomi-r3p"
       ],
       "homepage": "https://openwrt.ai",
-      "updatedAt": "2026-05-23T03:55:38Z",
-      "starredAt": "2026-05-23T03:55:38Z",
+      "updatedAt": "2026-05-24T04:27:54Z",
+      "starredAt": "2026-05-24T04:27:54Z",
       "category": "Other"
     },
     {
@@ -4267,7 +4267,7 @@
       "htmlUrl": "https://github.com/YaoFANGUK/video-subtitle-extractor",
       "description": "视频硬字幕提取，生成srt文件。无需申请第三方API，本地实现文本识别。基于深度学习的视频字幕提取框架，包含字幕区域检测、字幕内容提取。A GUI tool for extracting hard-coded subtitle (hardsub) from videos and generating srt files. ",
       "language": "Python",
-      "stars": 8860,
+      "stars": 8865,
       "forks": 902,
       "topics": [
         "deep-learning",
@@ -4280,8 +4280,8 @@
         "subtitles"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T23:11:34Z",
-      "starredAt": "2026-05-23T23:11:34Z",
+      "updatedAt": "2026-05-24T08:04:02Z",
+      "starredAt": "2026-05-24T08:04:02Z",
       "category": "Frontend"
     },
     {
@@ -4292,8 +4292,8 @@
       "htmlUrl": "https://github.com/yonggekkk/sing-box-yg",
       "description": "Sing-box精装桶五合一协议VPS专用脚本：三大独家功能！自签/acme双证书切换、Argo固定临时双隧道（可共存）、Psiphon赛风VPN（30个国家）分流功能。Hostuno三合一代理脚本",
       "language": "Shell",
-      "stars": 8809,
-      "forks": 2862,
+      "stars": 8814,
+      "forks": 2863,
       "topics": [
         "acme",
         "alpine",
@@ -4316,8 +4316,8 @@
         "xray"
       ],
       "homepage": "https://ygkkk.blogspot.com/2023/10/sing-box-yg.html",
-      "updatedAt": "2026-05-24T00:49:24Z",
-      "starredAt": "2026-05-24T00:49:24Z",
+      "updatedAt": "2026-05-24T07:30:28Z",
+      "starredAt": "2026-05-24T07:30:28Z",
       "category": "Frontend"
     },
     {
@@ -4328,7 +4328,7 @@
       "htmlUrl": "https://github.com/BewlyBewly/BewlyBewly",
       "description": "Just make a few small changes to your Bilibili homepage. (English | 简体中文 | 正體中文 | 廣東話)",
       "language": "Vue",
-      "stars": 8792,
+      "stars": 8796,
       "forks": 394,
       "topics": [
         "bilibili",
@@ -4338,8 +4338,8 @@
         "dark-theme"
       ],
       "homepage": "https://chromewebstore.google.com/detail/bewlybewly/bbbiejemhfihiooipfcjmjmbfdmobobp",
-      "updatedAt": "2026-05-24T01:25:47Z",
-      "starredAt": "2026-05-24T01:25:47Z",
+      "updatedAt": "2026-05-24T07:31:58Z",
+      "starredAt": "2026-05-24T07:31:58Z",
       "category": "Frontend"
     },
     {
@@ -4377,7 +4377,7 @@
       "htmlUrl": "https://github.com/RayWangQvQ/BiliBiliToolPro",
       "description": "B 站（bilibili）自动任务工具，支持docker、青龙、k8s等多种部署方式。全面拥抱AI。敏感肌也能用。",
       "language": "C#",
-      "stars": 8600,
+      "stars": 8603,
       "forks": 1907,
       "topics": [
         "bilibili",
@@ -4387,8 +4387,8 @@
         "serilog"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T15:38:50Z",
-      "starredAt": "2026-05-23T15:38:50Z",
+      "updatedAt": "2026-05-24T06:03:40Z",
+      "starredAt": "2026-05-24T06:03:40Z",
       "category": "AI"
     },
     {
@@ -4399,14 +4399,14 @@
       "htmlUrl": "https://github.com/esnet/iperf",
       "description": "iperf3:  A TCP, UDP, and SCTP network bandwidth measurement tool",
       "language": "C",
-      "stars": 8497,
-      "forks": 1418,
+      "stars": 8498,
+      "forks": 1419,
       "topics": [
         "iperf3"
       ],
       "homepage": "http://software.es.net/iperf/",
-      "updatedAt": "2026-05-23T13:18:12Z",
-      "starredAt": "2026-05-23T13:18:12Z",
+      "updatedAt": "2026-05-24T06:00:34Z",
+      "starredAt": "2026-05-24T06:00:34Z",
       "category": "Tooling"
     },
     {
@@ -4417,7 +4417,7 @@
       "htmlUrl": "https://github.com/ztjhz/BetterChatGPT",
       "description": "An amazing UI for OpenAI's ChatGPT (Website + Windows + MacOS + Linux)",
       "language": "TypeScript",
-      "stars": 8405,
+      "stars": 8407,
       "forks": 2683,
       "topics": [
         "better-chat-gpt",
@@ -4428,8 +4428,8 @@
         "gpt-4"
       ],
       "homepage": "http://bettergpt.chat/",
-      "updatedAt": "2026-05-24T01:43:26Z",
-      "starredAt": "2026-05-24T01:43:26Z",
+      "updatedAt": "2026-05-24T06:49:12Z",
+      "starredAt": "2026-05-24T06:49:12Z",
       "category": "AI"
     },
     {
@@ -4440,8 +4440,8 @@
       "htmlUrl": "https://github.com/HBAI-Ltd/Toonflow-app",
       "description": "Toonflow 是开源一站式 AI 短剧创作工具，将小说、剧本快速转化为动画短剧。集成 AI 编剧、智能分镜、角色与视频生成，跨平台桌面端轻量部署，助力创作者低成本批量产出视觉内容。Toonflow is an open-source AI tool that turns stories and scripts into animated short dramas. Features AI scriptwriting, storyboarding, character and video generation. A cross-platform desktop app for efficient content creation.",
       "language": "HTML",
-      "stars": 8318,
-      "forks": 1443,
+      "stars": 8352,
+      "forks": 1450,
       "topics": [
         "ai",
         "ai-content-creation",
@@ -4463,8 +4463,8 @@
         "vue3"
       ],
       "homepage": "https://toonflow.net",
-      "updatedAt": "2026-05-24T01:48:46Z",
-      "starredAt": "2026-05-24T01:48:46Z",
+      "updatedAt": "2026-05-24T08:09:56Z",
+      "starredAt": "2026-05-24T08:09:56Z",
       "category": "AI"
     },
     {
@@ -4475,8 +4475,8 @@
       "htmlUrl": "https://github.com/vastsa/FileCodeBox",
       "description": "文件快递柜-匿名口令分享文本，文件，像拿快递一样取文件（FileCodeBox - File Express Cabinet - Anonymous Passcode Sharing Text, Files, Like Taking Express Delivery for Files）",
       "language": "Python",
-      "stars": 8290,
-      "forks": 1036,
+      "stars": 8291,
+      "forks": 1037,
       "topics": [
         "anonymous",
         "fastapi",
@@ -4486,8 +4486,8 @@
         "vue"
       ],
       "homepage": "https://fcb-docs.aiuo.net/",
-      "updatedAt": "2026-05-23T23:15:50Z",
-      "starredAt": "2026-05-23T23:15:50Z",
+      "updatedAt": "2026-05-24T08:00:40Z",
+      "starredAt": "2026-05-24T08:00:40Z",
       "category": "Frontend"
     },
     {
@@ -4498,7 +4498,7 @@
       "htmlUrl": "https://github.com/Finb/Bark",
       "description": "Bark is an iOS App which allows you to push custom notifications to your iPhone",
       "language": "Swift",
-      "stars": 8078,
+      "stars": 8079,
       "forks": 631,
       "topics": [
         "ios",
@@ -4512,8 +4512,8 @@
         "rxswift"
       ],
       "homepage": "https://bark.day.app",
-      "updatedAt": "2026-05-24T01:45:49Z",
-      "starredAt": "2026-05-24T01:45:49Z",
+      "updatedAt": "2026-05-24T07:19:37Z",
+      "starredAt": "2026-05-24T07:19:37Z",
       "category": "Mobile"
     },
     {
@@ -4524,7 +4524,7 @@
       "htmlUrl": "https://github.com/nxtrace/NTrace-core",
       "description": "NextTrace, an open source visual route tracking CLI tool",
       "language": "Go",
-      "stars": 7851,
+      "stars": 7852,
       "forks": 473,
       "topics": [
         "api",
@@ -4540,8 +4540,8 @@
         "utility"
       ],
       "homepage": "https://www.nxtrace.org",
-      "updatedAt": "2026-05-23T10:53:24Z",
-      "starredAt": "2026-05-23T10:53:24Z",
+      "updatedAt": "2026-05-24T06:10:43Z",
+      "starredAt": "2026-05-24T06:10:43Z",
       "category": "Frontend"
     },
     {
@@ -4575,7 +4575,7 @@
       "htmlUrl": "https://github.com/qiye45/wechatDownload",
       "description": "微信公众号文章批量下载工具，支持评论、合集下载，支持保存html/mhtml/md/pdf/docx/csv文件，保存文章内图片、视频、音频文件，支持MCP/Skill调用",
       "language": "HTML",
-      "stars": 7773,
+      "stars": 7780,
       "forks": 832,
       "topics": [
         "download",
@@ -4583,8 +4583,8 @@
         "wechat"
       ],
       "homepage": "https://changfengbox.top/wechat",
-      "updatedAt": "2026-05-23T16:26:01Z",
-      "starredAt": "2026-05-23T16:26:01Z",
+      "updatedAt": "2026-05-24T08:10:04Z",
+      "starredAt": "2026-05-24T08:10:04Z",
       "category": "Data"
     },
     {
@@ -4595,12 +4595,12 @@
       "htmlUrl": "https://github.com/mli/autocut",
       "description": "用文本编辑器剪视频",
       "language": "Python",
-      "stars": 7709,
+      "stars": 7710,
       "forks": 813,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-23T08:46:56Z",
-      "starredAt": "2026-05-23T08:46:56Z",
+      "updatedAt": "2026-05-24T07:37:12Z",
+      "starredAt": "2026-05-24T07:37:12Z",
       "category": "Backend"
     },
     {
@@ -4611,16 +4611,16 @@
       "htmlUrl": "https://github.com/shaxiu/XianyuAutoAgent",
       "description": "智能闲鱼客服机器人系统：专为闲鱼平台打造的AI值守解决方案，实现闲鱼平台7×24小时自动化值守，支持多专家协同决策、智能议价和上下文感知对话。",
       "language": "Python",
-      "stars": 7689,
-      "forks": 1398,
+      "stars": 7694,
+      "forks": 1400,
       "topics": [
         "agent",
         "chatbot",
         "llm"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-24T00:35:38Z",
-      "starredAt": "2026-05-24T00:35:38Z",
+      "updatedAt": "2026-05-24T07:44:11Z",
+      "starredAt": "2026-05-24T07:44:11Z",
       "category": "AI"
     },
     {
@@ -4660,8 +4660,8 @@
         "surge"
       ],
       "homepage": "https://hackl0us.com",
-      "updatedAt": "2026-05-23T20:28:22Z",
-      "starredAt": "2026-05-23T20:28:22Z",
+      "updatedAt": "2026-05-24T04:17:09Z",
+      "starredAt": "2026-05-24T04:17:09Z",
       "category": "Backend"
     },
     {
@@ -4699,8 +4699,8 @@
       "htmlUrl": "https://github.com/yzfly/Awesome-MCP-ZH",
       "description": "MCP 资源精选， MCP指南，Claude MCP，MCP Servers, MCP Clients",
       "language": "",
-      "stars": 7132,
-      "forks": 564,
+      "stars": 7135,
+      "forks": 565,
       "topics": [
         "claude",
         "claude-mcp",
@@ -4716,8 +4716,8 @@
         "qwen-mcp"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T08:09:44Z",
-      "starredAt": "2026-05-23T08:09:44Z",
+      "updatedAt": "2026-05-24T07:11:49Z",
+      "starredAt": "2026-05-24T07:11:49Z",
       "category": "Backend"
     },
     {
@@ -4728,7 +4728,7 @@
       "htmlUrl": "https://github.com/EcoPasteHub/EcoPaste",
       "description": "🎉跨平台的剪贴板管理工具 | Cross-platform clipboard management tool",
       "language": "TypeScript",
-      "stars": 7005,
+      "stars": 7007,
       "forks": 349,
       "topics": [
         "application",
@@ -4745,8 +4745,8 @@
         "windows"
       ],
       "homepage": "https://ecopaste.cn",
-      "updatedAt": "2026-05-23T12:07:18Z",
-      "starredAt": "2026-05-23T12:07:18Z",
+      "updatedAt": "2026-05-24T02:25:03Z",
+      "starredAt": "2026-05-24T02:25:03Z",
       "category": "Tooling"
     },
     {
@@ -4757,8 +4757,8 @@
       "htmlUrl": "https://github.com/getagentseal/codeburn",
       "description": "See where your AI coding tokens go. Interactive TUI dashboard for Claude Code, Codex, and Cursor cost observability.",
       "language": "TypeScript",
-      "stars": 6965,
-      "forks": 526,
+      "stars": 6973,
+      "forks": 529,
       "topics": [
         "ai-coding",
         "claude-code",
@@ -4772,8 +4772,8 @@
         "token-usage"
       ],
       "homepage": "https://codeburn.app/",
-      "updatedAt": "2026-05-24T01:42:14Z",
-      "starredAt": "2026-05-24T01:42:14Z",
+      "updatedAt": "2026-05-24T08:04:57Z",
+      "starredAt": "2026-05-24T08:04:57Z",
       "category": "AI"
     },
     {
@@ -4785,7 +4785,7 @@
       "description": "AI & parametric QR code generator. AI & 参数化二维码生成器。https://qrbtf.com",
       "language": "TypeScript",
       "stars": 6932,
-      "forks": 587,
+      "forks": 588,
       "topics": [
         "art-qr",
         "art-qr-code",
@@ -4836,22 +4836,6 @@
       "category": "AI"
     },
     {
-      "id": 1079107863,
-      "fullName": "PleasePrompto/notebooklm-skill",
-      "name": "notebooklm-skill",
-      "owner": "PleasePrompto",
-      "htmlUrl": "https://github.com/PleasePrompto/notebooklm-skill",
-      "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base.",
-      "language": "Python",
-      "stars": 6613,
-      "forks": 745,
-      "topics": [],
-      "homepage": "",
-      "updatedAt": "2026-05-23T22:01:14Z",
-      "starredAt": "2026-05-23T22:01:14Z",
-      "category": "Backend"
-    },
-    {
       "id": 1075381375,
       "fullName": "getpaseo/paseo",
       "name": "paseo",
@@ -4859,8 +4843,8 @@
       "htmlUrl": "https://github.com/getpaseo/paseo",
       "description": "Coding agents from your phone, desktop and CLI",
       "language": "TypeScript",
-      "stars": 6605,
-      "forks": 626,
+      "stars": 6623,
+      "forks": 628,
       "topics": [
         "ade",
         "agents",
@@ -4875,9 +4859,25 @@
         "pi"
       ],
       "homepage": "https://paseo.sh",
-      "updatedAt": "2026-05-24T00:31:41Z",
-      "starredAt": "2026-05-24T00:31:41Z",
+      "updatedAt": "2026-05-24T08:06:17Z",
+      "starredAt": "2026-05-24T08:06:17Z",
       "category": "AI"
+    },
+    {
+      "id": 1079107863,
+      "fullName": "PleasePrompto/notebooklm-skill",
+      "name": "notebooklm-skill",
+      "owner": "PleasePrompto",
+      "htmlUrl": "https://github.com/PleasePrompto/notebooklm-skill",
+      "description": "Use this skill to enable Claude Code to communicate directly with your Google NotebookLM notebooks. Query your uploaded documents and get source-grounded, citation-backed answers from Gemini. Features browser automation, library management, persistent authentication, and answers exclusively from your own knowledge base.",
+      "language": "Python",
+      "stars": 6619,
+      "forks": 747,
+      "topics": [],
+      "homepage": "",
+      "updatedAt": "2026-05-24T07:29:05Z",
+      "starredAt": "2026-05-24T07:29:05Z",
+      "category": "Backend"
     },
     {
       "id": 1167515091,
@@ -4887,12 +4887,12 @@
       "htmlUrl": "https://github.com/Lakr233/vphone-cli",
       "description": "",
       "language": "Swift",
-      "stars": 6511,
-      "forks": 970,
+      "stars": 6516,
+      "forks": 971,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-24T01:49:47Z",
-      "starredAt": "2026-05-24T01:49:47Z",
+      "updatedAt": "2026-05-24T05:46:37Z",
+      "starredAt": "2026-05-24T05:46:37Z",
       "category": "Mobile"
     },
     {
@@ -4903,7 +4903,7 @@
       "htmlUrl": "https://github.com/ChatLab/ChatLab",
       "description": "Local-first chat history analyzer with AI. | 本地优先的 AI 聊天记录分析工具",
       "language": "TypeScript",
-      "stars": 6469,
+      "stars": 6474,
       "forks": 1371,
       "topics": [
         "ai-agent",
@@ -4914,8 +4914,8 @@
         "data-visualization"
       ],
       "homepage": "https://chatlab.fun",
-      "updatedAt": "2026-05-23T17:07:58Z",
-      "starredAt": "2026-05-23T17:07:58Z",
+      "updatedAt": "2026-05-24T06:41:01Z",
+      "starredAt": "2026-05-24T06:41:01Z",
       "category": "AI"
     },
     {
@@ -4926,7 +4926,7 @@
       "htmlUrl": "https://github.com/josStorer/RWKV-Runner",
       "description": "A RWKV management and startup tool, full automation, only 8MB. And provides an interface compatible with the OpenAI API. RWKV is a large language model that is fully open source and available for commercial use.",
       "language": "TypeScript",
-      "stars": 6355,
+      "stars": 6356,
       "forks": 597,
       "topics": [
         "api",
@@ -4938,8 +4938,8 @@
         "wails"
       ],
       "homepage": "https://www.rwkv.com",
-      "updatedAt": "2026-05-23T03:02:35Z",
-      "starredAt": "2026-05-23T03:02:35Z",
+      "updatedAt": "2026-05-24T07:44:06Z",
+      "starredAt": "2026-05-24T07:44:06Z",
       "category": "AI"
     },
     {
@@ -5005,8 +5005,8 @@
       "htmlUrl": "https://github.com/dataease/SQLBot",
       "description": "🔥 基于大模型和 RAG 的智能问数系统，对话式数据分析神器。Text-to-SQL Generation via LLMs using RAG.",
       "language": "JavaScript",
-      "stars": 6142,
-      "forks": 724,
+      "stars": 6143,
+      "forks": 725,
       "topics": [
         "chatbi",
         "deepseek",
@@ -5018,8 +5018,8 @@
         "text2sql"
       ],
       "homepage": "https://sqlbot.org/",
-      "updatedAt": "2026-05-24T01:31:51Z",
-      "starredAt": "2026-05-24T01:31:51Z",
+      "updatedAt": "2026-05-24T03:09:12Z",
+      "starredAt": "2026-05-24T03:09:12Z",
       "category": "AI"
     },
     {
@@ -5030,12 +5030,12 @@
       "htmlUrl": "https://github.com/JefferyHcool/BiliNote",
       "description": "AI 视频笔记生成工具 让 AI 为你的视频做笔记",
       "language": "TypeScript",
-      "stars": 6104,
-      "forks": 795,
+      "stars": 6106,
+      "forks": 796,
       "topics": [],
       "homepage": "https://www.bilinote.app/",
-      "updatedAt": "2026-05-24T00:25:07Z",
-      "starredAt": "2026-05-24T00:25:07Z",
+      "updatedAt": "2026-05-24T06:43:56Z",
+      "starredAt": "2026-05-24T06:43:56Z",
       "category": "AI"
     },
     {
@@ -5046,12 +5046,12 @@
       "htmlUrl": "https://github.com/craft-ai-agents/craft-agents-oss",
       "description": "",
       "language": "TypeScript",
-      "stars": 6085,
-      "forks": 827,
+      "stars": 6091,
+      "forks": 828,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-24T00:57:28Z",
-      "starredAt": "2026-05-24T00:57:28Z",
+      "updatedAt": "2026-05-24T07:14:20Z",
+      "starredAt": "2026-05-24T07:14:20Z",
       "category": "AI"
     },
     {
@@ -5062,7 +5062,7 @@
       "htmlUrl": "https://github.com/JimmyLv/BibiGPT-v1",
       "description": "BibiGPT v1 · one-Click AI Summary for Audio/Video & Chat with Learning Content: Bilibili | YouTube | Tweet丨TikTok丨Dropbox丨Google Drive丨Local files | Websites丨Podcasts | Meetings | Lectures, etc. 音视频内容 AI 一键总结 & 对话：哔哩哔哩丨YouTube丨推特丨小红书丨抖音丨快手丨百度网盘丨阿里云盘丨网页丨播客丨会议丨本地文件等 (原 BiliGPT 省流神器 & AI课代表)",
       "language": "TypeScript",
-      "stars": 6072,
+      "stars": 6073,
       "forks": 807,
       "topics": [
         "bilibili",
@@ -5073,8 +5073,8 @@
         "youtube"
       ],
       "homepage": "https://bibigpt.co",
-      "updatedAt": "2026-05-23T15:37:14Z",
-      "starredAt": "2026-05-23T15:37:14Z",
+      "updatedAt": "2026-05-24T07:12:54Z",
+      "starredAt": "2026-05-24T07:12:54Z",
       "category": "AI"
     },
     {
@@ -5106,7 +5106,7 @@
       "htmlUrl": "https://github.com/201206030/novel",
       "description": "novel 是一套基于时下最新 Java 技术栈 Spring Boot 3 + Vue 3 开发的前后端分离学习型小说项目，配备保姆级教程手把手教你从零开始开发上线一套生产级别的 Java 系统，由小说门户系统、作家后台管理系统、平台后台管理系统等多个子系统构成。包括小说推荐、作品检索、小说排行榜、小说阅读、小说评论、会员中心、作家专区、充值订阅、新闻发布等功能。",
       "language": "Java",
-      "stars": 5725,
+      "stars": 5726,
       "forks": 1459,
       "topics": [
         "book",
@@ -5117,8 +5117,8 @@
         "springboot"
       ],
       "homepage": "https://novel.xxyopen.com",
-      "updatedAt": "2026-05-23T11:39:42Z",
-      "starredAt": "2026-05-23T11:39:42Z",
+      "updatedAt": "2026-05-24T03:21:43Z",
+      "starredAt": "2026-05-24T03:21:43Z",
       "category": "Frontend"
     },
     {
@@ -5129,7 +5129,7 @@
       "htmlUrl": "https://github.com/666OS/ClashMac",
       "description": "Native Proxy Experience Built for macOS",
       "language": "",
-      "stars": 5721,
+      "stars": 5722,
       "forks": 232,
       "topics": [
         "clash",
@@ -5141,8 +5141,8 @@
         "swiftui"
       ],
       "homepage": "https://clashmac.app",
-      "updatedAt": "2026-05-24T00:08:02Z",
-      "starredAt": "2026-05-24T00:08:02Z",
+      "updatedAt": "2026-05-24T06:00:12Z",
+      "starredAt": "2026-05-24T06:00:12Z",
       "category": "Frontend"
     },
     {
@@ -5174,7 +5174,7 @@
       "description": "Orchestration layer for coding agents (Claude Code, Codex)",
       "language": "TypeScript",
       "stars": 5541,
-      "forks": 599,
+      "forks": 598,
       "topics": [],
       "homepage": "https://1code.dev",
       "updatedAt": "2026-05-23T16:59:03Z",
@@ -5209,7 +5209,7 @@
       "htmlUrl": "https://github.com/code-hike/codehike",
       "description": "Build rich content websites with Markdown and React",
       "language": "TypeScript",
-      "stars": 5361,
+      "stars": 5363,
       "forks": 167,
       "topics": [
         "blog",
@@ -5223,8 +5223,8 @@
         "syntax-highlighting"
       ],
       "homepage": "https://codehike.org",
-      "updatedAt": "2026-05-23T03:04:52Z",
-      "starredAt": "2026-05-23T03:04:52Z",
+      "updatedAt": "2026-05-24T04:52:55Z",
+      "starredAt": "2026-05-24T04:52:55Z",
       "category": "Frontend"
     },
     {
@@ -5255,15 +5255,15 @@
       "htmlUrl": "https://github.com/novicezk/midjourney-proxy",
       "description": "代理 MidJourney 的discord频道，实现api形式调用AI绘图",
       "language": "Java",
-      "stars": 5303,
+      "stars": 5304,
       "forks": 2420,
       "topics": [
         "midjourney",
         "midjourney-api"
       ],
       "homepage": "https://api4midjourney.com",
-      "updatedAt": "2026-05-23T09:16:30Z",
-      "starredAt": "2026-05-23T09:16:30Z",
+      "updatedAt": "2026-05-24T08:03:17Z",
+      "starredAt": "2026-05-24T08:03:17Z",
       "category": "AI"
     },
     {
@@ -5274,12 +5274,12 @@
       "htmlUrl": "https://github.com/StrayMeteor3337/WechatRealFriends",
       "description": "微信好友关系一键检测，基于微信ipad协议，看看有没有朋友偷偷删掉或者拉黑你",
       "language": "JavaScript",
-      "stars": 5256,
+      "stars": 5257,
       "forks": 365,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-23T05:58:24Z",
-      "starredAt": "2026-05-23T05:58:24Z",
+      "updatedAt": "2026-05-24T03:34:18Z",
+      "starredAt": "2026-05-24T03:34:18Z",
       "category": "Backend"
     },
     {
@@ -5313,7 +5313,7 @@
       "htmlUrl": "https://github.com/nanbingxyz/5ire",
       "description": "5ire is a cross-platform desktop AI assistant, MCP client. It compatible with major service providers,  supports local knowledge base and  tools via model context protocol servers .",
       "language": "TypeScript",
-      "stars": 5226,
+      "stars": 5225,
       "forks": 406,
       "topics": [
         "knowledge-base",
@@ -5323,8 +5323,8 @@
         "model-context-protocol"
       ],
       "homepage": "https://5ire.app",
-      "updatedAt": "2026-05-23T20:40:06Z",
-      "starredAt": "2026-05-23T20:40:06Z",
+      "updatedAt": "2026-05-24T02:23:57Z",
+      "starredAt": "2026-05-24T02:23:57Z",
       "category": "AI"
     },
     {
@@ -5335,12 +5335,12 @@
       "htmlUrl": "https://github.com/fmz200/wool_scripts",
       "description": "收集一些Loon、Surge、QuantumultX、ShadowRocket、Egern的配置与去广告规则。",
       "language": "Vim Snippet",
-      "stars": 5107,
-      "forks": 293,
+      "stars": 5108,
+      "forks": 294,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-23T21:27:36Z",
-      "starredAt": "2026-05-23T21:27:36Z",
+      "updatedAt": "2026-05-24T04:25:10Z",
+      "starredAt": "2026-05-24T04:25:10Z",
       "category": "Other"
     },
     {
@@ -5375,12 +5375,12 @@
       "htmlUrl": "https://github.com/Lakr233/Asspp",
       "description": "The App Store for your multi-account eco system.",
       "language": "Swift",
-      "stars": 4949,
+      "stars": 4948,
       "forks": 474,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-23T13:56:46Z",
-      "starredAt": "2026-05-23T13:56:46Z",
+      "updatedAt": "2026-05-24T07:04:22Z",
+      "starredAt": "2026-05-24T07:04:22Z",
       "category": "Mobile"
     },
     {
@@ -5420,8 +5420,8 @@
       "htmlUrl": "https://github.com/nICEnnnnnnnLee/BilibiliDown",
       "description": "(GUI-多平台支持) B站 哔哩哔哩 视频下载器。支持稍后再看、收藏夹、UP主视频批量下载|Bilibili Video Downloader 😳",
       "language": "Java",
-      "stars": 4874,
-      "forks": 425,
+      "stars": 4877,
+      "forks": 426,
       "topics": [
         "bilibili",
         "cookie",
@@ -5430,8 +5430,8 @@
         "video-downloader"
       ],
       "homepage": "http://nICEnnnnnnnLee.github.io/BilibiliDown/",
-      "updatedAt": "2026-05-23T23:55:00Z",
-      "starredAt": "2026-05-23T23:55:00Z",
+      "updatedAt": "2026-05-24T04:54:32Z",
+      "starredAt": "2026-05-24T04:54:32Z",
       "category": "Frontend"
     },
     {
@@ -5458,12 +5458,12 @@
       "htmlUrl": "https://github.com/zhinianboke/xianyu-auto-reply",
       "description": "闲鱼自动回复管理系统是一个基于 Python + FastAPI 开发的自动化客服系统，专为闲鱼平台设计。系统通过 WebSocket 连接闲鱼服务器，实时接收和处理消息，提供智能化的自动回复服务。",
       "language": "TypeScript",
-      "stars": 4668,
-      "forks": 1310,
+      "stars": 4671,
+      "forks": 1311,
       "topics": [],
       "homepage": "https://xy.zhinianboke.com/",
-      "updatedAt": "2026-05-24T01:35:35Z",
-      "starredAt": "2026-05-24T01:35:35Z",
+      "updatedAt": "2026-05-24T05:15:11Z",
+      "starredAt": "2026-05-24T05:15:11Z",
       "category": "Backend"
     },
     {
@@ -5475,7 +5475,7 @@
       "description": "AI 助手全套开源解决方案，自带运营管理后台，开箱即用。集成了 ChatGPT, Azure, ChatGLM,讯飞星火，文心一言等多个平台的大语言模型。支持 MJ AI 绘画，Stable Diffusion AI  绘画，微博热搜等插件工具。采用 Go + Vue3 + element-plus 实现。",
       "language": "Vue",
       "stars": 4643,
-      "forks": 1074,
+      "forks": 1073,
       "topics": [
         "azure",
         "chatgpt",
@@ -5486,8 +5486,8 @@
         "stable-diffusion"
       ],
       "homepage": "https://chat.geekai.me",
-      "updatedAt": "2026-05-22T21:51:21Z",
-      "starredAt": "2026-05-22T21:51:21Z",
+      "updatedAt": "2026-05-24T02:14:43Z",
+      "starredAt": "2026-05-24T02:14:43Z",
       "category": "AI"
     },
     {
@@ -5524,8 +5524,8 @@
       "htmlUrl": "https://github.com/201206030/novel-plus",
       "description": "novel-plus 是一个多端（PC、WAP）阅读 、功能完善的小说 CMS 系统。包括小说推荐、小说检索、小说排行、小说阅读、小说书架、小说评论、小说爬虫、会员中心、作家专区、充值订阅、新闻发布等功能。",
       "language": "Java",
-      "stars": 4602,
-      "forks": 1491,
+      "stars": 4601,
+      "forks": 1490,
       "topics": [
         "book",
         "crawl",
@@ -5534,8 +5534,8 @@
         "spider"
       ],
       "homepage": "https://novel.xxyopen.com",
-      "updatedAt": "2026-05-24T01:05:58Z",
-      "starredAt": "2026-05-24T01:05:58Z",
+      "updatedAt": "2026-05-24T01:54:33Z",
+      "starredAt": "2026-05-24T01:54:33Z",
       "category": "Backend"
     },
     {
@@ -5577,12 +5577,12 @@
       "htmlUrl": "https://github.com/zarazhangrui/codebase-to-course",
       "description": "A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.",
       "language": "CSS",
-      "stars": 4442,
+      "stars": 4444,
       "forks": 469,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-24T00:53:00Z",
-      "starredAt": "2026-05-24T00:53:00Z",
+      "updatedAt": "2026-05-24T07:55:20Z",
+      "starredAt": "2026-05-24T07:55:20Z",
       "category": "Frontend"
     },
     {
@@ -5593,7 +5593,7 @@
       "htmlUrl": "https://github.com/nguyenphutrong/quotio",
       "description": "Stop juggling AI accounts. Quotio is a beautiful native macOS menu bar app that unifies your Claude, Gemini, OpenAI, Qwen, and Antigravity subscriptions – with real-time quota tracking and smart auto-failover for AI coding tools like Claude Code, OpenCode, and Droid.",
       "language": "Swift",
-      "stars": 4420,
+      "stars": 4419,
       "forks": 288,
       "topics": [
         "ai-tools",
@@ -5602,8 +5602,8 @@
         "quota-monitor"
       ],
       "homepage": "https://www.quotio.dev",
-      "updatedAt": "2026-05-23T16:06:43Z",
-      "starredAt": "2026-05-23T16:06:43Z",
+      "updatedAt": "2026-05-24T07:35:20Z",
+      "starredAt": "2026-05-24T07:35:20Z",
       "category": "AI"
     },
     {
@@ -5630,15 +5630,15 @@
       "htmlUrl": "https://github.com/6dylan6/jdpro",
       "description": "",
       "language": "JavaScript",
-      "stars": 4387,
+      "stars": 4389,
       "forks": 605,
       "topics": [
         "crontab-task",
         "qinglong"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T15:57:18Z",
-      "starredAt": "2026-05-23T15:57:18Z",
+      "updatedAt": "2026-05-24T07:25:20Z",
+      "starredAt": "2026-05-24T07:25:20Z",
       "category": "Backend"
     },
     {
@@ -5649,8 +5649,8 @@
       "htmlUrl": "https://github.com/CortexReach/memory-lancedb-pro",
       "description": "Enhanced LanceDB memory plugin for OpenClaw — Hybrid Retrieval (Vector + BM25), Cross-Encoder Rerank, Multi-Scope Isolation, Management CLI",
       "language": "JavaScript",
-      "stars": 4371,
-      "forks": 721,
+      "stars": 4372,
+      "forks": 722,
       "topics": [
         "lancedb",
         "memory",
@@ -5660,8 +5660,8 @@
         "rag"
       ],
       "homepage": "https://youtu.be/bhuGrjuCM_g",
-      "updatedAt": "2026-05-23T22:47:00Z",
-      "starredAt": "2026-05-23T22:47:00Z",
+      "updatedAt": "2026-05-24T06:42:40Z",
+      "starredAt": "2026-05-24T06:42:40Z",
       "category": "AI"
     },
     {
@@ -5672,7 +5672,7 @@
       "htmlUrl": "https://github.com/osfans/trime",
       "description": "同文安卓輸入法平臺3.x/Android-rime/Rime Input Method Engine for Android",
       "language": "Kotlin",
-      "stars": 4309,
+      "stars": 4310,
       "forks": 465,
       "topics": [
         "android",
@@ -5683,8 +5683,8 @@
         "rime"
       ],
       "homepage": "http://osfans.github.io/trime/",
-      "updatedAt": "2026-05-23T16:19:37Z",
-      "starredAt": "2026-05-23T16:19:37Z",
+      "updatedAt": "2026-05-24T06:34:34Z",
+      "starredAt": "2026-05-24T06:34:34Z",
       "category": "Mobile"
     },
     {
@@ -5695,7 +5695,7 @@
       "htmlUrl": "https://github.com/chatpire/chatgpt-web-share",
       "description": "ChatGPT Plus 共享方案。ChatGPT Plus / OpenAI API sharing solution.",
       "language": "Vue",
-      "stars": 4274,
+      "stars": 4273,
       "forks": 655,
       "topics": [
         "chatgpt",
@@ -5706,8 +5706,8 @@
         "vue"
       ],
       "homepage": "https://cws-docs.pages.dev/zh/",
-      "updatedAt": "2026-05-23T15:02:22Z",
-      "starredAt": "2026-05-23T15:02:22Z",
+      "updatedAt": "2026-05-24T04:32:22Z",
+      "starredAt": "2026-05-24T04:32:22Z",
       "category": "AI"
     },
     {
@@ -5734,7 +5734,7 @@
       "htmlUrl": "https://github.com/graphif/project-graph",
       "description": "A node-based visual tool for organizing thoughts and notes in a non-linear way.",
       "language": "TypeScript",
-      "stars": 4090,
+      "stars": 4091,
       "forks": 256,
       "topics": [
         "canvas",
@@ -5752,8 +5752,8 @@
         "vitejs"
       ],
       "homepage": "https://graphif.dev",
-      "updatedAt": "2026-05-23T15:05:40Z",
-      "starredAt": "2026-05-23T15:05:40Z",
+      "updatedAt": "2026-05-24T07:45:56Z",
+      "starredAt": "2026-05-24T07:45:56Z",
       "category": "AI"
     },
     {
@@ -5764,12 +5764,12 @@
       "htmlUrl": "https://github.com/DrDonk/unlocker",
       "description": "VMware macOS utilities",
       "language": "Go",
-      "stars": 4041,
+      "stars": 4042,
       "forks": 542,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-23T12:59:23Z",
-      "starredAt": "2026-05-23T12:59:23Z",
+      "updatedAt": "2026-05-24T07:59:46Z",
+      "starredAt": "2026-05-24T07:59:46Z",
       "category": "Backend"
     },
     {
@@ -5814,7 +5814,7 @@
       "htmlUrl": "https://github.com/Dimillian/CodexMonitor",
       "description": "An app to monitor the (Codex) situation",
       "language": "TypeScript",
-      "stars": 3939,
+      "stars": 3940,
       "forks": 389,
       "topics": [
         "ai",
@@ -5824,8 +5824,8 @@
         "tauri-app"
       ],
       "homepage": "https://www.codexmonitor.app",
-      "updatedAt": "2026-05-23T23:49:25Z",
-      "starredAt": "2026-05-23T23:49:25Z",
+      "updatedAt": "2026-05-24T05:30:11Z",
+      "starredAt": "2026-05-24T05:30:11Z",
       "category": "AI"
     },
     {
@@ -5836,7 +5836,7 @@
       "htmlUrl": "https://github.com/groupultra/telegram-search",
       "description": "🔍 导出并模糊搜索 Telegram 聊天记录 | Export and fuzzy search your Telegram chat history",
       "language": "TypeScript",
-      "stars": 3902,
+      "stars": 3903,
       "forks": 247,
       "topics": [
         "ai",
@@ -5847,8 +5847,8 @@
         "telegram-bot"
       ],
       "homepage": "https://search.lingogram.app",
-      "updatedAt": "2026-05-23T12:39:11Z",
-      "starredAt": "2026-05-23T12:39:11Z",
+      "updatedAt": "2026-05-24T05:46:23Z",
+      "starredAt": "2026-05-24T05:46:23Z",
       "category": "AI"
     },
     {
@@ -5885,7 +5885,7 @@
       "htmlUrl": "https://github.com/huynhsontung/Screenbox",
       "description": "LibVLC-based media player for the Universal Windows Platform",
       "language": "C#",
-      "stars": 3754,
+      "stars": 3755,
       "forks": 168,
       "topics": [
         "csharp",
@@ -5897,8 +5897,8 @@
         "vlc"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-24T00:41:20Z",
-      "starredAt": "2026-05-24T00:41:20Z",
+      "updatedAt": "2026-05-24T08:07:26Z",
+      "starredAt": "2026-05-24T08:07:26Z",
       "category": "Backend"
     },
     {
@@ -5909,7 +5909,7 @@
       "htmlUrl": "https://github.com/icret/EasyImages2.0",
       "description": "简单图床 - 一款功能强大无数据库的图床 2.0版",
       "language": "PHP",
-      "stars": 3736,
+      "stars": 3737,
       "forks": 525,
       "topics": [
         "api",
@@ -5925,8 +5925,8 @@
         "zui"
       ],
       "homepage": "https://png.cm",
-      "updatedAt": "2026-05-22T20:30:11Z",
-      "starredAt": "2026-05-22T20:30:11Z",
+      "updatedAt": "2026-05-24T08:06:46Z",
+      "starredAt": "2026-05-24T08:06:46Z",
       "category": "Frontend"
     },
     {
@@ -5937,7 +5937,7 @@
       "htmlUrl": "https://github.com/badrisnarayanan/antigravity-claude-proxy",
       "description": "Proxy that exposes Antigravity provided claude / gemini models, so we can use them in Claude Code and OpenClaw (Clawdbot)",
       "language": "JavaScript",
-      "stars": 3681,
+      "stars": 3682,
       "forks": 503,
       "topics": [
         "antigravity",
@@ -5951,8 +5951,8 @@
         "proxy"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-24T00:09:54Z",
-      "starredAt": "2026-05-24T00:09:54Z",
+      "updatedAt": "2026-05-24T04:46:15Z",
+      "starredAt": "2026-05-24T04:46:15Z",
       "category": "AI"
     },
     {
@@ -5963,7 +5963,7 @@
       "htmlUrl": "https://github.com/Kuingsmile/PicList",
       "description": "An image upload and manage tool, base on PicGo",
       "language": "Vue",
-      "stars": 3648,
+      "stars": 3649,
       "forks": 151,
       "topics": [
         "alioss",
@@ -5982,8 +5982,8 @@
         "webdav-client"
       ],
       "homepage": "https://piclist.cn",
-      "updatedAt": "2026-05-23T15:16:11Z",
-      "starredAt": "2026-05-23T15:16:11Z",
+      "updatedAt": "2026-05-24T02:22:49Z",
+      "starredAt": "2026-05-24T02:22:49Z",
       "category": "Frontend"
     },
     {
@@ -6044,7 +6044,7 @@
       "description": "✦ Gemini ➜ OpenAI API proxy. Serverless!",
       "language": "JavaScript",
       "stars": 3558,
-      "forks": 5935,
+      "forks": 5934,
       "topics": [
         "chatgpt-api",
         "gemini",
@@ -6139,7 +6139,7 @@
       "htmlUrl": "https://github.com/glitternetwork/pinme",
       "description": "Deploy Your Frontend in a Single Command. Claude Code Skills supported.",
       "language": "TypeScript",
-      "stars": 3513,
+      "stars": 3518,
       "forks": 255,
       "topics": [
         "ai-tools",
@@ -6159,8 +6159,8 @@
         "zero-configuration"
       ],
       "homepage": "https://pinme.eth.limo",
-      "updatedAt": "2026-05-24T01:47:41Z",
-      "starredAt": "2026-05-24T01:47:41Z",
+      "updatedAt": "2026-05-24T07:59:39Z",
+      "starredAt": "2026-05-24T07:59:39Z",
       "category": "AI"
     },
     {
@@ -6193,7 +6193,7 @@
       "htmlUrl": "https://github.com/Ruben2776/PicView",
       "description": "Fast, free and customizable picture viewer",
       "language": "C#",
-      "stars": 3242,
+      "stars": 3243,
       "forks": 175,
       "topics": [
         "avalonia",
@@ -6215,8 +6215,8 @@
         "xaml"
       ],
       "homepage": "https://picview.org",
-      "updatedAt": "2026-05-23T22:19:57Z",
-      "starredAt": "2026-05-23T22:19:57Z",
+      "updatedAt": "2026-05-24T01:55:42Z",
+      "starredAt": "2026-05-24T01:55:42Z",
       "category": "Frontend"
     },
     {
@@ -6231,8 +6231,8 @@
       "forks": 182,
       "topics": [],
       "homepage": "https://yfamilys.com/quantumultx",
-      "updatedAt": "2026-05-23T23:14:32Z",
-      "starredAt": "2026-05-23T23:14:32Z",
+      "updatedAt": "2026-05-24T04:44:13Z",
+      "starredAt": "2026-05-24T04:44:13Z",
       "category": "Backend"
     },
     {
@@ -6270,12 +6270,12 @@
       "htmlUrl": "https://github.com/runjuu/InputSourcePro",
       "description": "Switch and track your input sources with ease ✨",
       "language": "Swift",
-      "stars": 3161,
+      "stars": 3164,
       "forks": 122,
       "topics": [],
       "homepage": "https://inputsource.pro",
-      "updatedAt": "2026-05-23T16:33:51Z",
-      "starredAt": "2026-05-23T16:33:51Z",
+      "updatedAt": "2026-05-24T07:52:28Z",
+      "starredAt": "2026-05-24T07:52:28Z",
       "category": "Mobile"
     },
     {
@@ -6286,7 +6286,7 @@
       "htmlUrl": "https://github.com/AtalayaLabs/OxiCloud",
       "description": "☁️ Ultra-fast, secure & lightweight self-hosted cloud storage — your files, photos, calendars & contacts, all in one place. Built in Rust.",
       "language": "Rust",
-      "stars": 3123,
+      "stars": 3124,
       "forks": 144,
       "topics": [
         "cloud",
@@ -6311,8 +6311,8 @@
         "webdav"
       ],
       "homepage": "https://atalayalabs.github.io/OxiCloud/",
-      "updatedAt": "2026-05-23T14:24:27Z",
-      "starredAt": "2026-05-23T14:24:27Z",
+      "updatedAt": "2026-05-24T03:57:45Z",
+      "starredAt": "2026-05-24T03:57:45Z",
       "category": "AI"
     },
     {
@@ -6323,12 +6323,12 @@
       "htmlUrl": "https://github.com/Emanuele-web04/remodex",
       "description": "Remote Control for Codex.",
       "language": "Swift",
-      "stars": 3101,
+      "stars": 3105,
       "forks": 355,
       "topics": [],
       "homepage": "https://phodex.app",
-      "updatedAt": "2026-05-23T23:50:00Z",
-      "starredAt": "2026-05-23T23:50:00Z",
+      "updatedAt": "2026-05-24T06:51:52Z",
+      "starredAt": "2026-05-24T06:51:52Z",
       "category": "Mobile"
     },
     {
@@ -6339,12 +6339,12 @@
       "htmlUrl": "https://github.com/X1a0He/Adobe-Downloader",
       "description": "macOS Adobe apps download & installer",
       "language": "Swift",
-      "stars": 3087,
+      "stars": 3088,
       "forks": 141,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-22T15:13:35Z",
-      "starredAt": "2026-05-22T15:13:35Z",
+      "updatedAt": "2026-05-24T05:03:12Z",
+      "starredAt": "2026-05-24T05:03:12Z",
       "category": "Mobile"
     },
     {
@@ -6420,8 +6420,8 @@
       "htmlUrl": "https://github.com/SakiRinn/LiveCaptions-Translator",
       "description": "Lightweight and powerful real-time audio/speech translation tool based on Windows LiveCaptions.",
       "language": "C#",
-      "stars": 3003,
-      "forks": 208,
+      "stars": 3006,
+      "forks": 209,
       "topics": [
         "api",
         "api-integration",
@@ -6434,8 +6434,8 @@
         "windows-11"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T22:48:02Z",
-      "starredAt": "2026-05-23T22:48:02Z",
+      "updatedAt": "2026-05-24T08:01:42Z",
+      "starredAt": "2026-05-24T08:01:42Z",
       "category": "Backend"
     },
     {
@@ -6446,15 +6446,15 @@
       "htmlUrl": "https://github.com/liyown/ai-trend-publish",
       "description": "TrendPublish: 全自动 AI 内容生成与发布系统 | 微信公众号自动化 | 多源数据抓取 (Twitter/X、网站) | DeepseekAI、千问、讯飞模型 | 智能内容分析排序 | 定时发布 | 多模板支持 | Node.js | TypeScript | AI 技术趋势跟踪工具",
       "language": "TypeScript",
-      "stars": 2937,
+      "stars": 2939,
       "forks": 406,
       "topics": [
         "ai",
         "weixin"
       ],
       "homepage": "https://liyown.github.io/ai-trend-publish/",
-      "updatedAt": "2026-05-23T08:33:23Z",
-      "starredAt": "2026-05-23T08:33:23Z",
+      "updatedAt": "2026-05-24T04:38:49Z",
+      "starredAt": "2026-05-24T04:38:49Z",
       "category": "AI"
     },
     {
@@ -6517,7 +6517,7 @@
       "htmlUrl": "https://github.com/nickrunning/wechat-selkies",
       "description": "基于Selkies的Linux网页版微信/QQ/Telegram，支持本地中文输入法，支持三方应用，支持AMD64和ARM64。",
       "language": "Python",
-      "stars": 2754,
+      "stars": 2757,
       "forks": 243,
       "topics": [
         "docker",
@@ -6527,8 +6527,8 @@
         "wechat"
       ],
       "homepage": "https://hub.docker.com/r/nickrunning/wechat-selkies",
-      "updatedAt": "2026-05-23T12:34:49Z",
-      "starredAt": "2026-05-23T12:34:49Z",
+      "updatedAt": "2026-05-24T06:09:26Z",
+      "starredAt": "2026-05-24T06:09:26Z",
       "category": "DevOps"
     },
     {
@@ -6539,7 +6539,7 @@
       "htmlUrl": "https://github.com/SeemSeam/claude_codex_bridge",
       "description": "Visible multi-agent CLI teams for Claude, Codex, Gemini, OpenCode, and Droid with project memory and tmux supervision",
       "language": "Python",
-      "stars": 2745,
+      "stars": 2747,
       "forks": 272,
       "topics": [
         "ai-collaboration",
@@ -6558,8 +6558,8 @@
         "terminal"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T19:01:41Z",
-      "starredAt": "2026-05-23T19:01:41Z",
+      "updatedAt": "2026-05-24T06:19:48Z",
+      "starredAt": "2026-05-24T06:19:48Z",
       "category": "AI"
     },
     {
@@ -6570,7 +6570,7 @@
       "htmlUrl": "https://github.com/KiCad/kicad-source-mirror",
       "description": "This is an active mirror of the KiCad development branch, which is hosted at GitLab (updated every time something is pushed). Pull requests on GitHub are not accepted or watched.",
       "language": "C++",
-      "stars": 2721,
+      "stars": 2719,
       "forks": 633,
       "topics": [
         "cad",
@@ -6586,8 +6586,8 @@
         "wxwidgets"
       ],
       "homepage": "https://gitlab.com/kicad/code/kicad",
-      "updatedAt": "2026-05-24T01:33:10Z",
-      "starredAt": "2026-05-24T01:33:10Z",
+      "updatedAt": "2026-05-24T06:12:11Z",
+      "starredAt": "2026-05-24T06:12:11Z",
       "category": "Other"
     },
     {
@@ -6667,12 +6667,12 @@
       "htmlUrl": "https://github.com/QiuChenly/CoreInject",
       "description": "搞快点",
       "language": "HTML",
-      "stars": 2630,
+      "stars": 2631,
       "forks": 116,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-24T01:30:27Z",
-      "starredAt": "2026-05-24T01:30:27Z",
+      "updatedAt": "2026-05-24T05:19:01Z",
+      "starredAt": "2026-05-24T05:19:01Z",
       "category": "Data"
     },
     {
@@ -6683,12 +6683,12 @@
       "htmlUrl": "https://github.com/cita-777/metapi",
       "description": "把你在各处注册的 New API / One API / OneHub / DoneHub / Veloera / AnyRouter / Sub2API 等站点， 汇聚成 一个 API Key、一个入口，自动发现模型、智能路由、成本最优",
       "language": "TypeScript",
-      "stars": 2608,
-      "forks": 383,
+      "stars": 2609,
+      "forks": 384,
       "topics": [],
       "homepage": "http://metapi.cita777.me/",
-      "updatedAt": "2026-05-23T17:47:03Z",
-      "starredAt": "2026-05-23T17:47:03Z",
+      "updatedAt": "2026-05-24T07:29:37Z",
+      "starredAt": "2026-05-24T07:29:37Z",
       "category": "Backend"
     },
     {
@@ -6747,12 +6747,12 @@
       "htmlUrl": "https://github.com/public-clis/twitter-cli",
       "description": "A CLI for Twitter/X — feed, bookmarks, and user timeline in terminal",
       "language": "Python",
-      "stars": 2482,
+      "stars": 2486,
       "forks": 222,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-24T01:02:32Z",
-      "starredAt": "2026-05-24T01:02:32Z",
+      "updatedAt": "2026-05-24T07:48:36Z",
+      "starredAt": "2026-05-24T07:48:36Z",
       "category": "Tooling"
     },
     {
@@ -6855,8 +6855,8 @@
         "websearch"
       ],
       "homepage": "https://ccs.kaitran.ca/",
-      "updatedAt": "2026-05-24T00:05:11Z",
-      "starredAt": "2026-05-24T00:05:11Z",
+      "updatedAt": "2026-05-24T05:32:14Z",
+      "starredAt": "2026-05-24T05:32:14Z",
       "category": "AI"
     },
     {
@@ -6911,7 +6911,7 @@
       "description": "Gmeek is a Blog All in Github",
       "language": "Python",
       "stars": 2334,
-      "forks": 365,
+      "forks": 366,
       "topics": [
         "blog",
         "github-actions",
@@ -6976,7 +6976,7 @@
       "htmlUrl": "https://github.com/ungoogled-software/ungoogled-chromium-windows",
       "description": "Windows packaging for ungoogled-chromium",
       "language": "Python",
-      "stars": 2304,
+      "stars": 2303,
       "forks": 202,
       "topics": [
         "chromium",
@@ -6984,8 +6984,8 @@
         "windows"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T22:21:18Z",
-      "starredAt": "2026-05-23T22:21:18Z",
+      "updatedAt": "2026-05-24T07:23:13Z",
+      "starredAt": "2026-05-24T07:23:13Z",
       "category": "Backend"
     },
     {
@@ -7051,7 +7051,7 @@
       "description": "🔥 Cordys CRM 是新一代开源 AI CRM 系统，融合信息化、数字化与智能化，支持私有化部署，Skills 技能现已上线，全面驱动 OpenClaw AI 助理。",
       "language": "Java",
       "stars": 2218,
-      "forks": 446,
+      "forks": 447,
       "topics": [
         "ai-crm",
         "cordys",
@@ -7063,8 +7063,8 @@
         "salesforce"
       ],
       "homepage": "https://cordys.cn",
-      "updatedAt": "2026-05-23T17:29:40Z",
-      "starredAt": "2026-05-23T17:29:40Z",
+      "updatedAt": "2026-05-24T06:12:25Z",
+      "starredAt": "2026-05-24T06:12:25Z",
       "category": "AI"
     },
     {
@@ -7075,12 +7075,12 @@
       "htmlUrl": "https://github.com/other-blowsnow/n8n-i18n-chinese",
       "description": "n8n 配置多语言",
       "language": "JavaScript",
-      "stars": 2107,
+      "stars": 2108,
       "forks": 250,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-23T02:34:45Z",
-      "starredAt": "2026-05-23T02:34:45Z",
+      "updatedAt": "2026-05-24T03:05:33Z",
+      "starredAt": "2026-05-24T03:05:33Z",
       "category": "Backend"
     },
     {
@@ -7091,12 +7091,12 @@
       "htmlUrl": "https://github.com/WecomTeam/wecom-cli",
       "description": "企业微信开放平台命令行工具 — 让人类和 AI Agent 都能在终端中操作企业微信",
       "language": "Rust",
-      "stars": 2104,
+      "stars": 2106,
       "forks": 149,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-23T08:28:05Z",
-      "starredAt": "2026-05-23T08:28:05Z",
+      "updatedAt": "2026-05-24T03:31:47Z",
+      "starredAt": "2026-05-24T03:31:47Z",
       "category": "AI"
     },
     {
@@ -7108,7 +7108,7 @@
       "description": "PHP开发的宝塔面板第三方云端",
       "language": "Shell",
       "stars": 2067,
-      "forks": 739,
+      "forks": 738,
       "topics": [],
       "homepage": "",
       "updatedAt": "2026-05-20T07:27:04Z",
@@ -7148,8 +7148,8 @@
       "htmlUrl": "https://github.com/miantiao-me/BroadcastChannel",
       "description": "Turn your Telegram Channel into a MicroBlog.",
       "language": "TypeScript",
-      "stars": 2016,
-      "forks": 1023,
+      "stars": 2017,
+      "forks": 1024,
       "topics": [
         "astro",
         "blog",
@@ -7159,8 +7159,8 @@
         "telegram-channel"
       ],
       "homepage": "https://memo.miantiao.me",
-      "updatedAt": "2026-05-23T15:55:08Z",
-      "starredAt": "2026-05-23T15:55:08Z",
+      "updatedAt": "2026-05-24T04:03:10Z",
+      "starredAt": "2026-05-24T04:03:10Z",
       "category": "Frontend"
     },
     {
@@ -7330,7 +7330,7 @@
       "htmlUrl": "https://github.com/B3o/GPTS-Prompt-Collection",
       "description": "收集GPTS的prompt  /   Collect the prompt of GPTS",
       "language": "",
-      "stars": 1793,
+      "stars": 1794,
       "forks": 250,
       "topics": [
         "chatgpt",
@@ -7341,8 +7341,8 @@
         "prompt-engineering"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-19T11:40:27Z",
-      "starredAt": "2026-05-19T11:40:27Z",
+      "updatedAt": "2026-05-24T06:29:41Z",
+      "starredAt": "2026-05-24T06:29:41Z",
       "category": "AI"
     },
     {
@@ -7403,7 +7403,7 @@
       "htmlUrl": "https://github.com/dyphire/mpv-config",
       "description": "本项目为 windows 下 mpv 播放器的配置文件 (This project is the configuration file of mpv player on Windows)",
       "language": "GLSL",
-      "stars": 1717,
+      "stars": 1718,
       "forks": 81,
       "topics": [
         "glsl",
@@ -7414,8 +7414,8 @@
         "mpv-scripts"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T19:37:14Z",
-      "starredAt": "2026-05-23T19:37:14Z",
+      "updatedAt": "2026-05-24T05:21:52Z",
+      "starredAt": "2026-05-24T05:21:52Z",
       "category": "Other"
     },
     {
@@ -7426,12 +7426,12 @@
       "htmlUrl": "https://github.com/hamster1963/nezha-dash",
       "description": "A simple dashboard for nezha.",
       "language": "TypeScript",
-      "stars": 1685,
+      "stars": 1686,
       "forks": 862,
       "topics": [],
       "homepage": "https://nezhadash-docs.buycoffee.top",
-      "updatedAt": "2026-05-23T15:46:00Z",
-      "starredAt": "2026-05-23T15:46:00Z",
+      "updatedAt": "2026-05-24T07:05:40Z",
+      "starredAt": "2026-05-24T07:05:40Z",
       "category": "Frontend"
     },
     {
@@ -7635,8 +7635,8 @@
       "forks": 157,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-23T02:47:51Z",
-      "starredAt": "2026-05-23T02:47:51Z",
+      "updatedAt": "2026-05-24T03:25:33Z",
+      "starredAt": "2026-05-24T03:25:33Z",
       "category": "Backend"
     },
     {
@@ -7922,7 +7922,7 @@
       "htmlUrl": "https://github.com/SUC-DriverOld/MSST-WebUI",
       "description": "A WebUI app for Music-Source-Separation-Training and we packed UVR together!",
       "language": "Python",
-      "stars": 1140,
+      "stars": 1141,
       "forks": 79,
       "topics": [
         "msst",
@@ -7930,8 +7930,8 @@
         "python"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T10:54:18Z",
-      "starredAt": "2026-05-23T10:54:18Z",
+      "updatedAt": "2026-05-24T02:40:02Z",
+      "starredAt": "2026-05-24T02:40:02Z",
       "category": "AI"
     },
     {
@@ -7989,12 +7989,12 @@
       "htmlUrl": "https://github.com/chaogei/Kiro-account-manager",
       "description": "",
       "language": "TypeScript",
-      "stars": 1120,
+      "stars": 1121,
       "forks": 201,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-23T21:36:01Z",
-      "starredAt": "2026-05-23T21:36:01Z",
+      "updatedAt": "2026-05-24T07:51:58Z",
+      "starredAt": "2026-05-24T07:51:58Z",
       "category": "Frontend"
     },
     {
@@ -8140,8 +8140,8 @@
       "htmlUrl": "https://github.com/gitcoffee-os/postbot",
       "description": "PostBot 内容同步助手 一款开源的多平台内容同步分发生产力工具。 支持将文章、笔记、动态、图片、视频、音频等内容，一键同步发布至主流媒体平台。覆盖微信/微博/今日头条/小红书/知乎/百家号/企鹅号/视频号/抖音/快手/哔哩哔哩（B站）等国内主流媒体平台，可轻松扩展兼容 X（Twitter）、Facebook、Instagram、TikTok、YouTube、LinkedIn 等国际媒体平台。",
       "language": "TypeScript",
-      "stars": 1004,
-      "forks": 132,
+      "stars": 1005,
+      "forks": 133,
       "topics": [
         "article",
         "audio",
@@ -8163,8 +8163,8 @@
         "video"
       ],
       "homepage": "",
-      "updatedAt": "2026-05-23T14:26:03Z",
-      "starredAt": "2026-05-23T14:26:03Z",
+      "updatedAt": "2026-05-24T06:57:58Z",
+      "starredAt": "2026-05-24T06:57:58Z",
       "category": "DevOps"
     },
     {
@@ -8191,8 +8191,8 @@
       "htmlUrl": "https://github.com/kenzok8/openwrt_Build",
       "description": "一键多编译固件",
       "language": "Shell",
-      "stars": 957,
-      "forks": 444,
+      "stars": 956,
+      "forks": 445,
       "topics": [
         "immortalwrt",
         "lean",
@@ -8200,8 +8200,8 @@
         "openwrt"
       ],
       "homepage": "https://down.dllkids.xyz/op/firmware/",
-      "updatedAt": "2026-05-21T14:27:10Z",
-      "starredAt": "2026-05-21T14:27:10Z",
+      "updatedAt": "2026-05-24T05:18:32Z",
+      "starredAt": "2026-05-24T05:18:32Z",
       "category": "Frontend"
     },
     {
@@ -8247,6 +8247,22 @@
       "category": "Backend"
     },
     {
+      "id": 919347782,
+      "fullName": "X1a0He/X1a0HeWeChatPlugin",
+      "name": "X1a0HeWeChatPlugin",
+      "owner": "X1a0He",
+      "htmlUrl": "https://github.com/X1a0He/X1a0HeWeChatPlugin",
+      "description": "一个随手写的插件 提供消息防撤回、多开、禁用更新和日志上报等功能。",
+      "language": "",
+      "stars": 919,
+      "forks": 80,
+      "topics": [],
+      "homepage": "",
+      "updatedAt": "2026-05-24T06:54:59Z",
+      "starredAt": "2026-05-24T06:54:59Z",
+      "category": "Tooling"
+    },
+    {
       "id": 215976478,
       "fullName": "develon2015/Youtube-dl-REST",
       "name": "Youtube-dl-REST",
@@ -8254,7 +8270,7 @@
       "htmlUrl": "https://github.com/develon2015/Youtube-dl-REST",
       "description": "Youtube & BiliBili 视频在线解析下载 -- Website for downloading Youtube & BiliBili videos. ",
       "language": "JavaScript",
-      "stars": 920,
+      "stars": 919,
       "forks": 188,
       "topics": [
         "bilibili",
@@ -8266,25 +8282,9 @@
         "yt-dlp"
       ],
       "homepage": "https://y2b.455556.xyz",
-      "updatedAt": "2026-05-23T04:49:27Z",
-      "starredAt": "2026-05-23T04:49:27Z",
+      "updatedAt": "2026-05-24T04:32:18Z",
+      "starredAt": "2026-05-24T04:32:18Z",
       "category": "Backend"
-    },
-    {
-      "id": 919347782,
-      "fullName": "X1a0He/X1a0HeWeChatPlugin",
-      "name": "X1a0HeWeChatPlugin",
-      "owner": "X1a0He",
-      "htmlUrl": "https://github.com/X1a0He/X1a0HeWeChatPlugin",
-      "description": "一个随手写的插件 提供消息防撤回、多开、禁用更新和日志上报等功能。",
-      "language": "",
-      "stars": 917,
-      "forks": 80,
-      "topics": [],
-      "homepage": "",
-      "updatedAt": "2026-05-23T13:28:59Z",
-      "starredAt": "2026-05-23T13:28:59Z",
-      "category": "Tooling"
     },
     {
       "id": 63768051,
@@ -8363,7 +8363,7 @@
       "description": "Mobile app for Chatwoot - React Native",
       "language": "TypeScript",
       "stars": 911,
-      "forks": 465,
+      "forks": 466,
       "topics": [
         "android",
         "chatwoot",
@@ -8430,7 +8430,7 @@
       "description": "📺 一个基于 UptimeRobot API 的在线状态面板 | 站点监测 | 状态检测 | An online status panel based on the UptimeRobot API | UptimeRobot, status, site",
       "language": "Vue",
       "stars": 889,
-      "forks": 622,
+      "forks": 623,
       "topics": [
         "status",
         "status-page"
@@ -8496,7 +8496,7 @@
       "htmlUrl": "https://github.com/geektcp/UeCore",
       "description": "UeCore(Universe Engine Core) is an Open Source MMO RPG Framework World of Warcraft Server Engine (NOT Unreal Engine)",
       "language": "C++",
-      "stars": 831,
+      "stars": 830,
       "forks": 229,
       "topics": [
         "game",
@@ -8515,8 +8515,8 @@
         "wow-server"
       ],
       "homepage": "http://uecore.org",
-      "updatedAt": "2026-05-19T02:33:55Z",
-      "starredAt": "2026-05-19T02:33:55Z",
+      "updatedAt": "2026-05-24T05:21:59Z",
+      "starredAt": "2026-05-24T05:21:59Z",
       "category": "Backend"
     },
     {
@@ -8527,7 +8527,7 @@
       "htmlUrl": "https://github.com/liuxiaopai-ai/raphael-publish",
       "description": "Raphael Publish - 公众号排版大师 | 现代 Markdown 排版引擎",
       "language": "TypeScript",
-      "stars": 811,
+      "stars": 812,
       "forks": 208,
       "topics": [
         "markdown",
@@ -8535,8 +8535,8 @@
         "wechat"
       ],
       "homepage": "https://publish.raphael.app",
-      "updatedAt": "2026-05-23T13:09:04Z",
-      "starredAt": "2026-05-23T13:09:04Z",
+      "updatedAt": "2026-05-24T04:28:45Z",
+      "starredAt": "2026-05-24T04:28:45Z",
       "category": "Frontend"
     },
     {
@@ -8981,6 +8981,28 @@
       "category": "Backend"
     },
     {
+      "id": 1172353905,
+      "fullName": "jackwener/xhs-cli",
+      "name": "xhs-cli",
+      "owner": "jackwener",
+      "htmlUrl": "https://github.com/jackwener/xhs-cli",
+      "description": "小红书命令行工具 — 搜索、阅读、点赞、收藏、评论，全在终端完成 | Xiaohongshu CLI",
+      "language": "Python",
+      "stars": 530,
+      "forks": 52,
+      "topics": [
+        "cli",
+        "python",
+        "redbook",
+        "xhs",
+        "xiaohongshu"
+      ],
+      "homepage": "",
+      "updatedAt": "2026-05-24T07:48:03Z",
+      "starredAt": "2026-05-24T07:48:03Z",
+      "category": "Tooling"
+    },
+    {
       "id": 621265023,
       "fullName": "shfshanyue/wechat-chatgpt",
       "name": "wechat-chatgpt",
@@ -9011,28 +9033,6 @@
       "updatedAt": "2026-04-02T18:30:01Z",
       "starredAt": "2026-04-02T18:30:01Z",
       "category": "Frontend"
-    },
-    {
-      "id": 1172353905,
-      "fullName": "jackwener/xhs-cli",
-      "name": "xhs-cli",
-      "owner": "jackwener",
-      "htmlUrl": "https://github.com/jackwener/xhs-cli",
-      "description": "小红书命令行工具 — 搜索、阅读、点赞、收藏、评论，全在终端完成 | Xiaohongshu CLI",
-      "language": "Python",
-      "stars": 511,
-      "forks": 49,
-      "topics": [
-        "cli",
-        "python",
-        "redbook",
-        "xhs",
-        "xiaohongshu"
-      ],
-      "homepage": "",
-      "updatedAt": "2026-05-24T01:48:30Z",
-      "starredAt": "2026-05-24T01:48:30Z",
-      "category": "Tooling"
     },
     {
       "id": 600637355,
@@ -9135,12 +9135,12 @@
       "htmlUrl": "https://github.com/jingcheng-chen/rhinomcp",
       "description": "RhinoMCP connects Rhino 3D to AI Agent through the Model Context Protocol (MCP)",
       "language": "Python",
-      "stars": 430,
+      "stars": 433,
       "forks": 62,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-23T17:46:25Z",
-      "starredAt": "2026-05-23T17:46:25Z",
+      "updatedAt": "2026-05-24T07:26:12Z",
+      "starredAt": "2026-05-24T07:26:12Z",
       "category": "AI"
     },
     {
@@ -9152,7 +9152,7 @@
       "description": "im system client",
       "language": "JavaScript",
       "stars": 429,
-      "forks": 105,
+      "forks": 104,
       "topics": [],
       "homepage": "",
       "updatedAt": "2026-05-12T14:40:47Z",
@@ -9168,7 +9168,7 @@
       "description": "Hexhub 是一款开源的SSH、SFTP、数据库管理客户端，数据库管理模块目前还在开发之中",
       "language": "",
       "stars": 424,
-      "forks": 79,
+      "forks": 80,
       "topics": [],
       "homepage": "https://hexhub.cn",
       "updatedAt": "2026-05-22T04:59:09Z",
@@ -9299,8 +9299,8 @@
         "windsurf2api"
       ],
       "homepage": "https://docs2.tokens-pool.top",
-      "updatedAt": "2026-05-23T14:54:01Z",
-      "starredAt": "2026-05-23T14:54:01Z",
+      "updatedAt": "2026-05-24T04:28:34Z",
+      "starredAt": "2026-05-24T04:28:34Z",
       "category": "AI"
     },
     {
@@ -9359,12 +9359,12 @@
       "htmlUrl": "https://github.com/OVINC-CN/OpenWebUI",
       "description": "基于 Open WebUI 的增强版：集成计费、支付与企业级用户管理",
       "language": "Python",
-      "stars": 357,
+      "stars": 358,
       "forks": 74,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-21T09:39:11Z",
-      "starredAt": "2026-05-21T09:39:11Z",
+      "updatedAt": "2026-05-24T04:19:17Z",
+      "starredAt": "2026-05-24T04:19:17Z",
       "category": "Frontend"
     },
     {
@@ -10239,12 +10239,12 @@
       "htmlUrl": "https://github.com/Laihiujin/SYNAPSEAUTOMATION",
       "description": "AI矩阵投放/多平台批量发布视频，支持平台「抖音/小红书/快手/视频号/B站」，支持已发布抖音/B站账号的视频数据回收；",
       "language": "Python",
-      "stars": 110,
+      "stars": 111,
       "forks": 31,
       "topics": [],
       "homepage": "",
-      "updatedAt": "2026-05-22T18:32:13Z",
-      "starredAt": "2026-05-22T18:32:13Z",
+      "updatedAt": "2026-05-24T06:51:55Z",
+      "starredAt": "2026-05-24T06:51:55Z",
       "category": "AI"
     },
     {
