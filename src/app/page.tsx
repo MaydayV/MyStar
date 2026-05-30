@@ -1,18 +1,9 @@
-import FavoritesShowcase from "@/components/favorites-showcase";
+import HomePage from "./home-page";
 import { getRepoData, getRepos } from "@/lib/repos";
 
-export default function Home() {
+export default function Page() {
   const data = getRepoData();
   const repos = getRepos();
 
-  return (
-    <main className="app-shell">
-      <FavoritesShowcase
-        repos={repos}
-        categories={data.categories}
-        username={data.username}
-        generatedAt={data.generatedAt}
-      />
-    </main>
-  );
+  return <HomePage repos={repos} username={data.username} />;
 }
