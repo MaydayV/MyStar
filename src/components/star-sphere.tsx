@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useMemo, useState, useEffect, Suspense } from "react";
+import { useRef, useMemo, useState, useEffect, Suspense, useCallback } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import type { StarRepo } from "@/lib/types";
@@ -49,30 +49,17 @@ function roundRect(
   ctx.closePath();
 }
 
-const CAT_COLORS: Record<string, string> = {
-  AI: "#a855f7",
-  Frontend: "#06b6d4",
-  Backend: "#22c55e",
-  Mobile: "#f43f5e",
-  DevOps: "#f97316",
-  Data: "#3b82f6",
-  Tooling: "#64748b",
-  Security: "#ef4444",
-  Other: "#6b7280",
-};
-
 // ═══════════════════════════════════════════════════════════════════
-// Card geometry: proportional to Fibonacci point spacing
+// Card geometry — proportional to Fibonacci point spacing
 // ═══════════════════════════════════════════════════════════════════
 
-/** Average great-circle neighbour distance on Fibonacci sphere */
 function avgNeighbourDist(n: number, r: number): number {
   return r * Math.sqrt((4 * Math.PI) / n);
 }
 
 function getCardDims(n: number, r: number) {
   const avgDist = avgNeighbourDist(n, r);
-  const w = avgDist * 0.82; // 82 % → tight fit, mosaic grout
+  const w = avgDist * 0.94; // 94 % → near-zero gap, mosaic / puzzle fit
   const h = w * 0.36;
   return { w, h, avgDist };
 }
@@ -81,8 +68,8 @@ function getCardDims(n: number, r: number) {
 // Canvas texture — frosted glass card
 // ═══════════════════════════════════════════════════════════════════
 
-const TEX_W = 160;
-const TEX_H = 60;
+const TEX_W = 192;
+const TEX_H = 72;
 
 function createCardTexture(repo: StarRepo): THREE.CanvasTexture {
   if (typeof document === "undefined") return new THREE.CanvasTexture();
@@ -90,35 +77,29 @@ function createCardTexture(repo: StarRepo): THREE.CanvasTexture {
   canvas.width = TEX_W;
   canvas.height = TEX_H;
   const ctx = canvas.getContext("2d")!;
-  const pad = 6;
+  const pad = 7;
   const langColor = getLangColor(repo.language);
-  const catColor = CAT_COLORS[repo.category] || "#6b7280";
 
   // ── Glass bg ──
-  roundRect(ctx, pad, pad, TEX_W - pad * 2, TEX_H - pad * 2, 5);
+  roundRect(ctx, pad, pad, TEX_W - pad * 2, TEX_H - pad * 2, 6);
   ctx.fillStyle = "rgba(12, 16, 38, 0.85)";
   ctx.fill();
 
   // ── Border ──
-  ctx.strokeStyle = "rgba(255,255,255,0.09)";
-  ctx.lineWidth = 0.8;
+  ctx.strokeStyle = "rgba(255,255,255,0.08)";
+  ctx.lineWidth = 0.7;
   ctx.stroke();
-
-  // ── Category accent left bar ──
-  ctx.fillStyle = catColor;
-  roundRect(ctx, pad, pad, 3, TEX_H - pad * 2, 1.5);
-  ctx.fill();
 
   // ── Repo name ──
   const name =
-    repo.name.length > 22 ? repo.name.slice(0, 21) + "\u2026" : repo.name;
+    repo.name.length > 24 ? repo.name.slice(0, 23) + "\u2026" : repo.name;
   ctx.fillStyle = "#e2e8f0";
-  ctx.font = "600 13px system-ui, -apple-system, sans-serif";
-  ctx.fillText(name, pad + 12, pad + 26);
+  ctx.font = "600 14px system-ui, -apple-system, sans-serif";
+  ctx.fillText(name, pad + 12, pad + 30);
 
   // ── Language dot + star count ──
   ctx.beginPath();
-  ctx.arc(pad + 14, pad + 42, 3.5, 0, Math.PI * 2);
+  ctx.arc(pad + 14, pad + 48, 4, 0, Math.PI * 2);
   ctx.fillStyle = langColor;
   ctx.fill();
 
@@ -127,11 +108,11 @@ function createCardTexture(repo: StarRepo): THREE.CanvasTexture {
       ? `${(repo.stars / 1000).toFixed(1)}k`
       : String(repo.stars);
   ctx.fillStyle = "rgba(148,163,184,0.65)";
-  ctx.font = "10px system-ui, -apple-system, sans-serif";
+  ctx.font = "11px system-ui, -apple-system, sans-serif";
   ctx.fillText(
     `${repo.language || "\u2014"}  \u2605${starCount}`,
-    pad + 22,
-    pad + 46,
+    pad + 23,
+    pad + 53,
   );
 
   const tex = new THREE.CanvasTexture(canvas);
@@ -142,7 +123,7 @@ function createCardTexture(repo: StarRepo): THREE.CanvasTexture {
 }
 
 // ═══════════════════════════════════════════════════════════════════
-// Single card — flat like a sticker on a globe
+// Single card — flat sticker, no hover glow
 // ═══════════════════════════════════════════════════════════════════
 
 function RepoCard({
@@ -162,7 +143,6 @@ function RepoCard({
   const [hovered, setHover] = useState(false);
   const texture = useMemo(() => createCardTexture(repo), [repo]);
 
-  // Align plane normal → radial direction (tangent to sphere surface)
   const quat = useMemo(
     () =>
       new THREE.Quaternion().setFromUnitVectors(
@@ -172,38 +152,16 @@ function RepoCard({
     [position],
   );
 
-  // Outline material (only visible on hover)
-  const outlineMat = useMemo(
-    () =>
-      new THREE.MeshBasicMaterial({
-        color: CAT_COLORS[repo.category] || "#6b7280",
-        transparent: true,
-        opacity: 0,
-        side: THREE.FrontSide,
-        depthTest: true,
-        depthWrite: false,
-      }),
-    [],
+  const handleClick = useCallback(
+    (e: THREE.Event) => {
+      e.stopPropagation();
+      onClick(repo.htmlUrl);
+    },
+    [onClick, repo.htmlUrl],
   );
-
-  useEffect(() => {
-    outlineMat.opacity = hovered ? 0.28 : 0;
-    outlineMat.needsUpdate = true;
-  }, [hovered, outlineMat]);
 
   return (
     <group position={position} quaternion={quat}>
-      {/* Outline — behind card in local z, raycast disabled */}
-      <mesh
-        material={outlineMat}
-        position={[0, 0, -0.005]}
-        raycast={() => null}
-        scale={hovered ? [1.05, 1.05, 1] : [1, 1, 1]}
-      >
-        <planeGeometry args={[cardW * 1.12, cardH * 1.12]} />
-      </mesh>
-
-      {/* Card face */}
       <mesh
         ref={meshRef}
         onPointerOver={(e) => {
@@ -215,11 +173,8 @@ function RepoCard({
           document.body.style.cursor = "";
           setHover(false);
         }}
-        onClick={(e) => {
-          e.stopPropagation();
-          onClick(repo.htmlUrl);
-        }}
-        scale={hovered ? [1.04, 1.04, 1] : [1, 1, 1]}
+        onClick={handleClick}
+        scale={hovered ? [1.06, 1.06, 1] : [1, 1, 1]}
       >
         <planeGeometry args={[cardW, cardH]} />
         <meshBasicMaterial
@@ -265,7 +220,7 @@ function Particles({ count = 400 }: { count?: number }) {
 }
 
 // ═══════════════════════════════════════════════════════════════════
-// Sphere group
+// Sphere group — with pause (spacebar / right-click)
 // ═══════════════════════════════════════════════════════════════════
 
 function SphereGroup({
@@ -280,6 +235,7 @@ function SphereGroup({
   const pointer = useRef({ x: 0, y: 0, active: false });
   const targetRot = useRef({ x: 0, y: 0 });
   const { size } = useThree();
+  const pausedRef = useRef(false);
 
   // ── Responsive radius ──
   const radius = useMemo(() => {
@@ -288,7 +244,6 @@ function SphereGroup({
     return Math.max(clamped, 2.5);
   }, [size.width, size.height]);
 
-  // ── Card size = 70 % of average neighbour distance (no overlap) ──
   const { w: cardW, h: cardH } = useMemo(
     () => getCardDims(repos.length, radius),
     [repos.length, radius],
@@ -317,6 +272,27 @@ function SphereGroup({
     };
   }, [size]);
 
+  // ── Pause toggles: spacebar & right-click ──
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+      if (e.code === "Space") {
+        e.preventDefault();
+        pausedRef.current = !pausedRef.current;
+      }
+    };
+    const onCtx = (e: MouseEvent) => {
+      e.preventDefault();
+      pausedRef.current = !pausedRef.current;
+    };
+    window.addEventListener("keydown", onKey);
+    window.addEventListener("contextmenu", onCtx);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      window.removeEventListener("contextmenu", onCtx);
+    };
+  }, []);
+
   // ── Rotation ──
   useFrame((_, delta) => {
     const g = groupRef.current;
@@ -324,10 +300,12 @@ function SphereGroup({
 
     const { x, y, active } = pointer.current;
 
-    if (!active) {
-      autoAngle.current += delta * 0.25;
-      g.rotation.y += (autoAngle.current - g.rotation.y) * 0.04;
-      g.rotation.x += (0 - g.rotation.x) * 0.04;
+    if (!active || pausedRef.current) {
+      if (!pausedRef.current) {
+        autoAngle.current += delta * 0.25;
+        g.rotation.y += (autoAngle.current - g.rotation.y) * 0.04;
+        g.rotation.x += (0 - g.rotation.x) * 0.04;
+      }
       return;
     }
 
