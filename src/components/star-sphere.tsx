@@ -66,7 +66,7 @@ function RepoCard({
       <Html
         transform
         center
-        distanceFactor={12}
+        distanceFactor={16}
         occlude={false}
         style={{ pointerEvents: "auto" }}
       >
@@ -80,27 +80,27 @@ function RepoCard({
           style={{
             display: "flex",
             alignItems: "center",
-            gap: 6,
+            gap: 5,
             background: hovered
-              ? "rgba(30, 41, 59, 0.88)"
-              : "rgba(15, 23, 42, 0.62)",
-            backdropFilter: "blur(8px) saturate(100%)",
-            WebkitBackdropFilter: "blur(8px) saturate(100%)",
+              ? "rgba(30, 41, 59, 0.85)"
+              : "rgba(10, 18, 32, 0.55)",
+            backdropFilter: "blur(6px) saturate(80%)",
+            WebkitBackdropFilter: "blur(6px) saturate(80%)",
             border: `1px solid ${
-              hovered ? hexToRgba(color, 0.45) : "rgba(148, 163, 184, 0.08)"
+              hovered ? hexToRgba(color, 0.4) : "rgba(148, 163, 184, 0.06)"
             }`,
-            borderLeft: `3px solid ${color}`,
-            borderRadius: "6px",
-            padding: "4px 10px 4px 8px",
+            borderLeft: `2px solid ${color}`,
+            borderRadius: "5px",
+            padding: "3px 8px 3px 6px",
             width: "fit-content",
-            maxWidth: "140px",
+            maxWidth: "110px",
             whiteSpace: "nowrap",
             cursor: "pointer",
             transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
-            transform: hovered ? "scale(1.12)" : "scale(1)",
+            transform: hovered ? "scale(1.15)" : "scale(1)",
             boxShadow: hovered
-              ? `0 0 16px ${hexToRgba(color, 0.3)}, 0 2px 16px rgba(0,0,0,0.4)`
-              : "0 1px 8px rgba(0,0,0,0.25)",
+              ? `0 0 12px ${hexToRgba(color, 0.25)}, 0 2px 12px rgba(0,0,0,0.35)`
+              : "0 1px 4px rgba(0,0,0,0.2)",
             fontFamily:
               "'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif",
             userSelect: "none",
