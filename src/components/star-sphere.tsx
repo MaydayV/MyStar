@@ -65,7 +65,7 @@ function getCardDims(n: number, r: number) {
 }
 
 // ═══════════════════════════════════════════════════════════════════
-// Canvas texture — frosted glass card
+// Canvas texture — frosted glass card with reflection
 // ═══════════════════════════════════════════════════════════════════
 
 const TEX_W = 192;
@@ -80,26 +80,47 @@ function createCardTexture(repo: StarRepo): THREE.CanvasTexture {
   const pad = 7;
   const langColor = getLangColor(repo.language);
 
-  // ── Glass bg ──
+  // ── Glass body — gradient from lighter top-left to darker bottom-right ──
+  const grad = ctx.createLinearGradient(pad, pad, TEX_W - pad, TEX_H - pad);
+  grad.addColorStop(0, "rgba(30, 41, 82, 0.72)");
+  grad.addColorStop(0.35, "rgba(14, 18, 42, 0.84)");
+  grad.addColorStop(1, "rgba(6, 8, 24, 0.92)");
   roundRect(ctx, pad, pad, TEX_W - pad * 2, TEX_H - pad * 2, 6);
-  ctx.fillStyle = "rgba(12, 16, 38, 0.85)";
+  ctx.fillStyle = grad;
   ctx.fill();
 
-  // ── Border ──
-  ctx.strokeStyle = "rgba(255,255,255,0.08)";
-  ctx.lineWidth = 0.7;
+  // ── Glass border — white, low opacity ──
+  ctx.strokeStyle = "rgba(255, 255, 255, 0.12)";
+  ctx.lineWidth = 0.8;
   ctx.stroke();
+
+  // ── Top glass reflection / shine ──
+  ctx.fillStyle = "rgba(255, 255, 255, 0.05)";
+  roundRect(
+    ctx,
+    pad + 3,
+    pad + 2,
+    TEX_W - pad * 2 - 6,
+    (TEX_H - pad * 2) * 0.45,
+    4,
+  );
+  ctx.fill();
+
+  // ── Subtle inner shadow (bottom edge) ──
+  ctx.fillStyle = "rgba(0, 0, 0, 0.12)";
+  roundRect(ctx, pad + 2, TEX_H - pad - 8, TEX_W - pad * 2 - 4, 6, 3);
+  ctx.fill();
 
   // ── Repo name ──
   const name =
     repo.name.length > 24 ? repo.name.slice(0, 23) + "\u2026" : repo.name;
   ctx.fillStyle = "#e2e8f0";
   ctx.font = "600 14px system-ui, -apple-system, sans-serif";
-  ctx.fillText(name, pad + 12, pad + 30);
+  ctx.fillText(name, pad + 14, pad + 30);
 
   // ── Language dot + star count ──
   ctx.beginPath();
-  ctx.arc(pad + 14, pad + 48, 4, 0, Math.PI * 2);
+  ctx.arc(pad + 16, pad + 48, 4, 0, Math.PI * 2);
   ctx.fillStyle = langColor;
   ctx.fill();
 
@@ -107,11 +128,11 @@ function createCardTexture(repo: StarRepo): THREE.CanvasTexture {
     repo.stars >= 1000
       ? `${(repo.stars / 1000).toFixed(1)}k`
       : String(repo.stars);
-  ctx.fillStyle = "rgba(148,163,184,0.65)";
+  ctx.fillStyle = "rgba(148,163,184,0.6)";
   ctx.font = "11px system-ui, -apple-system, sans-serif";
   ctx.fillText(
     `${repo.language || "\u2014"}  \u2605${starCount}`,
-    pad + 23,
+    pad + 25,
     pad + 53,
   );
 
@@ -123,7 +144,7 @@ function createCardTexture(repo: StarRepo): THREE.CanvasTexture {
 }
 
 // ═══════════════════════════════════════════════════════════════════
-// Single card — flat sticker, no hover glow
+// Single card — flat sticker, no hover glow, frosted glass texture
 // ═══════════════════════════════════════════════════════════════════
 
 function RepoCard({
@@ -153,7 +174,7 @@ function RepoCard({
   );
 
   const handleClick = useCallback(
-    (e: THREE.Event) => {
+    (e: any) => {
       e.stopPropagation();
       onClick(repo.htmlUrl);
     },
@@ -220,7 +241,7 @@ function Particles({ count = 400 }: { count?: number }) {
 }
 
 // ═══════════════════════════════════════════════════════════════════
-// Sphere group — with pause (spacebar / right-click)
+// Sphere group — slow edges + pause (spacebar / right-click)
 // ═══════════════════════════════════════════════════════════════════
 
 function SphereGroup({
@@ -293,7 +314,7 @@ function SphereGroup({
     };
   }, []);
 
-  // ── Rotation ──
+  // ── Rotation — gentle speed, even at screen edges ──
   useFrame((_, delta) => {
     const g = groupRef.current;
     if (!g) return;
@@ -312,14 +333,15 @@ function SphereGroup({
     autoAngle.current = g.rotation.y;
 
     const dist = Math.sqrt(x * x + y * y);
+    // Strong sub-linear damping — rises slowly, caps low so edges don't spin too fast
     const speed =
-      dist < 0.08 ? 0 : Math.min(Math.pow(dist, 0.55) * 0.7, 0.9);
+      dist < 0.06 ? 0 : Math.min(Math.pow(dist, 0.35) * 0.45, 0.5);
 
     targetRot.current.y += x * delta * speed;
     targetRot.current.x += y * delta * speed * 0.7;
 
-    g.rotation.y += (targetRot.current.y - g.rotation.y) * 0.06;
-    g.rotation.x += (targetRot.current.x - g.rotation.x) * 0.06;
+    g.rotation.y += (targetRot.current.y - g.rotation.y) * 0.07;
+    g.rotation.x += (targetRot.current.x - g.rotation.x) * 0.07;
   });
 
   return (
