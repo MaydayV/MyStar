@@ -239,3 +239,105 @@ body {
     display: none;
   }
 }
+
+/* ────────────────────────────────────────────────────────────────
+   Globe container — full viewport, behind floating bar
+   ──────────────────────────────────────────────────────────────── */
+.globe-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Ensure the globe canvas fills the container */
+.globe-container canvas {
+  display: block;
+}
+
+/* ────────────────────────────────────────────────────────────────
+   Frosted glass repo cards (DOM elements on globe surface)
+   ──────────────────────────────────────────────────────────────── */
+.globe-card {
+  position: absolute;
+  /* Globe.gl positions these via CSS transforms — no manual pos */
+  pointer-events: auto;
+  cursor: pointer;
+  transition:
+    opacity 0.25s ease,
+    filter 0.25s ease;
+  /* Prevent text selection */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.globe-card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 3px 7px;
+  border-radius: 5px;
+  /* Frosted glass */
+  background: rgba(8, 12, 24, 0.62);
+  backdrop-filter: blur(10px) saturate(160%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  /* Subtle shadow for depth */
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  white-space: nowrap;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Hover — lift + brighten */
+.globe-card:hover .globe-card-inner {
+  background: rgba(15, 23, 45, 0.85);
+  border-color: rgba(148, 163, 184, 0.35);
+  box-shadow:
+    0 2px 12px rgba(79, 143, 255, 0.2),
+    0 1px 3px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transform: scale(1.12);
+  z-index: 10;
+}
+
+/* Repo name */
+.globe-card-name {
+  font-size: 9px;
+  font-weight: 600;
+  color: #e2e8f0;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+/* Meta row (language dot + name + stars) */
+.globe-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 7.5px;
+  color: rgba(148, 163, 184, 0.65);
+  line-height: 1.2;
+}
+
+.globe-card-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.globe-card-lang {
+  opacity: 0.8;
+}
+
+.globe-card-stars {
+  margin-left: 1px;
+  opacity: 0.7;
+}
+
