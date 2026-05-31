@@ -72,7 +72,7 @@ function avgNeighbourDist(n: number, r: number): number {
 
 function getCardDims(n: number, r: number) {
   const avgDist = avgNeighbourDist(n, r);
-  const w = avgDist * 0.7; // 70 % → leaves a tiny gap like mosaic grout
+  const w = avgDist * 0.82; // 82 % → tight fit, mosaic grout
   const h = w * 0.36;
   return { w, h, avgDist };
 }
