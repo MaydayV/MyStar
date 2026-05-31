@@ -1,11 +1,11 @@
 "use client";
 
-import { useRef, useMemo, useState, useEffect, Suspense } from "react";
+import { useRef, useMemo, useCallback, useState, useEffect, Suspense } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { Html, Billboard } from "@react-three/drei";
+import { Text, Billboard } from "@react-three/drei";
 import * as THREE from "three";
 import type { StarRepo } from "@/lib/types";
-import { getLangColor } from "@/lib/colors";
+import { getLangColor, getGlowColor } from "@/lib/colors";
 
 // ── Fibonacci sphere ──────────────────────────────────────────────
 function fibonacciSphere(n: number, r: number): THREE.Vector3[] {
@@ -20,129 +20,38 @@ function fibonacciSphere(n: number, r: number): THREE.Vector3[] {
   return pts;
 }
 
-// ── Helpers ───────────────────────────────────────────────────────
-function formatStars(n: number): string {
-  if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, "") + "k";
-  return String(n);
-}
-
-function hexToRgba(hex: string, alpha: number): string {
-  const h = hex.replace("#", "");
-  const r = parseInt(h.slice(0, 2), 16);
-  const g = parseInt(h.slice(2, 4), 16);
-  const b = parseInt(h.slice(4, 6), 16);
-  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-}
-
-// ── Compact frosted-glass repo label ───────────────────────────────
-function RepoCard({
+// ── Single repo label (billboard text) ────────────────────────────
+function RepoLabel({
   repo,
   position,
   onClick,
-  isOverCardRef,
 }: {
   repo: StarRepo;
   position: THREE.Vector3;
   onClick: (url: string) => void;
-  isOverCardRef: React.MutableRefObject<boolean>;
 }) {
   const [hovered, setHover] = useState(false);
   const color = getLangColor(repo.language);
-  const displayName = repo.name.length > 16 ? repo.name.slice(0, 15) + "\u2026" : repo.name;
-
-  const handlePointerOver = (e: React.PointerEvent) => {
-    e.stopPropagation();
-    isOverCardRef.current = true;
-    setHover(true);
-  };
-
-  const handlePointerOut = () => {
-    isOverCardRef.current = false;
-    setHover(false);
-  };
+  const displayName = repo.name.length > 20 ? repo.name.slice(0, 19) + "…" : repo.name;
+  const starWeight = Math.min(Math.log10(repo.stars + 1) * 0.4, 1.2); // 0 .. 1.2
 
   return (
     <Billboard position={position}>
-      <Html
-        transform
-        center
-        distanceFactor={6}
-        occlude={false}
-        style={{ pointerEvents: "auto" }}
+      <Text
+        fontSize={hovered ? 0.13 : 0.07 + starWeight * 0.04}
+        color={hovered ? "#ffffff" : color}
+        anchorX="center"
+        anchorY="middle"
+        fillOpacity={hovered ? 1 : 0.72}
+        onPointerOver={() => setHover(true)}
+        onPointerOut={() => setHover(false)}
+        onClick={(e) => {
+          e.stopPropagation();
+          onClick(repo.htmlUrl);
+        }}
       >
-        <div
-          onPointerOver={handlePointerOver}
-          onPointerOut={handlePointerOut}
-          onClick={(e) => {
-            e.stopPropagation();
-            onClick(repo.htmlUrl);
-          }}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 5,
-            background: hovered
-              ? "rgba(30, 41, 59, 0.85)"
-              : "rgba(10, 18, 32, 0.55)",
-            backdropFilter: "blur(6px) saturate(80%)",
-            WebkitBackdropFilter: "blur(6px) saturate(80%)",
-            border: `1px solid ${
-              hovered ? hexToRgba(color, 0.4) : "rgba(148, 163, 184, 0.06)"
-            }`,
-            borderLeft: `2px solid ${color}`,
-            borderRadius: "5px",
-            padding: "3px 8px 3px 6px",
-            width: "fit-content",
-            maxWidth: "90px",
-            whiteSpace: "nowrap",
-            cursor: "pointer",
-            transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
-            transform: hovered ? "scale(1.15)" : "scale(1)",
-            boxShadow: hovered
-              ? `0 0 12px ${hexToRgba(color, 0.25)}, 0 2px 12px rgba(0,0,0,0.35)`
-              : "0 1px 4px rgba(0,0,0,0.2)",
-            fontFamily:
-              "'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif",
-            userSelect: "none",
-          }}
-        >
-          {/* Language dot */}
-          <span
-            style={{
-              width: 6,
-              height: 6,
-              borderRadius: "50%",
-              background: color,
-              flexShrink: 0,
-            }}
-          />
-          {/* Repo name */}
-          <span
-            style={{
-              fontSize: 10,
-              fontWeight: 600,
-              color: "#e2e8f0",
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-            }}
-          >
-            {displayName}
-          </span>
-          {/* Stars */}
-          {hovered && (
-            <span
-              style={{
-                fontSize: 9,
-                color: "#fbbf24",
-                flexShrink: 0,
-                marginLeft: 2,
-              }}
-            >
-              {"\u2B50"}{formatStars(repo.stars)}
-            </span>
-          )}
-        </div>
-      </Html>
+        {displayName}
+      </Text>
     </Billboard>
   );
 }
@@ -181,7 +90,6 @@ function SphereGroup({
   const autoAngle = useRef(0);
   const pointer = useRef({ x: 0, y: 0, active: false });
   const targetRot = useRef({ x: 0, y: 0 });
-  const isOverCard = useRef(false);
   const { size } = useThree();
 
   const radius = 5.5;
@@ -211,8 +119,8 @@ function SphereGroup({
 
     const { x, y, active } = pointer.current;
 
-    // Pause rotation while hovering a card
-    if (!active || isOverCard.current) {
+    if (!active) {
+      // Gentle auto-rotation
       autoAngle.current += delta * 0.25;
       g.rotation.y += (autoAngle.current - g.rotation.y) * 0.04;
       g.rotation.x += (0 - g.rotation.x) * 0.04;
@@ -235,13 +143,7 @@ function SphereGroup({
   return (
     <group ref={groupRef}>
       {repos.map((repo, i) => (
-        <RepoCard
-          key={repo.id}
-          repo={repo}
-          position={positions[i]}
-          onClick={onRepoClick}
-          isOverCardRef={isOverCard}
-        />
+        <RepoLabel key={repo.id} repo={repo} position={positions[i]} onClick={onRepoClick} />
       ))}
     </group>
   );
