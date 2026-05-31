@@ -2,6 +2,7 @@
 
 import { useRef, useMemo, useState, useEffect, Suspense, useCallback } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Text } from "@react-three/drei";
 import * as THREE from "three";
 import type { StarRepo } from "@/lib/types";
 import { getLangColor } from "@/lib/colors";
@@ -28,27 +29,6 @@ function fibonacciSphere(n: number, r: number): THREE.Vector3[] {
   return pts;
 }
 
-function roundRect(
-  ctx: CanvasRenderingContext2D,
-  x: number,
-  y: number,
-  w: number,
-  h: number,
-  r: number,
-) {
-  ctx.beginPath();
-  ctx.moveTo(x + r, y);
-  ctx.lineTo(x + w - r, y);
-  ctx.arcTo(x + w, y, x + w, y + r, r);
-  ctx.lineTo(x + w, y + h - r);
-  ctx.arcTo(x + w, y + h, x + w - r, y + h, r);
-  ctx.lineTo(x + r, y + h);
-  ctx.arcTo(x, y + h, x, y + h - r, r);
-  ctx.lineTo(x, y + r);
-  ctx.arcTo(x, y, x + r, y, r);
-  ctx.closePath();
-}
-
 // ═══════════════════════════════════════════════════════════════════
 // Card geometry — proportional to Fibonacci point spacing
 // ═══════════════════════════════════════════════════════════════════
@@ -59,92 +39,13 @@ function avgNeighbourDist(n: number, r: number): number {
 
 function getCardDims(n: number, r: number) {
   const avgDist = avgNeighbourDist(n, r);
-  const w = avgDist * 0.94; // 94 % → near-zero gap, mosaic / puzzle fit
+  const w = avgDist * 0.94;
   const h = w * 0.36;
   return { w, h, avgDist };
 }
 
 // ═══════════════════════════════════════════════════════════════════
-// Canvas texture — frosted glass card with reflection
-// ═══════════════════════════════════════════════════════════════════
-
-const TEX_W = 192;
-const TEX_H = 72;
-
-function createCardTexture(repo: StarRepo): THREE.CanvasTexture {
-  if (typeof document === "undefined") return new THREE.CanvasTexture();
-  const canvas = document.createElement("canvas");
-  canvas.width = TEX_W;
-  canvas.height = TEX_H;
-  const ctx = canvas.getContext("2d")!;
-  const pad = 7;
-  const langColor = getLangColor(repo.language);
-
-  // ── Glass body — gradient from lighter top-left to darker bottom-right ──
-  const grad = ctx.createLinearGradient(pad, pad, TEX_W - pad, TEX_H - pad);
-  grad.addColorStop(0, "rgba(30, 41, 82, 0.72)");
-  grad.addColorStop(0.35, "rgba(14, 18, 42, 0.84)");
-  grad.addColorStop(1, "rgba(6, 8, 24, 0.92)");
-  roundRect(ctx, pad, pad, TEX_W - pad * 2, TEX_H - pad * 2, 6);
-  ctx.fillStyle = grad;
-  ctx.fill();
-
-  // ── Glass border — white, low opacity ──
-  ctx.strokeStyle = "rgba(255, 255, 255, 0.12)";
-  ctx.lineWidth = 0.8;
-  ctx.stroke();
-
-  // ── Top glass reflection / shine ──
-  ctx.fillStyle = "rgba(255, 255, 255, 0.05)";
-  roundRect(
-    ctx,
-    pad + 3,
-    pad + 2,
-    TEX_W - pad * 2 - 6,
-    (TEX_H - pad * 2) * 0.45,
-    4,
-  );
-  ctx.fill();
-
-  // ── Subtle inner shadow (bottom edge) ──
-  ctx.fillStyle = "rgba(0, 0, 0, 0.12)";
-  roundRect(ctx, pad + 2, TEX_H - pad - 8, TEX_W - pad * 2 - 4, 6, 3);
-  ctx.fill();
-
-  // ── Repo name ──
-  const name =
-    repo.name.length > 24 ? repo.name.slice(0, 23) + "\u2026" : repo.name;
-  ctx.fillStyle = "#e2e8f0";
-  ctx.font = "600 14px system-ui, -apple-system, sans-serif";
-  ctx.fillText(name, pad + 14, pad + 30);
-
-  // ── Language dot + star count ──
-  ctx.beginPath();
-  ctx.arc(pad + 16, pad + 48, 4, 0, Math.PI * 2);
-  ctx.fillStyle = langColor;
-  ctx.fill();
-
-  const starCount =
-    repo.stars >= 1000
-      ? `${(repo.stars / 1000).toFixed(1)}k`
-      : String(repo.stars);
-  ctx.fillStyle = "rgba(148,163,184,0.6)";
-  ctx.font = "11px system-ui, -apple-system, sans-serif";
-  ctx.fillText(
-    `${repo.language || "\u2014"}  \u2605${starCount}`,
-    pad + 25,
-    pad + 53,
-  );
-
-  const tex = new THREE.CanvasTexture(canvas);
-  tex.minFilter = THREE.LinearFilter;
-  tex.magFilter = THREE.LinearFilter;
-  tex.colorSpace = THREE.SRGBColorSpace;
-  return tex;
-}
-
-// ═══════════════════════════════════════════════════════════════════
-// Single card — flat sticker, no hover glow, frosted glass texture
+// Single card — clean puzzle tile
 // ═══════════════════════════════════════════════════════════════════
 
 function RepoCard({
@@ -160,9 +61,8 @@ function RepoCard({
   cardW: number;
   cardH: number;
 }) {
-  const meshRef = useRef<THREE.Mesh>(null);
   const [hovered, setHover] = useState(false);
-  const texture = useMemo(() => createCardTexture(repo), [repo]);
+  const langColor = getLangColor(repo.language);
 
   const quat = useMemo(
     () =>
@@ -173,37 +73,89 @@ function RepoCard({
     [position],
   );
 
-  const handleClick = useCallback(
-    (e: any) => {
-      e.stopPropagation();
-      onClick(repo.htmlUrl);
-    },
-    [onClick, repo.htmlUrl],
-  );
+  const starLabel = useMemo(() => {
+    return repo.stars >= 1000
+      ? `${(repo.stars / 1000).toFixed(1)}k`
+      : String(repo.stars);
+  }, [repo.stars]);
+
+  const displayName = useMemo(() => {
+    return repo.name.length > 26
+      ? repo.name.slice(0, 25) + "\u2026"
+      : repo.name;
+  }, [repo.name]);
+
+  // Font size scales with card height — keeps text proportional
+  const titleSize = cardH * 0.38;
+  const metaSize = cardH * 0.30;
+  const langDotR = metaSize * 0.55;
 
   return (
-    <group position={position} quaternion={quat}>
-      <mesh
-        ref={meshRef}
-        onPointerOver={(e) => {
-          e.stopPropagation();
-          document.body.style.cursor = "pointer";
-          setHover(true);
-        }}
-        onPointerOut={() => {
-          document.body.style.cursor = "";
-          setHover(false);
-        }}
-        onClick={handleClick}
-        scale={hovered ? [1.06, 1.06, 1] : [1, 1, 1]}
-      >
+    <group
+      position={position}
+      quaternion={quat}
+      onPointerOver={(e) => {
+        e.stopPropagation();
+        document.body.style.cursor = "pointer";
+        setHover(true);
+      }}
+      onPointerOut={() => {
+        document.body.style.cursor = "";
+        setHover(false);
+      }}
+      onClick={(e) => {
+        e.stopPropagation();
+        onClick(repo.htmlUrl);
+      }}
+      scale={hovered ? [1.06, 1.06, 1.06] : [1, 1, 1]}
+    >
+      {/* Card background — solid, no gradient, no blur */}
+      <mesh position={[0, 0, -0.005]}>
         <planeGeometry args={[cardW, cardH]} />
-        <meshBasicMaterial
-          map={texture}
-          transparent
-          side={THREE.FrontSide}
-        />
+        <meshBasicMaterial color="#0d1125" transparent opacity={0.92} />
       </mesh>
+
+      {/* Subtle border line */}
+      <mesh position={[0, 0, -0.003]}>
+        <planeGeometry args={[cardW - 0.012, cardH - 0.012]} />
+        <meshBasicMaterial color="#1e2a4a" transparent opacity={0.6} />
+      </mesh>
+
+      {/* Inner face */}
+      <mesh position={[0, 0, 0]}>
+        <planeGeometry args={[cardW - 0.02, cardH - 0.02]} />
+        <meshBasicMaterial color="#0b1020" transparent opacity={0.95} />
+      </mesh>
+
+      {/* Repo name — SDF text, crisp at any scale */}
+      <Text
+        position={[-cardW * 0.42, cardH * 0.15, 0.006]}
+        fontSize={titleSize}
+        color="#e2e8f0"
+        anchorX="left"
+        anchorY="middle"
+        maxWidth={cardW * 0.84}
+        overflowWrap="break-word"
+      >
+        {displayName}
+      </Text>
+
+      {/* Language dot */}
+      <mesh position={[-cardW * 0.42, -cardH * 0.22, 0.006]}>
+        <circleGeometry args={[langDotR, 16]} />
+        <meshBasicMaterial color={langColor} />
+      </mesh>
+
+      {/* Language + stars label */}
+      <Text
+        position={[-cardW * 0.42 + langDotR * 2.5, -cardH * 0.22, 0.006]}
+        fontSize={metaSize}
+        color="rgba(148,163,184,0.7)"
+        anchorX="left"
+        anchorY="middle"
+      >
+        {`${repo.language || "\u2014"}  \u2605${starLabel}`}
+      </Text>
     </group>
   );
 }
@@ -241,7 +193,7 @@ function Particles({ count = 400 }: { count?: number }) {
 }
 
 // ═══════════════════════════════════════════════════════════════════
-// Sphere group — slow edges + pause (spacebar / right-click)
+// Sphere group — pause + gentle rotation
 // ═══════════════════════════════════════════════════════════════════
 
 function SphereGroup({
@@ -258,7 +210,6 @@ function SphereGroup({
   const { size } = useThree();
   const pausedRef = useRef(false);
 
-  // ── Responsive radius ──
   const radius = useMemo(() => {
     const minDim = Math.min(size.width, size.height);
     const clamped = Math.min(minDim * 0.0052, 6.0);
@@ -293,10 +244,14 @@ function SphereGroup({
     };
   }, [size]);
 
-  // ── Pause toggles: spacebar & right-click ──
+  // ── Pause: spacebar & right-click ──
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+      if (
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLTextAreaElement
+      )
+        return;
       if (e.code === "Space") {
         e.preventDefault();
         pausedRef.current = !pausedRef.current;
@@ -314,7 +269,7 @@ function SphereGroup({
     };
   }, []);
 
-  // ── Rotation — gentle speed, even at screen edges ──
+  // ── Rotation — gentle, damped at edges ──
   useFrame((_, delta) => {
     const g = groupRef.current;
     if (!g) return;
@@ -333,7 +288,6 @@ function SphereGroup({
     autoAngle.current = g.rotation.y;
 
     const dist = Math.sqrt(x * x + y * y);
-    // Strong sub-linear damping — rises slowly, caps low so edges don't spin too fast
     const speed =
       dist < 0.06 ? 0 : Math.min(Math.pow(dist, 0.35) * 0.45, 0.5);
 
