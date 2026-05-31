@@ -34,7 +34,7 @@ function hexToRgba(hex: string, alpha: number): string {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
 
-// ── Frosted-glass repo card ───────────────────────────────────────
+// ── Compact frosted-glass repo label ───────────────────────────────
 function RepoCard({
   repo,
   position,
@@ -48,9 +48,7 @@ function RepoCard({
 }) {
   const [hovered, setHover] = useState(false);
   const color = getLangColor(repo.language);
-  const displayName = repo.name.length > 22 ? repo.name.slice(0, 21) + "\u2026" : repo.name;
-  const desc = repo.description || "";
-  const displayDesc = desc.length > 55 ? desc.slice(0, 54) + "\u2026" : desc;
+  const displayName = repo.name.length > 20 ? repo.name.slice(0, 19) + "\u2026" : repo.name;
 
   const handlePointerOver = (e: React.PointerEvent) => {
     e.stopPropagation();
@@ -68,7 +66,7 @@ function RepoCard({
       <Html
         transform
         center
-        distanceFactor={8}
+        distanceFactor={12}
         occlude={false}
         style={{ pointerEvents: "auto" }}
       >
@@ -80,108 +78,69 @@ function RepoCard({
             onClick(repo.htmlUrl);
           }}
           style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 6,
             background: hovered
               ? "rgba(30, 41, 59, 0.88)"
-              : "rgba(15, 23, 42, 0.68)",
-            backdropFilter: "blur(16px) saturate(120%)",
-            WebkitBackdropFilter: "blur(16px) saturate(120%)",
+              : "rgba(15, 23, 42, 0.62)",
+            backdropFilter: "blur(8px) saturate(100%)",
+            WebkitBackdropFilter: "blur(8px) saturate(100%)",
             border: `1px solid ${
-              hovered ? hexToRgba(color, 0.5) : "rgba(148, 163, 184, 0.1)"
+              hovered ? hexToRgba(color, 0.45) : "rgba(148, 163, 184, 0.08)"
             }`,
-            borderRadius: "12px",
-            padding: "10px 14px",
-            width: "190px",
+            borderLeft: `3px solid ${color}`,
+            borderRadius: "6px",
+            padding: "4px 10px 4px 8px",
+            width: "fit-content",
+            maxWidth: "140px",
+            whiteSpace: "nowrap",
             cursor: "pointer",
-            transition: "all 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
-            transform: hovered ? "scale(1.08)" : "scale(1)",
+            transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
+            transform: hovered ? "scale(1.12)" : "scale(1)",
             boxShadow: hovered
-              ? `0 0 22px ${hexToRgba(color, 0.25)}, 0 4px 28px rgba(0,0,0,0.45)`
-              : "0 2px 14px rgba(0,0,0,0.3)",
+              ? `0 0 16px ${hexToRgba(color, 0.3)}, 0 2px 16px rgba(0,0,0,0.4)`
+              : "0 1px 8px rgba(0,0,0,0.25)",
             fontFamily:
               "'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif",
             userSelect: "none",
           }}
         >
-          {/* Header: repo name + stars */}
-          <div
+          {/* Language dot */}
+          <span
             style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              marginBottom: displayDesc ? 5 : 0,
+              width: 6,
+              height: 6,
+              borderRadius: "50%",
+              background: color,
+              flexShrink: 0,
+            }}
+          />
+          {/* Repo name */}
+          <span
+            style={{
+              fontSize: 11,
+              fontWeight: 600,
+              color: "#e2e8f0",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
             }}
           >
+            {displayName}
+          </span>
+          {/* Stars */}
+          {hovered && (
             <span
               style={{
-                fontSize: 13,
-                fontWeight: 700,
-                color: "#e2e8f0",
-                whiteSpace: "nowrap",
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-                flex: 1,
-                minWidth: 0,
-              }}
-            >
-              {displayName}
-            </span>
-            <span
-              style={{
-                fontSize: 10,
+                fontSize: 9,
                 color: "#fbbf24",
-                whiteSpace: "nowrap",
                 flexShrink: 0,
-                marginLeft: 8,
+                marginLeft: 2,
               }}
             >
-              {"\u2B50"} {formatStars(repo.stars)}
+              {"\u2B50"}{formatStars(repo.stars)}
             </span>
-          </div>
-
-          {/* Description */}
-          {displayDesc && (
-            <div
-              style={{
-                fontSize: 10,
-                color: "#94a3b8",
-                lineHeight: "1.45",
-                marginBottom: 7,
-                maxHeight: 28,
-                overflow: "hidden",
-                wordBreak: "break-word",
-              }}
-            >
-              {displayDesc}
-            </div>
           )}
-
-          {/* Footer: language + owner */}
-          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-            {repo.language && (
-              <span
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: 4,
-                  fontSize: 9,
-                  color: "#94a3b8",
-                }}
-              >
-                <span
-                  style={{
-                    width: 7,
-                    height: 7,
-                    borderRadius: "50%",
-                    background: color,
-                    display: "inline-block",
-                    flexShrink: 0,
-                  }}
-                />
-                {repo.language}
-              </span>
-            )}
-            <span style={{ fontSize: 9, color: "#475569" }}>{repo.owner}</span>
-          </div>
         </div>
       </Html>
     </Billboard>
