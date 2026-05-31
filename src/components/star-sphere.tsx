@@ -1,11 +1,11 @@
 "use client";
 
-import { useRef, useMemo, useCallback, useState, useEffect, Suspense } from "react";
+import { useRef, useMemo, useState, useEffect, Suspense } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { Text, Billboard } from "@react-three/drei";
+import { Html, Billboard } from "@react-three/drei";
 import * as THREE from "three";
 import type { StarRepo } from "@/lib/types";
-import { getLangColor, getGlowColor } from "@/lib/colors";
+import { getLangColor } from "@/lib/colors";
 
 // ── Fibonacci sphere ──────────────────────────────────────────────
 function fibonacciSphere(n: number, r: number): THREE.Vector3[] {
@@ -20,38 +20,170 @@ function fibonacciSphere(n: number, r: number): THREE.Vector3[] {
   return pts;
 }
 
-// ── Single repo label (billboard text) ────────────────────────────
-function RepoLabel({
+// ── Helpers ───────────────────────────────────────────────────────
+function formatStars(n: number): string {
+  if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, "") + "k";
+  return String(n);
+}
+
+function hexToRgba(hex: string, alpha: number): string {
+  const h = hex.replace("#", "");
+  const r = parseInt(h.slice(0, 2), 16);
+  const g = parseInt(h.slice(2, 4), 16);
+  const b = parseInt(h.slice(4, 6), 16);
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
+// ── Frosted-glass repo card ───────────────────────────────────────
+function RepoCard({
   repo,
   position,
   onClick,
+  isOverCardRef,
 }: {
   repo: StarRepo;
   position: THREE.Vector3;
   onClick: (url: string) => void;
+  isOverCardRef: React.MutableRefObject<boolean>;
 }) {
   const [hovered, setHover] = useState(false);
   const color = getLangColor(repo.language);
-  const displayName = repo.name.length > 20 ? repo.name.slice(0, 19) + "…" : repo.name;
-  const starWeight = Math.min(Math.log10(repo.stars + 1) * 0.4, 1.2); // 0 .. 1.2
+  const displayName = repo.name.length > 22 ? repo.name.slice(0, 21) + "\u2026" : repo.name;
+  const desc = repo.description || "";
+  const displayDesc = desc.length > 55 ? desc.slice(0, 54) + "\u2026" : desc;
+
+  const handlePointerOver = (e: React.PointerEvent) => {
+    e.stopPropagation();
+    isOverCardRef.current = true;
+    setHover(true);
+  };
+
+  const handlePointerOut = () => {
+    isOverCardRef.current = false;
+    setHover(false);
+  };
 
   return (
     <Billboard position={position}>
-      <Text
-        fontSize={hovered ? 0.13 : 0.07 + starWeight * 0.04}
-        color={hovered ? "#ffffff" : color}
-        anchorX="center"
-        anchorY="middle"
-        fillOpacity={hovered ? 1 : 0.72}
-        onPointerOver={() => setHover(true)}
-        onPointerOut={() => setHover(false)}
-        onClick={(e) => {
-          e.stopPropagation();
-          onClick(repo.htmlUrl);
-        }}
+      <Html
+        transform
+        center
+        distanceFactor={8}
+        occlude={false}
+        style={{ pointerEvents: "auto" }}
       >
-        {displayName}
-      </Text>
+        <div
+          onPointerOver={handlePointerOver}
+          onPointerOut={handlePointerOut}
+          onClick={(e) => {
+            e.stopPropagation();
+            onClick(repo.htmlUrl);
+          }}
+          style={{
+            background: hovered
+              ? "rgba(30, 41, 59, 0.88)"
+              : "rgba(15, 23, 42, 0.68)",
+            backdropFilter: "blur(16px) saturate(120%)",
+            WebkitBackdropFilter: "blur(16px) saturate(120%)",
+            border: `1px solid ${
+              hovered ? hexToRgba(color, 0.5) : "rgba(148, 163, 184, 0.1)"
+            }`,
+            borderRadius: "12px",
+            padding: "10px 14px",
+            width: "190px",
+            cursor: "pointer",
+            transition: "all 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
+            transform: hovered ? "scale(1.08)" : "scale(1)",
+            boxShadow: hovered
+              ? `0 0 22px ${hexToRgba(color, 0.25)}, 0 4px 28px rgba(0,0,0,0.45)`
+              : "0 2px 14px rgba(0,0,0,0.3)",
+            fontFamily:
+              "'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif",
+            userSelect: "none",
+          }}
+        >
+          {/* Header: repo name + stars */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              marginBottom: displayDesc ? 5 : 0,
+            }}
+          >
+            <span
+              style={{
+                fontSize: 13,
+                fontWeight: 700,
+                color: "#e2e8f0",
+                whiteSpace: "nowrap",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                flex: 1,
+                minWidth: 0,
+              }}
+            >
+              {displayName}
+            </span>
+            <span
+              style={{
+                fontSize: 10,
+                color: "#fbbf24",
+                whiteSpace: "nowrap",
+                flexShrink: 0,
+                marginLeft: 8,
+              }}
+            >
+              {"\u2B50"} {formatStars(repo.stars)}
+            </span>
+          </div>
+
+          {/* Description */}
+          {displayDesc && (
+            <div
+              style={{
+                fontSize: 10,
+                color: "#94a3b8",
+                lineHeight: "1.45",
+                marginBottom: 7,
+                maxHeight: 28,
+                overflow: "hidden",
+                wordBreak: "break-word",
+              }}
+            >
+              {displayDesc}
+            </div>
+          )}
+
+          {/* Footer: language + owner */}
+          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            {repo.language && (
+              <span
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 4,
+                  fontSize: 9,
+                  color: "#94a3b8",
+                }}
+              >
+                <span
+                  style={{
+                    width: 7,
+                    height: 7,
+                    borderRadius: "50%",
+                    background: color,
+                    display: "inline-block",
+                    flexShrink: 0,
+                  }}
+                />
+                {repo.language}
+              </span>
+            )}
+            <span style={{ fontSize: 9, color: "#475569" }}>{repo.owner}</span>
+          </div>
+        </div>
+      </Html>
     </Billboard>
   );
 }
@@ -90,6 +222,7 @@ function SphereGroup({
   const autoAngle = useRef(0);
   const pointer = useRef({ x: 0, y: 0, active: false });
   const targetRot = useRef({ x: 0, y: 0 });
+  const isOverCard = useRef(false);
   const { size } = useThree();
 
   const radius = 5.5;
@@ -119,8 +252,8 @@ function SphereGroup({
 
     const { x, y, active } = pointer.current;
 
-    if (!active) {
-      // Gentle auto-rotation
+    // Pause rotation while hovering a card
+    if (!active || isOverCard.current) {
       autoAngle.current += delta * 0.25;
       g.rotation.y += (autoAngle.current - g.rotation.y) * 0.04;
       g.rotation.x += (0 - g.rotation.x) * 0.04;
@@ -130,7 +263,8 @@ function SphereGroup({
     autoAngle.current = g.rotation.y; // sync
 
     const dist = Math.sqrt(x * x + y * y);
-    const speed = dist < 0.08 ? 0 : dist * 1.8;
+    // Sub-linear speed curve — edges rotate proportionally slower
+    const speed = dist < 0.08 ? 0 : Math.min(Math.pow(dist, 0.55) * 0.7, 0.9);
 
     targetRot.current.y += x * delta * speed;
     targetRot.current.x += y * delta * speed * 0.7;
@@ -142,7 +276,13 @@ function SphereGroup({
   return (
     <group ref={groupRef}>
       {repos.map((repo, i) => (
-        <RepoLabel key={repo.id} repo={repo} position={positions[i]} onClick={onRepoClick} />
+        <RepoCard
+          key={repo.id}
+          repo={repo}
+          position={positions[i]}
+          onClick={onRepoClick}
+          isOverCardRef={isOverCard}
+        />
       ))}
     </group>
   );
