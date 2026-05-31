@@ -48,7 +48,7 @@ function RepoCard({
 }) {
   const [hovered, setHover] = useState(false);
   const color = getLangColor(repo.language);
-  const displayName = repo.name.length > 20 ? repo.name.slice(0, 19) + "\u2026" : repo.name;
+  const displayName = repo.name.length > 16 ? repo.name.slice(0, 15) + "\u2026" : repo.name;
 
   const handlePointerOver = (e: React.PointerEvent) => {
     e.stopPropagation();
@@ -66,7 +66,7 @@ function RepoCard({
       <Html
         transform
         center
-        distanceFactor={16}
+        distanceFactor={6}
         occlude={false}
         style={{ pointerEvents: "auto" }}
       >
@@ -93,7 +93,7 @@ function RepoCard({
             borderRadius: "5px",
             padding: "3px 8px 3px 6px",
             width: "fit-content",
-            maxWidth: "110px",
+            maxWidth: "90px",
             whiteSpace: "nowrap",
             cursor: "pointer",
             transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
@@ -119,7 +119,7 @@ function RepoCard({
           {/* Repo name */}
           <span
             style={{
-              fontSize: 11,
+              fontSize: 10,
               fontWeight: 600,
               color: "#e2e8f0",
               overflow: "hidden",
