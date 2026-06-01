@@ -475,7 +475,7 @@ function Scene({
 }) {
   return (
     <>
-      <color attach="background" args={["#060610"]} />
+      <color attach="background" args={["#05050e"]} />
       <fog attach="fog" args={["#060610", 2, 12]} />
       <ambientLight intensity={0.5} />
       <Particles />
