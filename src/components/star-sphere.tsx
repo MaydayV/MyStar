@@ -345,8 +345,9 @@ function SphereGroup({
   // ── Responsive radius ──
   const radius = useMemo(() => {
     const minDim = Math.min(size.width, size.height);
-    const clamped = Math.min(minDim * 0.0052, 6.0);
-    return Math.max(clamped, 2.5);
+    // 0.007 gives ~86% viewport height coverage (vs ~64% with old 0.0052)
+    const clamped = Math.min(minDim * 0.007, 6.0);
+    return Math.max(clamped, 3.0);
   }, [size.width, size.height]);
 
   // ── Geodesic face data (icosahedron subdiv 3 = 1280 faces) ──
@@ -412,9 +413,10 @@ function SphereGroup({
     // ── Auto-rotate when idle ──
     if (!active || pausedRef.current) {
       if (!pausedRef.current) {
-        autoAngle.current += delta * 0.25;
-        g.rotation.y += (autoAngle.current - g.rotation.y) * 0.04;
-        g.rotation.x += (0 - g.rotation.x) * 0.04;
+        // Auto-rotate at ~28°/s (up from ~14°/s) — fast enough to be clearly visible
+        autoAngle.current += delta * 0.5;
+        g.rotation.y += (autoAngle.current - g.rotation.y) * 0.06;
+        g.rotation.x += (0 - g.rotation.x) * 0.06;
       }
       return;
     }
