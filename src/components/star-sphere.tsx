@@ -180,8 +180,8 @@ function RepoCard({
   const cardSize = useMemo(() => {
     // Approximate edge length of equilateral triangle with given area
     const L = Math.sqrt((faceData.area * 4) / Math.sqrt(3));
-    // ~3x original card size: 0.55→0.85
-    const w = L * 0.85;
+    // Card size proportional to face (sphere radius controls overall scale)
+    const w = L * 0.55;
     const h = w * (TEX_H / TEX_W);
     return { w, h };
   }, [faceData.area]);
@@ -345,9 +345,9 @@ function SphereGroup({
   // ── Responsive radius ──
   const radius = useMemo(() => {
     const minDim = Math.min(size.width, size.height);
-    // 0.007 gives ~86% viewport height coverage (vs ~64% with old 0.0052)
-    const clamped = Math.min(minDim * 0.007, 6.0);
-    return Math.max(clamped, 3.0);
+    // 0.014 gives 1.4x viewport height — sphere dominates the viewport
+    const clamped = Math.min(minDim * 0.014, 10.0);
+    return Math.max(clamped, 4.0);
   }, [size.width, size.height]);
 
   // ── Geodesic face data (icosahedron subdiv 3 = 1280 faces) ──
@@ -476,7 +476,7 @@ function Scene({
   return (
     <>
       <color attach="background" args={["#05050e"]} />
-      <fog attach="fog" args={["#060610", 2, 12]} />
+      <fog attach="fog" args={["#060610", 3, 18]} />
       <ambientLight intensity={0.5} />
       <Particles />
       <SphereGroup repos={repos} onRepoClick={onRepoClick} />
