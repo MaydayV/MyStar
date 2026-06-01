@@ -180,8 +180,8 @@ function RepoCard({
   const cardSize = useMemo(() => {
     // Approximate edge length of equilateral triangle with given area
     const L = Math.sqrt((faceData.area * 4) / Math.sqrt(3));
-    // Inscribed rectangle: max width ≈ L/2, scale slightly up
-    const w = L * 0.55;
+    // ~3x original card size: 0.55→0.85
+    const w = L * 0.85;
     const h = w * (TEX_H / TEX_W);
     return { w, h };
   }, [faceData.area]);
@@ -476,7 +476,7 @@ function Scene({
   return (
     <>
       <color attach="background" args={["#060610"]} />
-      <fog attach="fog" args={["#060610", 3, 15]} />
+      <fog attach="fog" args={["#060610", 2, 12]} />
       <ambientLight intensity={0.5} />
       <Particles />
       <SphereGroup repos={repos} onRepoClick={onRepoClick} />
@@ -498,7 +498,7 @@ export default function StarSphere({
   return (
     <Canvas
       dpr={[1, 2]}
-      camera={{ position: [0, 0, 7], fov: 55, near: 0.5, far: 30 }}
+      camera={{ position: [0, 0, 6], fov: 55, near: 0.5, far: 25 }}
       style={{ position: "fixed", inset: 0, zIndex: 0 }}
       gl={{ antialias: true, alpha: false }}
     >
